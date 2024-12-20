@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    .navbar {
+        height: 70px;
+        background-color: #4c2d7b;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar div {
+        height: 70px;
+        background-color: #5d3f99;
+        margin-right: 2px;
+    }
+    .navbar div:hover {
+        background-color: #4c2d7b;
+    }
+    .navbar div p {
+        text-align: center;
+        padding: 5px 10px;
+    }
+    .navbar div p a {
+        color: white;
+        text-decoration: none;
+        font-family: "Montserrat", serif;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .navbar div a i {
+        width: 40px;
+        font-size: 19px;
+        padding: 5px 10px;
+    }
+    .navbar2 {
+        height: 85px;
+        border-bottom: 1px solid rgb(231, 231, 231);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+    }
+    .navbar2 ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -90px;
+    }
+    .navbar2 ul li {
+        font-family: "Montserrat", serif;
+        font-size: 14px;
+        list-style-type: none;
+        margin-right: 15px;
+    }
+    .navbar2 ul li a {
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 4;
+    }
+    .navbar2 input {
+        height: 25px;
+        font-family: "Montserrat", serif;
+        font-weight: 600;
+        padding: 5px;
+    }
+    @media (max-width: 1024px) {
+        .navbar {
+            display: none;
+        }
+        .navbar2 ul li {
+            margin-right: 8px;
+            font-size: 12px;
+        }
+        .navbar2 ul li a {
+            line-height: 1;
+        }
+    }
+    @media (max-width: 800px) {
+        .navbar2 {
+            display: none;
+        }
+        .mobile-navbar {
+            display: flex;
+        }
+        
+    }
+    @media (min-width: 801px) {
+        .mobile-navbar {
+            display: none;
+        }
+        .mobile-input {
+            display: none;
+        }
+    }
+    .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    
+    .navbar > div:not(:first-child):not(:last-child) {
+        display: none;
+    }
+    
+    .navbar.active > div {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    
+    .navbar2 ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navbar2.active ul {
+        display: flex;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+    
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    .navbar2 input {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    /* Adjust specific styles */
+    .logo {
+        padding-left: 0 !important;
+    }
+    
+    .navbar2 li[style] {
+        margin-right: 0 !important;
+    }
+    .mobile-input {
+        margin-top: 110px;
+        margin-left: 30px;
+        padding: 10px;
+        background-image: url('https://www.flaticon.com/free-icons/search');
+    }
+}
+
+</style>
+<body>
+    <button class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="navbar">
+        <div class="logo" style="background-color: white; padding-left: 100px;"></div>
+        <div><p><a href="">PATIENT <br>PORTAL <span style="font-size: 8px; color: #F5831F">BETA</span></a></p></div>
+        <div><p><a href="">FIND A <br>DOCTOR</a></p></div>
+        <div><p><a href="">LAB &<br> RADIOLOGY</a></p></div>
+        <div><p><a href="">PHARMACY</a></p></div>
+        <div><p><a href="">HOME <br>HEALTHCARE</a></p></div>
+        <div><p><a href="">SURGICAL <br>CARE</a></p></div>
+        <div><p><a href="">PHYSICAL <br>THERAPY</a></p></div>
+        <div><p><a href="">VACCINATIONS</a></p></div>
+        <div><p><a href="">SPORTS <br>MEDICINE</a></p></div>
+        <div><p><a href="">CORPORATE &<br> INSURANCE</a></p></div>
+        <div><p><a href="">EDUCATION <br>& RESEARCH</a></p></div>
+        <div><p><a href=""><i class="fas fa-user-alt"></i></a></p></div>
+    </div>
+    <div class="navbar2">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Centres</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Facilities</a></li>
+            <li><a href="" style="color: #F5831F;">Specialities</a></li>
+            <li><a href="">Health Packages</a></li>
+            <li><a href="">Latest @RxDx</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li style=" margin-right: 40px; "><a href="" style="color: #F5831F;">+255 760 903 468</a></li>
+       </ul>
+       <input placeholder="Search" name="search">
+    </div>
+    <input class="mobile-input" placeholder="Search">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navbar = document.querySelector('.navbar');
+    const navbar2 = document.querySelector('.navbar2');
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navbar.classList.toggle('active');
+        navbar2.classList.toggle('active');
+    });
+});
+    </script>
+</body>
+</html>
