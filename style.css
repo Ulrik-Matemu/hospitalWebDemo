@@ -259,6 +259,8 @@ margin-right: 20px;
     width: 100%;
 }
 
+
+
 .social-icons {
     position: fixed;
     top: 50%;
@@ -271,8 +273,8 @@ margin-right: 20px;
   
   .social-icons a {
     text-decoration: none;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     color: white;
     font-size: 14px;
     margin: 0;
@@ -294,3 +296,150 @@ margin-right: 20px;
   .twitter { background-color: #1da1f2; }
   .instagram { background-color: #e4405f; }
   .linkedin { background-color: #0077b5; }
+
+  /* Right Side Sticky Options */
+.sticky-right {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    z-index: 1000;
+  }
+  
+  /* REQUEST INFO Button */
+  /* REQUEST INFO Button (Vertical Style) */
+/* REQUEST INFO Button (Vertical Style, Far Right) */
+.sticky-right .request-info {
+    position: fixed; /* Keeps it fixed on the screen */
+    top: 50%; /* Centers vertically */
+    right: 0; /* Sticks to the far right of the screen */
+    transform: translateY(-50%) rotate(180deg); /* Centers vertically and rotates text for readability */
+    writing-mode: vertical-rl; /* Makes the text vertical */
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    height: 150px;
+    color: white;
+    background-color: #ff5722;
+    padding: 0 5px;
+    font-family: 'Montserrat', serif;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+  }
+  
+  .sticky-right .request-info:hover {
+    background-color: #e64a19;
+    transform: translateY(-50%) rotate(180deg) scale(1.05); /* Keeps rotation and adds hover scaling */
+  }
+  
+  /* WhatsApp Icon */
+  .sticky-right .whatsapp {
+    position: fixed; /* Keeps it fixed */
+    top: calc(50% + 150px); /* Places it slightly below the REQUEST INFO button */
+    right: 10px; /* Adjust distance from the right edge */
+    text-decoration: none;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+  }
+  
+  .sticky-right .whatsapp:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+  }
+  
+
+  .booking {
+    background-color: white;
+    width: 100%;
+  }
+
+  .booking-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 95%;
+  }
+
+  .container {
+    margin: 50px 15px;
+    border-radius: 2px;
+    padding: 10px;
+    width: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .container p {
+    margin-top: 120px;
+    font-family: 'Montserrat', serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: #F5831F;
+  }
+
+  .container div a button {
+    background-color: #4c2d7b;
+    border-radius: 5px;
+    font-family: 'Montserrat', serif;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 0;
+    margin: 0 20px;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+  }
+
+  .container div a button:hover {
+    background-color: white;
+    border: 0.5px solid #4c2d7b;
+    color: black;
+  }
+  
+  .container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .hero img {
+        width: 100%;
+    }
+    .booking-container {
+        display: block;
+        margin: 0;
+    }
+    .container {
+        margin: 50px 10px;
+        width: 95%;
+    }
+    .sticky-right .whatsapp {
+        font-size: 18px;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+    }
+}
