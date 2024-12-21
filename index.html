@@ -179,7 +179,14 @@
       </div>
       <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <section class="hero">
-        <img src="Siha_Polyclinic_Hero_Image_1351x480.jpg" alt="Sila Polyclinic">
+        <img src="Siha_Polyclinic_Hero_Image_1351x480.jpg" alt="Slide 1" class="active">
+        <img src="DALL·E 2024-12-21 16.08.54 - A modern and professional hero image for a hospital website named 'Siha Polyclinic'. The scene features a spacious and welcoming hospital lobby with c.webp" alt="Slide 2">
+        <img src="DALL·E 2024-12-21 16.08.57 - A welcoming and bright hero image for a hospital website named 'Siha Polyclinic'. The image shows a clean and modern hospital room with a large window.webp" alt="Slide 3">
+        <div class="controls">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+        </div>
+        <div class="dots"></div>
     </section>
     <section class="booking">
         <div class="booking-container">
@@ -231,5 +238,57 @@
     });
 });
     </script>
+     <script>
+        // JavaScript for slideshow functionality
+        const slides = document.querySelectorAll(".hero img");
+        const prevButton = document.querySelector(".controls .prev");
+        const nextButton = document.querySelector(".controls .next");
+        const dotsContainer = document.querySelector(".dots");
+    
+        let currentSlide = 0;
+    
+        // Initialize navigation dots
+        slides.forEach((_, index) => {
+          const dot = document.createElement("span");
+          dot.dataset.index = index;
+          if (index === 0) dot.classList.add("active");
+          dotsContainer.appendChild(dot);
+        });
+    
+        const dots = document.querySelectorAll(".dots span");
+    
+        // Function to update slide
+        const updateSlide = (index) => {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+            dots[i].classList.toggle("active", i === index);
+          });
+        };
+    
+        // Go to next slide
+        const nextSlide = () => {
+          currentSlide = (currentSlide + 1) % slides.length;
+          updateSlide(currentSlide);
+        };
+    
+        // Go to previous slide
+        const prevSlide = () => {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          updateSlide(currentSlide);
+        };
+    
+        // Add event listeners
+        nextButton.addEventListener("click", nextSlide);
+        prevButton.addEventListener("click", prevSlide);
+        dots.forEach((dot) =>
+          dot.addEventListener("click", (e) => {
+            currentSlide = Number(e.target.dataset.index);
+            updateSlide(currentSlide);
+          })
+        );
+    
+        // Auto-play functionality
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+      </script>
 </body>
 </html>
