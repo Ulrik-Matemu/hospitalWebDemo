@@ -35,7 +35,7 @@
     }
     .navbar div p {
         text-align: center;
-        padding: 5px 10px;
+        padding: 5px 12px;
     }
     .navbar div p a {
         color: white;
@@ -191,6 +191,82 @@
     }
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: -2px;
+    background-color: #4c2d7b;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: white;
+    min-width: 190px;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 10px;
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    background-color: #4c2d7b;
+    border-bottom: 0.2px solid #5d3f99;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #5d3f99;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #4c2d7b;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: white;
+    min-width: 190px;
+    padding: 10px 20px 20px 20px;
+  }
+  .dropdown-content2 a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 14px;
+    margin-bottom: -30px;
+  }
+
+  .dropdown2:hover .dropdown-content2 {
+    display: block;
+  }
+  .double-drop {
+    display: flex;
+  }
+  .double-menu {
+    margin: 20px;
+    padding: 20px;
+    width: 180px;
+    border-right: 0.5px solid #5d3f99;
+  }
 </style>
 <body>
     <button class="mobile-menu-btn">
@@ -202,23 +278,115 @@
         <div class="logo" style="background-color: white; padding-left: 9px; padding-right: 10px; display: flex; justify-content: center; align-items: center;"><img src="WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px"></div>
         <div><p><a href="">PATIENT <br>PORTAL <span style="font-size: 8px; color: #F5831F">BETA</span></a></p></div>
         <div><p><a href="">FIND A <br>DOCTOR</a></p></div>
-        <div><p><a href="">LAB &<br> RADIOLOGY</a></p></div>
+        <div class="dropdown"><p><a href="">LAB &<br> RADIOLOGY</a></p>
+            <div class="dropdown-content">
+                <a href="#">LABORATORY</a>
+                <a href="#">CT SCAN</a>
+                <a href="#">ULTRASONOGRAPHY</a>
+                <a href="#">X-RAY</a>
+                <a href="#">MAMMOGRAPHY</a>
+                <a href="#">DENTAL OPG</a>
+                <a href="#">DEXA SCAN</a>
+              </div>
+        </div>
         <div><p><a href="">PHARMACY</a></p></div>
         <div><p><a href="">HOME <br>HEALTHCARE</a></p></div>
         <div><p><a href="">SURGICAL <br>CARE</a></p></div>
         <div><p><a href="">PHYSICAL <br>THERAPY</a></p></div>
-        <div><p><a href="">VACCINATIONS</a></p></div>
-        <div><p><a href="">SPORTS <br>MEDICINE</a></p></div>
-        <div><p><a href="">CORPORATE &<br> INSURANCE</a></p></div>
+        <div class="dropdown"><p><a href="">VACCINATIONS</a></p>
+            <div class="dropdown-content">
+                <a href="#">SEASONAL FLU SHOT</a>
+                <a href="#">ADULT VACCINATIONS</a>
+                <a href="#">KIDS VACCINATIONS</a>
+                <a href="#">SHINGLES VACCINATION</a>
+                <a href="#">HPV VACCINE</a>
+                <a href="#">PNEUMONIA VACCINE</a>
+                <a href="#">TYPHOID VACCINE</a>
+            </div>
+        </div>
+        <div class="dropdown"><p><a href="">SPORTS <br>MEDICINE</a></p>
+            <div class="dropdown-content">
+                <a href="#">SPORTS MEDICINE</a>
+                <a href="#">CONSULTATION</a>
+                <a href="#">MEDICAL SCREENING &<br>DIAGNOSTICS</a>
+                <a href="#">SPECIALIZED SERVICES</a>
+                <a href="#">SPORTS SPECIFIC HIGH <br>PERFORMANCE ASSESSMENT</a>
+            </div>
+        </div>
+        <div class="dropdown"><p><a href="">CORPORATE &<br> INSURANCE</a></p>
+            <div class="dropdown-content">
+                <a href="#">CORPORATE</a>
+                <a href="#">CASHLESS OPD</a>
+                <a href="#">PRE-POLICY MEDICAL CHECKUP</a>
+                <a href="#">FOOD HANDLERS PACKAGE</a>
+            </div>
+        </div>
         <div><p><a href="">EDUCATION <br>& RESEARCH</a></p></div>
         <div><p><a href=""><i class="fas fa-user-alt"></i></a></p></div>
     </div>
     <div class="navbar2">
         <ul>
             <li><a href="">Home</a></li>
-            <li><a href="">Centres</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Facilities</a></li>
+            <li class="dropdown2"><a href="">Centres</a>
+                <div class="dropdown-content2">
+                    <a href="" style="color: #FD8103;">Flagship Clinics</a>
+                </div>
+            </li>
+            <li class="dropdown2"><a href="">About Us</a>
+                <div class="dropdown-content2">
+                    <a href="" style="font-weight: 400;">About Us</a>
+                    <a href="" style="font-weight: 400;">Careers</a>
+                    <a href="" style="font-weight: 400;">CSR</a>
+                </div>
+            </li>
+            <li class="dropdown2"><a href="">Facilities</a>
+                <div class="dropdown-content2">
+                    <div class="double-drop">
+                        <div class="double-menu">
+                            <a href="" style="font-weight: 400;">ABPM</a>
+                            <a href="" style="font-weight: 400;">Bone Density Test</a>
+                            <a href="" style="font-weight: 400;">CT Scan</a>
+                            <a href="" style="font-weight: 400;">Dexa Scan</a>
+                            <a href="" style="font-weight: 400;">Echocardiography</a>
+                            <a href="" style="font-weight: 400;">Foetal Echocardiography</a>
+                            <a href="" style="font-weight: 400;">Hydrafacial</a>
+                            <a href="" style="font-weight: 400;">Hydrotherapy</a>
+                            <a href="" style="font-weight: 400;">Mammography</a>
+                            <a href="" style="font-weight: 400;">Pharmacy</a>
+                            <a href="" style="font-weight: 400;">Sleep Study</a>
+                            <a href="" style="font-weight: 400;">TMT</a>    
+                        </div>
+                        <div class="double-menu">
+                            <a href="" style="font-weight: 400;">Audiometry</a>
+                            <a href="" style="font-weight: 400;">Colonoscopy</a>
+                            <a href="" style="font-weight: 400;">Dengue Care</a>
+                            <a href="" style="font-weight: 400;">Digital X-Ray</a>
+                            <a href="" style="font-weight: 400;">EEG</a>
+                            <a href="" style="font-weight: 400;">GFC Treatment - Derma</a>
+                            <a href="" style="font-weight: 400;">Health Checks</a>
+                            <a href="" style="font-weight: 400;">Laboratory</a>
+                            <a href="" style="font-weight: 400;">MNRF</a>
+                            <a href="" style="font-weight: 400;">Pulmonary Function Test</a>
+                            <a href="" style="font-weight: 400;">Swimming Pool</a>
+                            <a href="" style="font-weight: 400;">Ultrasonography</a>
+                        </div>
+                        <div class="double-menu">
+                            <a href="" style="font-weight: 400;">ABPM</a>
+                            <a href="" style="font-weight: 400;">Bone Density Test</a>
+                            <a href="" style="font-weight: 400;">CT Scan</a>
+                            <a href="" style="font-weight: 400;">Dexa Scan</a>
+                            <a href="" style="font-weight: 400;">Echocardiography</a>
+                            <a href="" style="font-weight: 400;">Foetal Echocardiography</a>
+                            <a href="" style="font-weight: 400;">Hydrafacial</a>
+                            <a href="" style="font-weight: 400;">Hydrotherapy</a>
+                            <a href="" style="font-weight: 400;">Mammography</a>
+                            <a href="" style="font-weight: 400;">Pharmacy</a>
+                            <a href="" style="font-weight: 400;">Sleep Study</a>
+                            <a href="" style="font-weight: 400;">TMT</a>    
+                        </div> 
+                    </div>
+                </div>
+            </li>
             <li><a href="" style="color: #F5831F;">Specialities</a></li>
             <li><a href="">Health Packages</a></li>
             <li><a href="">Latest @Siha Polyclinic</a></li>
