@@ -11,263 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body {
-        margin: 0;
-    }
-    .navbar {
-        height: 70px;
-        background-color: #4c2d7b;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .navbar div {
-        height: 70px;
-        background-color: #5d3f99;
-        margin-right: 2px;
-    }
-    .navbar div:hover {
-        background-color: #4c2d7b;
-    }
-    .navbar div p {
-        text-align: center;
-        padding: 5px 12px;
-    }
-    .navbar div p a {
-        color: white;
-        text-decoration: none;
-        font-family: "Montserrat", serif;
-        font-size: 10px;
-        font-weight: 500;
-    }
-    .navbar div a i {
-        width: 40px;
-        font-size: 19px;
-        padding: 5px 10px;
-    }
-    .navbar2 {
-        height: 85px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 50px;
-    }
-    .navbar2 ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -90px;
-    }
-    .navbar2 ul li {
-        font-family: "Montserrat", serif;
-        font-size: 14px;
-        list-style-type: none;
-        margin-right: 15px;
-    }
-    .navbar2 ul li a {
-        text-decoration: none;
-        font-weight: 700;
-        line-height: 4;
-    }
-    .navbar2 input {
-        height: 25px;
-        font-family: "Montserrat", serif;
-        font-weight: 600;
-        padding: 5px;
-    }
-    @media (max-width: 1024px) {
-        .navbar {
-            display: none;
-        }
-        .navbar2 ul li {
-            margin-right: 8px;
-            font-size: 12px;
-        }
-        .navbar2 ul li a {
-            line-height: 1;
-        }
-    }
-    @media (max-width: 800px) {
-        .navbar2 {
-            display: none;
-        }
-        .mobile-navbar {
-            display: flex;
-        }
-        
-    }
-    @media (min-width: 801px) {
-        .mobile-navbar {
-            display: none;
-        }
-        .mobile-input {
-            display: none;
-        }
-    }
-    .mobile-menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
-.mobile-menu-btn span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-    transition: 0.3s;
-}
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-    }
-    
-    .navbar > div:not(:first-child):not(:last-child) {
-        display: none;
-    }
-    
-    .navbar.active > div {
-        display: block;
-        width: 100%;
-        padding: 0.5rem 0;
-    }
-    
-    .navbar2 ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .navbar2.active ul {
-        display: flex;
-    }
-    
-    .mobile-menu-btn {
-        display: block;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-    }
-    
-    .mobile-menu-btn.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    
-    .mobile-menu-btn.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .mobile-menu-btn.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
-    }
-    
-    .navbar2 input {
-        width: 100%;
-        margin-top: 1rem;
-    }
-    
-    /* Adjust specific styles */
-    .logo {
-        padding-left: 0 !important;
-    }
-    
-    .navbar2 li[style] {
-        margin-right: 0 !important;
-    }
-    .mobile-input {
-        margin-top: 110px;
-        margin-left: 30px;
-        padding: 10px;
-        background-image: url('https://www.flaticon.com/free-icons/search');
-    }
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: -2px;
-    background-color: #4c2d7b;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    color: white;
-    min-width: 190px;
-  }
-
-  .dropdown-content a {
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    font-size: 10px;
-    font-family: 'Montserrat', serif;
-    font-weight: 500;
-    background-color: #4c2d7b;
-    border-bottom: 0.2px solid #5d3f99;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #5d3f99;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .dropdown a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .dropdown2 {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-content2 {
-    display: none;
-    position: absolute;
-    background-color: #4c2d7b;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    color: white;
-    min-width: 190px;
-    padding: 10px 20px 20px 20px;
-  }
-  .dropdown-content2 a {
-    text-decoration: none;
-    display: block;
-    color: white;
-    font-size: 14px;
-    margin-bottom: -30px;
-  }
-
-  .dropdown2:hover .dropdown-content2 {
-    display: block;
-  }
-  .double-drop {
-    display: flex;
-  }
-  .double-menu {
-    margin: 20px;
-    padding: 20px;
-    width: 180px;
-    border-right: 0.5px solid #5d3f99;
-  }
-</style>
 <body>
     <button class="mobile-menu-btn">
         <span></span>
@@ -277,27 +22,41 @@
     <div class="navbar">
         <div class="logo" style="background-color: white; padding-left: 9px; padding-right: 10px; display: flex; justify-content: center; align-items: center;"><img src="WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px"></div>
         <div><p><a href="">PATIENT <br>PORTAL <span style="font-size: 8px; color: #F5831F">BETA</span></a></p></div>
-        <div><p><a href="">FIND A <br>DOCTOR</a></p></div>
+        <div class="dropdown"><p><a href="">FIND A <br>DOCTOR</a></p>
+            <div class="dropdown-content">
+                <a href="#">MD</a>
+                <a href="#">SPECIALIST</a>
+            </div>
+        </div>
         <div class="dropdown"><p><a href="">LAB &<br> RADIOLOGY</a></p>
             <div class="dropdown-content">
-                <a href="#">LABORATORY</a>
+                <a href="#">RADIOLOGY</a>
                 <a href="#">CT SCAN</a>
-                <a href="#">ULTRASONOGRAPHY</a>
                 <a href="#">X-RAY</a>
-                <a href="#">MAMMOGRAPHY</a>
-                <a href="#">DENTAL OPG</a>
-                <a href="#">DEXA SCAN</a>
+                <a href="#">USS</a>
+                <a href="#">MRI</a>
               </div>
         </div>
-        <div><p><a href="">PHARMACY</a></p></div>
+        <div class="dropdown"><p><a href="">PHARMACY</a></p>
+            <div class="dropdown-content" style="height: 10px;">
+                <a href="#">MEDICINE</a>
+            </div>
+        </div>
         <div><p><a href="">HOME <br>HEALTHCARE</a></p></div>
-        <div><p><a href="">SURGICAL <br>CARE</a></p></div>
+        <div class="dropdown"><p><a href="">SURGICAL <br>CARE</a></p>
+            <div class="dropdown-content">
+                <a href="#">MINOR WOUND CARE</a>
+                <a href="#">MINOR INCISIONS AND DRAINAGE</a>
+                <a href="#">CERUMEN REMOVAL</a>
+                <a href="#">POP APPLICATIONS</a>
+            </div>
+        </div>
         <div><p><a href="">PHYSICAL <br>THERAPY</a></p></div>
         <div class="dropdown"><p><a href="">VACCINATIONS</a></p>
             <div class="dropdown-content">
+                <a href="#">HEPATITIS B VACCINE</a>
                 <a href="#">SEASONAL FLU SHOT</a>
-                <a href="#">ADULT VACCINATIONS</a>
-                <a href="#">KIDS VACCINATIONS</a>
+                <a href="#">HB VACCINATIONS</a>
                 <a href="#">SHINGLES VACCINATION</a>
                 <a href="#">HPV VACCINE</a>
                 <a href="#">PNEUMONIA VACCINE</a>
@@ -315,10 +74,8 @@
         </div>
         <div class="dropdown"><p><a href="">CORPORATE &<br> INSURANCE</a></p>
             <div class="dropdown-content">
-                <a href="#">CORPORATE</a>
-                <a href="#">CASHLESS OPD</a>
-                <a href="#">PRE-POLICY MEDICAL CHECKUP</a>
-                <a href="#">FOOD HANDLERS PACKAGE</a>
+                <a href="#">NHIF INSURANCE</a>
+                <a href="#">STRATEGIES INSURANCE</a>
             </div>
         </div>
         <div><p><a href="">EDUCATION <br>& RESEARCH</a></p></div>
@@ -334,55 +91,57 @@
             </li>
             <li class="dropdown2"><a href="">About Us</a>
                 <div class="dropdown-content2">
-                    <a href="" style="font-weight: 400;">About Us</a>
-                    <a href="" style="font-weight: 400;">Careers</a>
-                    <a href="" style="font-weight: 400;">CSR</a>
+                    <div style="margin: 10px;">
+                        <a href="" style="font-weight: 400; line-height: 2;">About Us</a>
+                    <a href="" style="font-weight: 400; line-height: 2;">Careers</a>
+                    <a href="" style="font-weight: 400; line-height: 2;">CSR</a>
+                    </div>
                 </div>
             </li>
             <li class="dropdown2"><a href="">Facilities</a>
                 <div class="dropdown-content2">
                     <div class="double-drop">
                         <div class="double-menu">
-                            <a href="" style="font-weight: 400;">ABPM</a>
-                            <a href="" style="font-weight: 400;">Bone Density Test</a>
-                            <a href="" style="font-weight: 400;">CT Scan</a>
-                            <a href="" style="font-weight: 400;">Dexa Scan</a>
-                            <a href="" style="font-weight: 400;">Echocardiography</a>
-                            <a href="" style="font-weight: 400;">Foetal Echocardiography</a>
-                            <a href="" style="font-weight: 400;">Hydrafacial</a>
-                            <a href="" style="font-weight: 400;">Hydrotherapy</a>
-                            <a href="" style="font-weight: 400;">Mammography</a>
-                            <a href="" style="font-weight: 400;">Pharmacy</a>
-                            <a href="" style="font-weight: 400;">Sleep Study</a>
-                            <a href="" style="font-weight: 400;">TMT</a>    
+                            <a href="" style="font-weight: 400; line-height: 2;">ABPM</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Bone Density Test</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">CT Scan</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Dexa Scan</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Echocardiography</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Foetal Echocardiography</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Hydrafacial</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Hydrotherapy</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Mammography</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Pharmacy</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Sleep Study</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">TMT</a>    
                         </div>
                         <div class="double-menu">
-                            <a href="" style="font-weight: 400;">Audiometry</a>
-                            <a href="" style="font-weight: 400;">Colonoscopy</a>
-                            <a href="" style="font-weight: 400;">Dengue Care</a>
-                            <a href="" style="font-weight: 400;">Digital X-Ray</a>
-                            <a href="" style="font-weight: 400;">EEG</a>
-                            <a href="" style="font-weight: 400;">GFC Treatment - Derma</a>
-                            <a href="" style="font-weight: 400;">Health Checks</a>
-                            <a href="" style="font-weight: 400;">Laboratory</a>
-                            <a href="" style="font-weight: 400;">MNRF</a>
-                            <a href="" style="font-weight: 400;">Pulmonary Function Test</a>
-                            <a href="" style="font-weight: 400;">Swimming Pool</a>
-                            <a href="" style="font-weight: 400;">Ultrasonography</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Audiometry</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Colonoscopy</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Dengue Care</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Digital X-Ray</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">EEG</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">GFC Treatment - Derma</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Health Checks</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Laboratory</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">MNRF</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Pulmonary Function Test</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Swimming Pool</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Ultrasonography</a>
                         </div>
-                        <div class="double-menu">
-                            <a href="" style="font-weight: 400;">ABPM</a>
-                            <a href="" style="font-weight: 400;">Bone Density Test</a>
-                            <a href="" style="font-weight: 400;">CT Scan</a>
-                            <a href="" style="font-weight: 400;">Dexa Scan</a>
-                            <a href="" style="font-weight: 400;">Echocardiography</a>
-                            <a href="" style="font-weight: 400;">Foetal Echocardiography</a>
-                            <a href="" style="font-weight: 400;">Hydrafacial</a>
-                            <a href="" style="font-weight: 400;">Hydrotherapy</a>
-                            <a href="" style="font-weight: 400;">Mammography</a>
-                            <a href="" style="font-weight: 400;">Pharmacy</a>
-                            <a href="" style="font-weight: 400;">Sleep Study</a>
-                            <a href="" style="font-weight: 400;">TMT</a>    
+                        <div class="double-menu" style="border-right: #f5831f00;">
+                            <a href="" style="font-weight: 400; line-height: 2;">ABPM</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Bone Density Test</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">CT Scan</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Dexa Scan</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Echocardiography</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Foetal Echocardiography</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Hydrafacial</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Hydrotherapy</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Mammography</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Pharmacy</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">Sleep Study</a>
+                            <a href="" style="font-weight: 400; line-height: 2;">TMT</a>    
                         </div> 
                     </div>
                 </div>
@@ -396,6 +155,24 @@
        <input placeholder="Search" name="search">
     </div>
     <input class="mobile-input" placeholder="Search">
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" class="facebook" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="twitter" title="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <section class="hero">
+        <img src="Siha_Polyclinic_Hero_Image_1351x480.jpg" alt="Sila Polyclinic">
+    </section>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
