@@ -452,9 +452,7 @@ margin-right: 20px;
   }
   
   .sticky-right .request-info:hover {
-    background-color: #e64a19;
-    transform: translateY(-50%) rotate(180deg) scale(1.05); /* Keeps rotation and adds hover scaling */
-  }
+    background-color: #e64a19;  }
   
   /* WhatsApp Icon */
   .sticky-right .whatsapp {
