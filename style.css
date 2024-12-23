@@ -57,6 +57,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     line-height: 4;
+    color: #00a896;
 }
 .navbar2 input {
     height: 25px;
@@ -291,10 +292,11 @@ margin-right: 20px;
 }
 
 .double-menu a {
+  color: #03045e;
 }
 
 .double-menu a:hover {
-    background-color: #03045e;
+    background-color: #00a896;
 }
 
  /* Hero Section */
@@ -611,5 +613,51 @@ margin-right: 20px;
     width: 85%;
     border-right: 1px solid white;
     border-bottom: 2px solid #4c2d7b;
+  }
+}
+
+
+.welcome-line {
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  font-size: 30px;
+}
+
+.counter-section {
+  background-color: #00a896;
+}
+
+.counters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.counter {
+  margin: 40px;
+  padding: 40px;
+}
+
+.counter h3, .counter p {
+  text-align: center;
+  color: white;
+}
+
+.counter h3 {
+  font-family: 'Montserrat', serif;
+  font-size: 50px;
+  margin: 0;
+}
+
+.counter p {
+  font-size: 18px;
+  font-family: 'Montserrat', serif;
+}
+
+@media (max-width: 1024px) {
+  .counters {
+    display: block;
   }
 }
