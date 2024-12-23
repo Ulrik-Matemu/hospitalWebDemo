@@ -436,8 +436,8 @@ margin-right: 20px;
 .sticky-right .request-info {
     position: fixed; /* Keeps it fixed on the screen */
     top: 50%; /* Centers vertically */
-    right: 0; /* Sticks to the far right of the screen */
-    transform: translateY(-50%) rotate(180deg); /* Centers vertically and rotates text for readability */
+    right:45px; /* Sticks to the far right of the screen */
+    transform: translateY(-50%) rotate(-90deg); /* Centers vertically and rotates text for readability */
     writing-mode: vertical-rl; /* Makes the text vertical */
     text-decoration: none;
     font-weight: bold;
@@ -620,7 +620,7 @@ margin-right: 20px;
 .welcome-line {
   text-align: center;
   font-family: 'Montserrat', serif;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .counter-section {
