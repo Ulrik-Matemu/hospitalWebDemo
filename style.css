@@ -450,6 +450,7 @@ margin-right: 20px;
     transition: background-color 0.3s, transform 0.3s;
     z-index: 1000; /* Ensures it stays on top of other elements */
   }
+
   
   .sticky-right .request-info:hover {
     background-color: #e64a19;  }
@@ -619,6 +620,7 @@ margin-right: 20px;
   text-align: center;
   font-family: 'Montserrat', serif;
   font-size: 32px;
+  color: gray;
 }
 
 .counter-section {
@@ -659,3 +661,121 @@ margin-right: 20px;
     display: block;
   }
 }
+
+.about {
+  background-color: #e4f4f4;
+  padding: 30px;
+}
+
+.about-container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-para {
+  margin-bottom: 40px;
+  width: 49%;
+  padding-right: 50px;
+  font-family: "Montserrat", serif;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.about-video {
+  height: 400px;
+}
+
+.about-video video {
+  width: 560px;
+}
+
+.footer {
+  background-color: #03045e;
+  padding-bottom: 50px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03045e;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.f-column1 {
+  margin: 20px;
+}
+
+.social-footer {
+  display: flex;
+  margin-left: 140px;
+}
+
+.social-footer div {
+  margin-right: 10px;
+  border: 1px solid white;
+  padding: 7px 10px;
+  border-radius: 100%;
+}
+
+.social-footer a {
+  color: white;
+}
+
+@media (min-width: 2559px) {
+  .social-footer {
+    margin-left: 780px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .social-footer {
+    margin-left: 460px;
+  }
+}
+
+
+@media (min-width: 1439px) {
+  .social-footer {
+    margin-left: 220px;
+  }
+}
+
+@media (min-width: 1365px) {
+  .social-footer {
+    margin-left: 180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .social-footer {
+    margin-left: 50px;
+  }
+  .about-container1 {
+    display: block;
+  }
+  .about-para {
+    padding-right: 0;
+    width: 90%;
+  }
+  .about-video video {
+    width: 280px;
+  }
+  .footer ul {
+    display: none;
+  }
+}
+
