@@ -659,6 +659,7 @@ margin-right: 20px;
 @media (max-width: 1024px) {
   .counters {
     display: block;
+    padding: 1px;
   }
 }
 
@@ -674,13 +675,26 @@ margin-right: 20px;
 }
 
 .about-para {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   width: 49%;
   padding-right: 50px;
   font-family: "Montserrat", serif;
   text-align: justify;
   font-weight: 500;
   line-height: 2;
+}
+
+.about-para2 {
+  width: 49%;
+  font-weight: 500;
+  line-height: 2;
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  .about-para2 {
+    width: 100%;
+  }
 }
 
 .about-video {
@@ -693,13 +707,14 @@ margin-right: 20px;
 
 .footer {
   background-color: #03045e;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
 }
 
 .footer-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 200px;
   background-color: #03045e;
 }
 
@@ -721,55 +736,29 @@ margin-right: 20px;
 
 .social-footer {
   display: flex;
-  margin-left: 140px;
 }
 
 .social-footer div {
-  margin-right: 10px;
   border: 1px solid white;
   padding: 7px 10px;
-  border-radius: 100%;
 }
 
 .social-footer a {
   color: white;
 }
 
-@media (min-width: 2559px) {
-  .social-footer {
-    margin-left: 780px;
-  }
-}
-
-@media (min-width: 1919px) {
-  .social-footer {
-    margin-left: 460px;
-  }
-}
 
 
-@media (min-width: 1439px) {
-  .social-footer {
-    margin-left: 220px;
-  }
-}
 
-@media (min-width: 1365px) {
-  .social-footer {
-    margin-left: 180px;
-  }
-}
 
 @media (max-width: 1024px) {
-  .social-footer {
-    margin-left: 50px;
-  }
+ 
   .about-container1 {
     display: block;
   }
   .about-para {
     padding-right: 0;
-    width: 90%;
+    width: 100%;
   }
   .about-video video {
     width: 280px;
@@ -779,3 +768,55 @@ margin-right: 20px;
   }
 }
 
+
+@media (width: 2560px) {
+.footer p {
+  margin-left: 790px;
+}
+.social-footer {
+  margin-left: 790px;
+}
+}
+
+@media (width: 1920px) {
+  .footer p {
+    margin-left: 470px;
+  }
+  .social-footer {
+    margin-left: 470px;
+  }
+}
+
+@media (width: 1600px) {
+  .footer p, .social-footer {
+    margin-left: 310px;
+  }
+}
+
+@media (width: 1440px) {
+  .footer p, .social-footer {
+    margin-left: 230px;
+  }
+}
+
+@media (width: 1366px) {
+  .footer p, .social-footer {
+    margin-left: 195px;
+  }
+}
+
+@media (width: 1280px) {
+  .footer p, .social-footer {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .social-footer {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer p {
+    text-align: center;
+  }
+}
