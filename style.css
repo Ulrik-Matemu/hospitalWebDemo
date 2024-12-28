@@ -304,7 +304,7 @@ margin-right: 20px;
     position: relative;
     width: 100%;
     max-width: 100%; /* Ensure no overflow */
-    height: 480px;
+   
     overflow: hidden;
   }
 
@@ -589,6 +589,7 @@ margin-right: 20px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
+  color: gray;
 }
 
 .container-call button {
@@ -692,7 +693,7 @@ margin-right: 20px;
 }
 
 .about-para div {
-  width: 49%;
+  width: 100%;
 }
 
 .about-para2 {
