@@ -623,6 +623,15 @@ margin-right: 20px;
   color: gray;
 }
 
+.welcome-line p {
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: black;
+  margin-top: -30px;
+  margin-bottom: 60px;
+}
+
 .counter-section {
   background-color: #00a896;
 }
@@ -669,23 +678,25 @@ margin-right: 20px;
 }
 
 .about-container1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 .about-para {
   margin-bottom: 70px;
-  width: 49%;
   padding-right: 50px;
   font-family: "Montserrat", serif;
   text-align: justify;
   font-weight: 500;
   line-height: 2;
+  display: flex;
+}
+
+.about-para div {
+  width: 49%;
 }
 
 .about-para2 {
-  width: 49%;
+  display: flex;
   font-weight: 500;
   line-height: 2;
   text-align: justify;
@@ -694,6 +705,7 @@ margin-right: 20px;
 @media (max-width: 1024px) {
   .about-para2 {
     width: 100%;
+    display: block;
   }
 }
 
@@ -736,6 +748,7 @@ margin-right: 20px;
 
 .social-footer {
   display: flex;
+  justify-content: end;
 }
 
 .social-footer div {
@@ -759,6 +772,11 @@ margin-right: 20px;
   .about-para {
     padding-right: 0;
     width: 100%;
+    display: block;
+  }
+
+  .about-para div {
+    width: 90%;
   }
   .about-video video {
     width: 280px;
@@ -774,7 +792,7 @@ margin-right: 20px;
   margin-left: 790px;
 }
 .social-footer {
-  margin-left: 790px;
+  margin-right: 790px;
 }
 }
 
@@ -783,31 +801,43 @@ margin-right: 20px;
     margin-left: 470px;
   }
   .social-footer {
-    margin-left: 470px;
+    margin-right: 470px;
   }
 }
 
 @media (width: 1600px) {
-  .footer p, .social-footer {
+  .footer p {
     margin-left: 310px;
+  }
+  .social-footer {
+    margin-right: 310px;
   }
 }
 
 @media (width: 1440px) {
-  .footer p, .social-footer {
+  .footer p {
     margin-left: 230px;
+  }
+  .social-footer {
+    margin-right: 230px;
   }
 }
 
 @media (width: 1366px) {
-  .footer p, .social-footer {
+  .footer p {
     margin-left: 195px;
+  }
+  .social-footer {
+    margin-right: 195px;
   }
 }
 
 @media (width: 1280px) {
-  .footer p, .social-footer {
+  .footer p {
     margin-left: 150px;
+  }
+  .social-footer {
+    margin-right: 150px;
   }
 }
 
@@ -819,4 +849,16 @@ margin-right: 20px;
   .footer p {
     text-align: center;
   }
+}
+
+.video-div video {
+  width: 600px;
+  margin: 15px 15px 50px 15px;
+
+}
+
+
+.about-para2 img {
+  height: 26px;
+  margin-right: 10px;
 }
