@@ -579,17 +579,48 @@ margin-right: 20px;
   justify-content: center;
 }
 
+.call-container1 {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+
+.container-call1 {
+  width: 50%;
+  padding: 2px 20px 0 20px;
+  border-right: 2px solid #03045e;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  color: gray;
+}
+
 .container-call {
   width: 50%;
   padding: 20px 20px 0 20px;
   border-right: 2px solid #03045e;
 }
 
+@media (max-width: 1024px) {
+  .call-container1 {
+    width: 100%;
+  }
+  .container-call1 {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
 .container-call p {
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
   color: gray;
+  text-align: justify;
 }
 
 .container-call button {
