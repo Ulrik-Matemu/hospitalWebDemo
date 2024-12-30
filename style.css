@@ -572,6 +572,15 @@ margin-right: 20px;
   font-family: "Montserrat", serif;
 }
 
+.call-to-action1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4f4f4;
+  padding: 35px;
+  font-family: "Montserrat", serif;
+}
+
 .call-container {
   background-color: white;
   display: flex;
