@@ -670,8 +670,8 @@ margin-right: 20px;
 .welcome-line {
   text-align: center;
   font-family: 'Montserrat', serif;
-  font-size: 32px;
-  color: gray;
+  font-size: 25px;
+  color: #00a896;
 }
 
 .welcome-line p {
