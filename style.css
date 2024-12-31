@@ -903,3 +903,29 @@ margin-right: 20px;
   height: 26px;
   margin-right: 10px;
 }
+
+ /* Styling for the button */
+ #backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Hidden by default */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#backToTop:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1024px) {
+  #backToTop {
+    margin-bottom: 40px;
+  }
+}
