@@ -605,21 +605,36 @@ margin-right: 20px;
   width: 90%;
 }
 
+.border-line2 {
+  width: 2.2px;
+  height: 240px;
+  background-color: #03045e;
+}
+
+@media (max-width: 1024px) {
+  .border-line2 {
+    display: none;
+  }
+}
 
 .container-call1 {
   width: 50%;
   padding: 2px 20px 0 20px;
-  border-right: 2px solid #03045e;
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
   color: gray;
 }
 
+.border-line {
+  width: 2.2px;
+  height: 60px;
+  background-color: #03045e;
+}
+
 .container-call {
   width: 50%;
   padding: 20px 20px 0 20px;
-  border-right: 2px solid #03045e;
 }
 
 
@@ -946,8 +961,103 @@ margin-right: 20px;
   
 }
 
+.faq-container {
+  margin: 50px 80px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+
 .faq1 {
   display: flex;
   align-items: center;
+  justify-content: center; 
+}
+
+@media (max-width: 1024px) {
+  .faq-container {
+    margin: 20px;
+  }
+  .faq1 {
+    display: block;
+  }
+}
+
+.faq-icon {
+  margin: 50px 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.faq-icon h3 {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+}
+
+.faq-icon p {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+.faq-icon:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .carousel-container {
+    display: none;
+  }
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  display: flex;
   justify-content: center;
+  min-width: 100%;
+}
+
+.faq-icon {
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.faq-icon:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
 }
