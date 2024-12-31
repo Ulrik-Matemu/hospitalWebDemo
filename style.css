@@ -485,6 +485,9 @@ margin-right: 20px;
     background-color: white;
     width: 100%;
     margin-top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .booking-container {
@@ -493,11 +496,14 @@ margin-right: 20px;
     justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
-    width: 95%;
+    width: 90%;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 20px;
   }
 
   .container {
-    margin: 10px 15px;
+    margin: 10px 5px;
     border-radius: 2px;
     padding: 5px;
     background-color: white;
@@ -515,14 +521,14 @@ margin-right: 20px;
   }
 
   .container div a button {
-    background-color: #03045e;
+    background-color: white;
     border-radius: 5px;
     font-family: 'Montserrat', serif;
-    color: white;
+    color: black;
     font-weight: 300;
     font-size: 15px;
-    padding: 10px 20px;
-    border: 0;
+    padding: 10px 10px;
+    border: 1px solid rgb(0, 0, 119);
     margin: 0 20px;
     margin-bottom: 10px;
     transition: 0.5s ease;
@@ -581,6 +587,7 @@ margin-right: 20px;
   background-color: #e4f4f4;
   padding: 35px;
   font-family: "Montserrat", serif;
+  margin-top: -30px;
 }
 
 .call-container {
