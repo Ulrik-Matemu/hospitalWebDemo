@@ -1381,7 +1381,8 @@ body {
 }
 
 .diagnostic-card {
-  padding: 20px 240px 20px 20px;
+  padding: 20px;
+  width: 400px;
   box-shadow: 1px 5px 5px 5px #abbbbb2a;
   border-radius: 20px;
   background-color: white;
