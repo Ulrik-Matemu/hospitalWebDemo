@@ -1415,3 +1415,103 @@ body {
 .diagnostic-card ul li {
   margin-bottom: 10px;
 }
+
+.pharmacy-hero {
+  background-position: center bottom 0px;
+  background-image: url(img/pharmacy.jpg);
+}
+
+.p-hero {
+  margin-left: 50px;
+}
+
+.pharmacy-hero-container {
+  font-family: "Montserrat", serif;
+}
+
+.pharmacy-hero-container h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #fd8103;
+  line-height: 60px;
+  padding-top: 50px;
+}
+
+.pharmacy-hero-container h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #00a896;
+  margin-top: -10px;
+}
+
+.pharmacy-hero-container ul {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.imaging-services {
+  background-color: white;
+  margin: 0 100px 0 100px;
+  font-family: "Montserrat", serif;
+}
+
+.imaging-services h3, .imaging-services h2 {
+  text-align: center;
+  color: #fd8103;
+}
+
+.imaging-services h2 {
+  margin-top: -10px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.imaging-services-card-container {
+  display: flex;
+}
+
+.imgs-card {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 25%;
+  padding: 5px 20px 20px 20px;
+  color: white;
+  margin: 10px 10px 10px 10px;
+  background-image:  linear-gradient(45deg, #5d3e98 0%, #a67afb 100%);
+  transform: translateY(0); /* Initial position */
+  transition: transform 0.2s ease-in;
+}
+
+.imgs-card:hover {
+  background-image: linear-gradient(45deg, #5d3e98 0%, #5d35ad 100%);
+  transform: translateY(-15px); /* Moves the card upward */
+  position: relative;
+}
+
+.imgs-card h4 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.imgs-card p {
+  line-height: 25px;
+  font-size: 16px;
+  margin-top: -25px;
+  font-weight: 500;
+}
+
+.imgs-card button {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  padding: 5px 10px;
+  font-size: 13px;
+  color: white;
+  border: 1px solid #8C62DA;
+  background-color: #5d3e98;;
+}
+
+.imgs-card button:hover {
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.5s ease;
+}
