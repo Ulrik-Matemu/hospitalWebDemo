@@ -1417,8 +1417,11 @@ body {
 }
 
 .pharmacy-hero {
-  background-position: center bottom 0px;
+  background-position: 50%;
+  background-color: rgb(196, 192, 192);
   background-image: url(img/pharmacy.jpg);
+  background-repeat: no-repeat;
+  margin-top: -50px;
 }
 
 .p-hero {
@@ -1447,6 +1450,12 @@ body {
 .pharmacy-hero-container ul {
   font-size: 24px;
   padding-bottom: 20px;
+  color: #00a896;
+  font-weight: 400;
+}
+
+.pharmacy-hero-container ul li::marker {
+  color: #fd8103;
 }
 
 .imaging-services {
@@ -1478,13 +1487,13 @@ body {
   padding: 5px 20px 20px 20px;
   color: white;
   margin: 10px 10px 10px 10px;
-  background-image:  linear-gradient(45deg, #5d3e98 0%, #a67afb 100%);
+  background-image:  linear-gradient(45deg, #00a896 0%, #41c9bb 100%);
   transform: translateY(0); /* Initial position */
   transition: transform 0.2s ease-in;
 }
 
 .imgs-card:hover {
-  background-image: linear-gradient(45deg, #5d3e98 0%, #5d35ad 100%);
+  background-image: linear-gradient(45deg, #31948a 0%, #00a896 100%);
   transform: translateY(-15px); /* Moves the card upward */
   position: relative;
 }
@@ -1507,11 +1516,62 @@ body {
   padding: 5px 10px;
   font-size: 13px;
   color: white;
-  border: 1px solid #8C62DA;
-  background-color: #5d3e98;;
+  border: 1px solid #41c9bb;
+  background-color: #00a896;
+  display: none;
 }
 
 .imgs-card button:hover {
   border: 1px solid rgba(255, 255, 255, 0);
   transition: 0.5s ease;
+}
+
+
+.contact-hero {
+  background-image: url(img/Siha_Polyclinic_Hero_Image_1351x480.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-hero h1 {
+  margin-top: 0;
+  padding: 50px 0 50px 100px;
+  font-family: "Montserrat", serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fd8103;
+}
+
+.why button {
+  background-color: white;
+  border: 1px solid #00a896;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  left: 50px;
+}
+
+.why h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #fd8103;
+  position: relative;
+  left: 50px;
+}
+
+.why .contact-list {
+  position: relative;
+  right: 40px;
+}
+
+.pharmacy-sub-hero {
+  background-color: #e4f4f4;
+}
+
+.p-sub-hero-container {
+  display: flex;
+  font-family: "Montserrat", serif;
+  justify-content: center;
+  gap: 20px;
 }
