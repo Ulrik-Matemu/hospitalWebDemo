@@ -1750,3 +1750,43 @@ body {
 .info-card p span {
   font-weight: 700;
 }
+
+
+
+.insurance-card-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 100px 50px 100px;
+  font-family: "Montserrat", serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  gap: 50px;
+}
+
+.insurance-card {
+  box-shadow: 5px 5px 25px 5px rgb(224, 224, 224);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.insurance-card img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.insurance-card h3 {
+  margin: 0;
+  color: #00a896;
+}
+
+.insurance-details {
+  text-align: justify;
+  margin: 0 200px 0 200px;
+  font-family: "Montserrat", serif;
+}
+
+.insurance-details p {
+  font-size: 20px;
+  font-weight: 400;
+}
