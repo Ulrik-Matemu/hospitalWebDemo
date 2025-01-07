@@ -1248,6 +1248,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .nav-button-container {
+    display: block;
+  }
+}
+
 .nav-button {
   margin: 20px;
   border-top-right-radius: 10px;
@@ -1274,11 +1280,15 @@ body {
 }
 
 
+
+
 .why {
   width: 49%;
   margin: 20px 0;
   padding: 20px;
 }
+
+
 
 .why h2 {
   color: #00a896;
@@ -1286,6 +1296,21 @@ body {
 
 .why h2, .why p, .why ul {
   margin: 0 0 0 50px;
+}
+
+@media (max-width: 1024px) {
+  .form-and-why {
+    display: grid;
+    margin: 0 10px;
+  }
+  .why {
+    width: 95%;
+    padding: 5px;
+    text-align: justify;
+  }
+  .why h2, .why p, .why ul {
+    margin: 0;
+  }
 }
 
 .why p, .why ul {
@@ -1305,6 +1330,7 @@ body {
 }
 
 
+
 .form h2 {
   text-align: center;
   color: #00a896;
@@ -1315,6 +1341,8 @@ body {
   justify-content: center;
   gap: 5px;
 }
+
+
 
 .form-container {
   margin: 5px;
@@ -1340,6 +1368,34 @@ body {
   border-radius: 5px;
   height: 55px;
   background-color: white;
+}
+
+#lab-test-input, #preferred-date-input, #select-department {
+  width: 515px;
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 90%;
+    margin: 5px;
+  }
+  .form-div {
+    display: block;
+  }
+  .form-container label select {
+    width: 90%;
+  }
+  #lab-test-input {
+    width: 250px;
+    position: relative;
+    right: 12px;
+  }
+  #preferred-date-input {
+    width: 250px;
+  }
+  #select-department {
+    width: 250px;
+  }
 }
 
 .form-button {
@@ -1380,12 +1436,33 @@ body {
   margin-bottom: 50px;
 }
 
+
+
 .diagnostic-card {
   padding: 20px;
   width: 400px;
   box-shadow: 1px 5px 5px 5px #abbbbb2a;
   border-radius: 20px;
   background-color: white;
+}
+
+@media (max-width: 1024px) {
+  .diagnostic-container {
+    display: grid;
+    gap: 0;;
+    margin-bottom: 0;
+  }
+  .diagnostic-card {
+    margin: 5px;
+    width: 100%;
+    padding: 5px;
+  }
+  .form-button {
+    margin-right: 20px;
+  }
+  .form {
+    padding: 0 5px;
+  }
 }
 
 .diagnostic-card h3 {
@@ -1417,11 +1494,9 @@ body {
 }
 
 .pharmacy-hero {
-  background-position: 50%;
   background-color: rgb(196, 192, 192);
-  background-image: url(img/pharmacy.jpg);
-  background-repeat: no-repeat;
-  margin-top: -50px;
+  position: relative;
+  bottom: 50px;
 }
 
 .p-hero {
@@ -1479,6 +1554,7 @@ body {
   display: flex;
 }
 
+
 .imgs-card {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -1490,6 +1566,23 @@ body {
   background-image:  linear-gradient(45deg, #00a896 0%, #41c9bb 100%);
   transform: translateY(0); /* Initial position */
   transition: transform 0.2s ease-in;
+}
+
+
+@media (max-width: 1023px) {
+  .imaging-services-card-container {
+    display: grid;
+  }
+  .imgs-card {
+    width: 255px;
+  }
+
+  .imaging-services {
+    margin: 10px;
+  }
+  .diagnostic-card {
+    width: 300px;
+  }
 }
 
 .imgs-card:hover {
@@ -1567,6 +1660,8 @@ body {
 
 .pharmacy-sub-hero {
   background-color: #e4f4f4;
+  position: relative;
+  bottom: 75px;
 }
 
 .p-sub-hero-container {
@@ -1574,4 +1669,84 @@ body {
   font-family: "Montserrat", serif;
   justify-content: center;
   gap: 20px;
+}
+
+.p-sub-hero-container p a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.why-pharmacy {
+  font-family: "Montserrat", serif;
+  position: relative;
+  bottom: 70px;
+}
+
+.why-pharmacy h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  color: #00a896;
+}
+
+.why-pharmacy-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 90px;
+}
+
+.why-pharmacy-card {
+  background-color: #e4f4f4;
+  margin: 15px;
+  padding: 30px 10px;
+  width: 50%;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  transform: translateY(0); /* Initial position */
+  transition: transform 0.2s ease-in;
+}
+
+.why-pharmacy-card:hover {
+  transform: translateY(-15px); /* Moves the card upward */
+  position: relative;
+}
+
+.info-form {
+  display: flex;
+  justify-content: center;
+  margin: 0 120px;
+  gap: 50px;
+}
+
+.pharmacy-info {
+  width: 50%;
+}
+
+#pharmacy-form {
+  margin-right: 0;
+}
+
+.info-card {
+  background-color: #fddabc;
+  width: 90%;
+  line-height: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.info-card h3 {
+  color: #00a896;
+}
+
+.info-card h3 a {
+  text-decoration: none;
+}
+
+.info-card p {
+  font-weight: 500;
+}
+
+.info-card p span {
+  font-weight: 700;
 }
