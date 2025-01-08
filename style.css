@@ -1772,6 +1772,7 @@ body {
 
 .insurance-card img {
   width: 250px;
+  height: 250px;
   border-radius: 5px;
 }
 
@@ -1789,5 +1790,13 @@ body {
 .insurance-details p {
   font-size: 20px;
   font-weight: 400;
+}
+
+.f-column1 ul li a {
+  transition: 0.3s ease;
+}
+
+.f-column1 ul li a:hover{
+  color: black;
 }
 
