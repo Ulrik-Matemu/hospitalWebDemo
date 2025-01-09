@@ -1783,7 +1783,7 @@ body {
 
 .insurance-details {
   text-align: justify;
-  margin: 0 200px 0 200px;
+  margin: 0 200px 100px 200px;
   font-family: "Montserrat", serif;
 }
 
@@ -1799,4 +1799,36 @@ body {
 .f-column1 ul li a:hover{
   color: black;
 }
+
+.insurance-details h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #00a896;
+}
+
+.insurance-details p a {
+  text-decoration: none;
+}
+
+.insurance-details ul li a {
+  text-decoration: none;
+}
+
+.insurance-details ul li::marker {
+  color: #00a896;
+  font-size: 25px;
+}
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.qr-container h3 {
+  text-align: center;
+  margin: 0;
+  color: #00a896;
+}
+
 
