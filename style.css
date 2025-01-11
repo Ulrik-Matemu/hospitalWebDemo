@@ -2020,3 +2020,35 @@ font-size: 1.5em; /* Adjust tick size */
   position: relative;
   top: 250px;
 }
+
+@media (max-width: 1024px) {
+  .latest-container {
+    display: block;
+    margin: 20px 10px;
+    padding: 5px;
+  }
+  .l-container-1 {
+    width: 100%;
+  }
+  .l-container-1-2-card {
+    display: block;
+  }
+  .l-self-card {
+    width: 100%;
+    padding: 1px;
+    margin: 0;
+  }
+  .l-self-card h3, .l-self-card p {
+    position: static;
+    font-size: 19.5px;
+  }
+  .latest h2 {
+    margin-left: 30px;
+  }
+  .underline {
+    margin-left: 30px;
+  }
+  .latest {
+    padding-bottom: 45px;
+  }
+}
