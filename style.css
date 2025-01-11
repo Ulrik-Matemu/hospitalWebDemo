@@ -1940,6 +1940,25 @@ font-size: 1.5em; /* Adjust tick size */
   display: flex;
 }
 
+.l-container-1-sm-card1 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.856)),  url(img/latest4.jpeg);
+  background-size: cover;
+  padding: 1px 20px;
+  margin: 0 10px 10px 10px;
+}
+
+.l-container-1-sm-card1 h3 {
+  font-weight: 700;
+  font-size: 28px;
+  position: relative;
+  top: 20px;
+}
+
+.l-container-1-sm-card1 p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .l-container-1-sm-card {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.856)),  url(img/latest1.webp);
   background-size: cover;
@@ -1960,7 +1979,7 @@ font-size: 1.5em; /* Adjust tick size */
 }
 
 .l-container-1-lg-card {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.856)),  url(img/latest1.webp);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.856)),  url(img/latest3.jpeg);
   padding: 20px;
   background-size: cover;
   margin: 10px;
@@ -1981,7 +2000,7 @@ font-size: 1.5em; /* Adjust tick size */
 
 .l-self-card {
   width: 40%; 
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.856)),  url(img/latest2.webp);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.856)),  url(img/latest5.jpeg);
   background-size: cover;
   margin: 0 10px 10px 10px;
   padding: 50px;
