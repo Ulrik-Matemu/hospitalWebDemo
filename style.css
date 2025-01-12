@@ -2091,7 +2091,7 @@ font-size: 1.5em; /* Adjust tick size */
     top: 50px;
     background-color: transparent;
     border: 2px solid transparent;
-    right: 25px;
+    right: 15px;
     z-index: 9999;
   }
   .toggle2-btn span {
