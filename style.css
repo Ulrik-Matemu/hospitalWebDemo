@@ -156,7 +156,7 @@ body {
     /* Hide the main navbar on mobile */
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem;
+    
   }
 
   .navbar.active {
@@ -164,7 +164,7 @@ body {
     /* Display navbar when active */
     position: absolute;
     z-index: 999;
-    width: 90%;
+    width: 100%;
   }
 
   .navbar2 {
@@ -204,11 +204,14 @@ body {
   /* Adjust the mobile navbar items */
   .navbar>div {
     width: 100%;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
+    height: 60px;
   }
 
   .navbar div p {
     font-size: 14px;
+    text-align: left;
+    font-weight: 700;
   }
 
   .navbar2 input {
@@ -2068,8 +2071,17 @@ font-size: 1.5em; /* Adjust tick size */
   }
 }
 
+.logo2 {
+  display: flex;
+}
 
 @media (max-width: 1024px) {
+  .responsive-br {
+    display: none;
+  }
+  .logo2 {
+    display: none;
+  }
   .drop-icon {
     margin-left: 5px;
   }
