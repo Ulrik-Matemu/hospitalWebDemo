@@ -41,6 +41,8 @@ body {
   padding: 5px 10px;
 }
 
+/* Second Navbar */
+
 .navbar2 {
   height: 85px;
   display: flex;
@@ -93,15 +95,16 @@ body {
 }
 
 @media (max-width: 800px) {
-  .navbar2 {
-    display: none;
-  }
+
+
 
   .navbar {
     display: flex;
   }
 
 }
+
+
 
 @media (min-width: 821px) {
   .mobile-navbar {
@@ -165,7 +168,7 @@ body {
   }
 
   .navbar2 {
-    display: none;
+   
     /* Hide navbar2 on mobile */
   }
 
@@ -195,7 +198,7 @@ body {
 
 
   .mobile-menu-btn span {
-    background-color: #333;
+    background-color: #03045e;
   }
 
   /* Adjust the mobile navbar items */
@@ -341,6 +344,9 @@ body {
 .double-menu a:hover {
   background-color: #00a896;
 }
+
+
+
 
 /* Hero Section */
 .hero {
@@ -1941,7 +1947,7 @@ font-size: 1.5em; /* Adjust tick size */
 }
 
 .l-container-1-sm-card1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.856)),  url(img/latest4.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.671)),  url(img/latest4.jpeg);
   background-size: cover;
   padding: 1px 20px;
   margin: 0 10px 10px 10px;
@@ -2050,5 +2056,60 @@ font-size: 1.5em; /* Adjust tick size */
   }
   .latest {
     padding-bottom: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .toggle2-btn {
+    display: none;
+  }
+  .drop-icon {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .drop-icon {
+    margin-left: 5px;
+  }
+  .toggle2-btn {
+    display: block;
+    position: absolute;
+    top: 60px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    right: 20px;
+    z-index: 9999;
+  }
+  .toggle2-btn span {
+    background-color: #333;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+
+  }
+  .navbar2 {
+    display: none;
+    width: 80%;
+  }
+  .navbar2:active {
+    display: block;
+  }
+  .navbar2 input {
+    display: none;
+  }
+  .navbar2 ul {
+    display: block;
+    position: relative;
+    top: 150px;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+  }
+  .navbar2 ul li {
+    margin: 20px;
   }
 }
