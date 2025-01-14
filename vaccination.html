@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab & Radiology</title>
+    <title>Vaccination - Siha Polyclinic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,16 +50,16 @@
           </div>
           <div><p><a href="physiotherapy.html">PHYSICAL <br>THERAPY</a></p></div>
           <div class="dropdown"><p><a href="vaccination.html">VACCINATIONS</a></p>
-            <div class="dropdown-content">
-                <a href="vaccination.html">HEPATITIS B VACCINE</a>
-                <a href="vaccination.html">SEASONAL FLU SHOT</a>
-                <a href="vaccination.html">HB VACCINATIONS</a>
-                <a href="vaccination.html">SHINGLES VACCINATION</a>
-                <a href="vaccination.html">HPV VACCINE</a>
-                <a href="vaccination.html">PNEUMONIA VACCINE</a>
-                <a href="vaccination.html">TYPHOID VACCINE</a>
-            </div>
-        </div>
+              <div class="dropdown-content">
+                  <a href="vaccination.html">HEPATITIS B VACCINE</a>
+                  <a href="vaccination.html">SEASONAL FLU SHOT</a>
+                  <a href="vaccination.html">HB VACCINATIONS</a>
+                  <a href="vaccination.html">SHINGLES VACCINATION</a>
+                  <a href="vaccination.html">HPV VACCINE</a>
+                  <a href="vaccination.html">PNEUMONIA VACCINE</a>
+                  <a href="vaccination.html">TYPHOID VACCINE</a>
+              </div>
+          </div>
           <div class="dropdown"><p><a href="">SPORTS <br>MEDICINE</a></p>
               <div class="dropdown-content">
                   <a href="#">SPORTS MEDICINE</a>
@@ -133,7 +133,7 @@
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <section class="hero">
-        <img src="img/lab-&-radiology.webp" style="width: 100%;" alt="Slide 1" class="active">
+        <img src="img/vacc.jpg" style="width: 100%;" alt="Slide 1" class="active">
         <div class="controls">
             <button class="prev">❮</button>
             <button class="next">❯</button>
@@ -141,40 +141,16 @@
         <div class="dots"></div>
 
     </section>
-    <section class="navigation-buttons">
-        <div class="nav-button-container">
-            <button class="nav-button"><a href="#diagnostic" style="text-decoration: none;">DIAGNOSTICS</a>
-                <span></span>
-            </button>
-            <button class="nav-button"><a href="#imaging-services" style="text-decoration: none;">RADIOLOGY & ULTRASOUND</a>
-                <span></span>
-            </button>
-            <button class="nav-button">LABORATORY-TESTS
-                <span></span>
-            </button>
-            <button class="nav-button">DEXA SCAN
-                <span></span>
-            </button>
-        </div>
-    </section>
+
     <section class="form-and-why">
         <div class="why">
-            <h2>Why Siha Polyclinic Lab is your choice of diagnostic center?</h2>
-            <p>We have formal recognition of competence in accordance with the following international criteria:</p>
-            <ul>
-                <li>Reliable testing, measurement, and calibration services</li>
-                <li>Accuracy and reliable results</li>
-                <li>Sound quality assurance system and technical competency</li>
-                <li>International recognition, our data and results will be readily accepted in overseas markets</li>
-                <li>Featuring on the NABL website and the directory of accredited laboratories</li>
-            </ul>
-            <p>Our diagnostic team comprises experienced pathologists, radiologists, and expert technicians. We bring you compassionate personalized care along with safety and tech conveniences.</p>
-            <p>Our laboratory is trusted by leading doctors, hospitals, clinical research companies and corporates across Tanga.</p>
-            <p>Lab reports are shared with patients via email.</p>
+            <p>Vaccination is crucial for protecting yourself and your loved ones from dangerous diseases. At RxDx Immunization Hub, we provide a wide range of vaccines for all ages, including those needed for travel. Our clinic offers various vaccination methods, including injections, nasal sprays, and needle-free options. We’re here to help keep you healthy and safe.</p>
+           
+            <img src="img/flu-vaccination-bg.jpg" style="width: 450px; margin-left: 50px;">
         </div>
-        <div class="form">
+        <div class="form" id="form">
             <form>
-                <h2>Book Diagnostics</h2>
+                <h2>Request for Physiotherapy Service Enquiry</h2>
                 <div class="form-div">
                     <div class="form-container">
                         <label>
@@ -245,126 +221,248 @@
             </form>
         </div>
     </section>
-    <section class="diagnostic" id="diagnostic">
-        <h2>Diagnostics</h2>
-        <div class="diagnostic-container">
-            <div class="diagnostic-card">
-                <h3>RADIOLOGY</h3>
-                <ul>
-                    <li>MRI</li>
-                    <li>CT-Scan</li>
-                    <li>Mammography</li>
-                    <li>Orthopantomogram(OPG)</li>
-                    <li>Ultrasound</li>
-                    <li>X-Ray</li>
-                    <li>Flouroscopy</li>
-                </ul>
+    <section class="contact-section" style="margin: 80px 0;">
+        <div class="contact-container">
+            <div style="margin: 0 100px;" class="cont-card">
+                <h2 style="margin-bottom: -5px;">
+                    Take charge of your health today. Visit RxDx Immunization Hub or contact us to embark on a journey towards a healthier tomorrow.</h2>
+                    <div style="display: flex;">
+                        <p style="color: transparent;">Find out highly skilled and well qualified specialists work schedule and fix an appointment on convenient time</p>
+            <button id="myBtn"><a href="#pain-form">ENQUIRE TODAY</a></button>
+            <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="form" id="pain-form" style="background-color: white;">
+        <form>
+            <h2 style="color: #00a896;">Request for Specialities Service</h2>
+            <div class="form-div">
+                <div class="form-container">
+                    <label>
+                        Full Name <span style="color: red;">*</span><br>
+                        <input>
+                    </label>
+                </div>
+                <div class="form-container">
+                    <label>
+                        Email<br>
+                        <input>
+                    </label>
+                </div>
             </div>
-            <div class="diagnostic-card">
-                <h3>CARDIOLOGY</h3>
-                <ul>
-                    <li>ECG</li>
-                    <li>Echocardiography</li>
-                    <li>Stress ECG</li>
-                    <li>Holter</li>
-                    <li>Ambulatory BP monitoring</li>
-                </ul>
+            <div class="form-div">
+                <div class="form-container">
+                    <label>
+                        Phone No.<br>
+                        <input>
+                    </label>
+                </div>
+                <div class="form-container">
+                    <label>
+                        Select Service<br>
+                        <select>
+                            <option>X-RAY</option>
+                            <option>Another</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <div class="form-container" style="display: flex; justify-content: center;">
+                <label>
+                    Specify Lab Test<br>
+                    <input id="lab-test-input">
+                </label>
+            </div>
+            <div class="form-div">
+                <div class="form-container">
+                    <label>
+                        Preffered Branch<br>
+                        <select style="margin-right: 10px; width: 250px;">
+                    </label>
+                </div>
+                <div class="form-container">
+                    <label>
+                        Preffered Dated<br>
+                        <input type="date" placeholder="Preffered Date" style="width: 255px; height: 55px;">
+                    </label>
+                </div>
+            </div>
+            <div class="form-container" style="display: flex; justify-content: center;">
+                <label>
+                    Brief description of your requirement (optional).<br>
+                    <input id="preferred-date-input">
+                </label>
+            </div>
+            <div class="form-container" style="margin: 0 34px; display: flex;">
+                <input type="checkbox" style="margin-bottom: 40px;">
+                <label style=" font-size: 8px; font-weight: 500; text-align: justify;"><i>By submitting this web form, I grant permission for Siha Polyclinic to contact me via email or phone. 
+                    It will override my registry in NCPR. I affirm that I am refraining from disclosing medical, financial, or sensitive personal details, online. 
+                    I recognize that despite implementing security measures, websites do encounter cyber threats. By using our Website and Services, you acknowledge that we are not liable for intercepted information online and release us from related claims. 
+                    Any revisions to this consent form take effect upon posting. Opt-out anytime by following the guidelines in the Privacy Policy. For more details, visit our website's Privacy Policy section.</i></label>
+            </div>
+            <div class="form-button">
+                <button style="width: 40%;">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+    </div>
+  
+  </div>
+  <style>
+    /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe00;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  justify-content: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+  </style>
+  <script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
+                    </div>
             </div>
         </div>
-        <div class="diagnostic-container">
-            <div class="diagnostic-card">
-                <h3>LABORATORY TESTS</h3>
-                <ul>
-                    <li>Biochemistry</li>
-                    <li>Clinical Pathology</li>
-                    <li>Cytology</li>
-                    <li>Hematology</li>
-                    <li>Immunology</li>
-                    <li>Microbiology & Cultures</li>
-                    <li>Serology</li>
-                </ul>
-            </div>
-            <div class="diagnostic-card">
-                <h3>GASTROENTEROLOGY</h3>
-                <ul>
-                    <li>Gastroscopy</li>
-                    <li>Colonoscopy</li>
-                </ul>
-            </div>
-            
-        </div>
-        <div class="diagnostic-container">
-            <div class="diagnostic-card">
-                <h3>PULMONOLOGY</h3>
-                <ul>
-                    <li>Spirometer</li>
-                </ul>
-            </div>
-            <div class="diagnostic-card">
-                <h3>NEUROLOGY</h3>
-                <ul>
-                    <li>Electroencephalography</li>
-                </ul>
-            </div>
-        </div>
-        <div class="diagnostic-container">
-            <div class="diagnostic-card">
-                <h3>ENT</h3>
-                <ul>
-                    <li>Audiometer</li>
-                </ul>
-            </div>
-        </div>
-        
     </section>
     <section class="imaging-services" id="imaging-services">
-        <h3>OUR IMAGING SERVICES</h3>
-        <h2>Radiology and Ultrasound</h2>
+        <h2>Vaccinations</h2>
         <div class="imaging-services-card-container">
             <div class="imgs-card">
-                <h4>CT-Scan</h4>
-                <p>Our Multi-Slice CT Scanner generates fast, highly detailed, and clear images of bone, soft tissues, and blood vessels. Imaging is quicker than single slice CT scans and emission of radiation is lower.</p>
+                <h4>Vaccination for Kids</h4>
+                <p>Immunization schedule<br>
+                    Vaccine-preventable-diseases</p>
                 <button>KNOW MORE</button>
             </div>
             <div class="imgs-card">
-                <h4>Electrocardiography</h4>
-                <p>An ECG/EKG machine records electrical signals produced by our heart, called Electrocardiogram, in painless manner. Abnormal reading from electrical activity change suggests possible cardiac issues.</p>
+                <h4>Vaccination for Adolescents</h4>
+                <p>Immunization schedule<br>
+                    Vaccine-preventable-diseases</p>
                 <button>KNOW MORE</button>
             </div>
             <div class="imgs-card">
-                <h4>Fetal echocardiography</h4>
-                <p>An experienced ultrasound technician or a pediatric cardiologist performs this safe non-invasive ultrasonography on the pregnant mother to detect structural or functional Heart Problems in the unborn baby.</p>
+                <h4>Vaccination for Adults</h4>
+                <p>Immunization schedule<br>
+                    Vaccine-preventable-diseases</p>
                 <button>KNOW MORE</button>
             </div>
-            <div class="imgs-card">
-                <h4>Ultrasound</h4>
-                <p>High frequency sound waves are used to generate images of soft tissue organs like liver, gall bladder, pancreas, etc. to diagnose causes of pain, swelling, etc., vascular imaging or performing biopsies</p>
-                <button>KNOW MORE</button>
-            </div>
+           
         </div>
         <div class="imaging-services-card-container">
             <div class="imgs-card">
-                <h4>Echocardiogram</h4>
-                <p>Heart Specialists or sonographers perform doppler echo or heart ultrasound to understand signs like cardiac murmurs or suspicion of congenital anomalies, or before any non-cardiac surgery or procedure.</p>
+                <h4>Vaccination for Pregnant Women</h4>
+                <p>Immunization schedule<br>
+                    Vaccine-preventable-diseases</p>
                 <button>KNOW MORE</button>
             </div>
             <div class="imgs-card">
-                <h4>X-Ray</h4>
-                <p>Your doctor may refer you to a radiologist or x-ray technician for an imaging of lung, bone, and other issues. Digital x-ray generates less radiation and you can receive reports sooner than classic x-ray.</p>
+                <h4>Vaccination above 50 years</h4>
+                <p>Immunization schedule<br>
+                    Vaccine-preventable-diseases</p>
                 <button>KNOW MORE</button>
             </div>
             <div class="imgs-card">
-                <h4>Dental OPG</h4>
-                <p>Dental Orthopantomogram is a wide view or panoramic x-ray image created for the lower part of the face, focusing on teeth and jaw. Dental x-rays are recommended in cases of factures, cyst & tumour, etc.</p>
-                <button>KNOW MORE</button>
-            </div>
-            <div class="imgs-card">
-                <h4>Mammography</h4>
-                <p>Digital X-ray imaging requires low radiation to detect lumps, tumors, cancer in the breast. Doctors advise women over 45 to get annual mammograms, the gold standard early breast cancer screening test.</p>
+                <h4>Vaccination for Travellers</h4>
+                <p>Immunization schedule<br>
+                    Vaccine-preventable-diseases</p>
                 <button>KNOW MORE</button>
             </div>
         </div>
       </section>
+      <style>
+        .imgs-card {
+            width: 33.33%;
+        }
+        .contact-section {
+            margin: 100px 0;
+        }
+      </style>
+       <section class="contact-section">
+        <div class="contact-container">
+            <div class="cont-card">
+                <p><a href="">WHATSAPP : +255 717 050 537</a></p>
+            </div>
+            <div class="cont-bord"></div>
+            <div class="cont-card">
+                <p><a href="">CALL +255 717 050 537</a></p>
+            </div>
+            <div class="cont-bord"></div>
+            <div class="cont-card">
+                <p><a href="">EMAIL: INFO@SIHAPOLYCLINIC.COM</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="diagnosis-services">
+        <div class="d-services">
+            <div class="d-list">
+                <h2 style="margin-left: 100px; text-align: left;">Needle Free Vaccination available at Siha Polyclinic</h2>
+                <p>Have been avoiding your vaccine shots out of a fear of needles?</p>
+              <p><b>We understand. Go needle-free at RxDx.</b></p>
+
+                <p>Book your vaccination now. Have questions, fill out the form!</p>
+                <button class="vaccination-button"><a href="#form">GET IN TOUCH</a></button>
+            </div>
+            <div class="d-image">
+                <img src="img/vaccination.png">
+            </div>
+        </div>
+    </section>
     <section class="footer">
         <div class="footer-container">
             <div class="f-column1">

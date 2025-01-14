@@ -53,20 +53,19 @@
       <p><a href="lab-and-radiology.html">DIAGNOSTICS</a></p>
     </div>
     <div>
-      <p><a href="">PHYSICAL <br class="responsive-br">THERAPY</a></p>
+      <p><a href="physiotherapy.html">PHYSICAL <br class="responsive-br">THERAPY</a></p>
     </div>
-    <div class="dropdown">
-      <p><a href="">VACCINATIONS</a></p>
+    <div class="dropdown"><p><a href="vaccination.html">VACCINATIONS</a></p>
       <div class="dropdown-content">
-        <a href="#">HEPATITIS B VACCINE</a>
-        <a href="#">SEASONAL FLU SHOT</a>
-        <a href="#">HB VACCINATIONS</a>
-        <a href="#">SHINGLES VACCINATION</a>
-        <a href="#">HPV VACCINE</a>
-        <a href="#">PNEUMONIA VACCINE</a>
-        <a href="#">TYPHOID VACCINE</a>
+          <a href="vaccination.html">HEPATITIS B VACCINE</a>
+          <a href="vaccination.html">SEASONAL FLU SHOT</a>
+          <a href="vaccination.html">HB VACCINATIONS</a>
+          <a href="vaccination.html">SHINGLES VACCINATION</a>
+          <a href="vaccination.html">HPV VACCINE</a>
+          <a href="vaccination.html">PNEUMONIA VACCINE</a>
+          <a href="vaccination.html">TYPHOID VACCINE</a>
       </div>
-    </div>
+  </div>
     <div class="dropdown">
       <p><a href="">SPORTS <br class="responsive-br">MEDICINE</a></p>
       <div class="dropdown-content">
@@ -115,8 +114,8 @@
               <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Obstetrics & Gynaecology</a>
               <a href="orthopaedics.html" style=" line-height: 2; color: black;">Orthopaedics</a>
               <a href="pain-medicine.html" style=" line-height: 2; color: black;">Pain Medicine</a>
-              <a href="" style=" line-height: 2; color: black;">Physiotherapy</a>
-              <a href="" style=" line-height: 2; color: black;">Urology</a>
+              <a href="physiotherapy.html" style=" line-height: 2; color: black;">Physiotherapy</a>
+              <a href="urology.html" style=" line-height: 2; color: black;">Urology</a>
             </div>
 
           </div>
@@ -210,9 +209,9 @@
         <p>Lab Tests</p>
         <div>
           <a href="#">
-            <button>ENQUIRY</button>
+            <button id="myBtn">ENQUIRY</button>
           </a>
-          <a href="#">
+          <a href="+255 717 050 537">
             <button>CALL NOW</button>
           </a>
         </div>
@@ -222,15 +221,168 @@
         <p>Radiology</p>
         <div>
           <a href="#">
-            <button>ENQUIRY</button>
+            <button id="myBtn2">ENQUIRY</button>
           </a>
-          <a href="#">
+          <a href="+255 717 050 537">
             <button>CALL NOW</button>
           </a>
         </div>
       </div>
     </div>
   </section>
+     <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="form" id="pain-form" style="background-color: white;">
+      <form>
+          <h2 style="color: #00a896;">Request for Specialities Service</h2>
+          <div class="form-div">
+              <div class="form-container">
+                  <label>
+                      Full Name <span style="color: red;">*</span><br>
+                      <input>
+                  </label>
+              </div>
+              <div class="form-container">
+                  <label>
+                      Email<br>
+                      <input>
+                  </label>
+              </div>
+          </div>
+          <div class="form-div">
+              <div class="form-container">
+                  <label>
+                      Phone No.<br>
+                      <input>
+                  </label>
+              </div>
+              <div class="form-container">
+                  <label>
+                      Select Service<br>
+                      <select>
+                          <option>X-RAY</option>
+                          <option>Another</option>
+                      </select>
+                  </label>
+              </div>
+          </div>
+          <div class="form-container" style="display: flex; justify-content: center;">
+              <label>
+                  Specify Lab Test<br>
+                  <input id="lab-test-input">
+              </label>
+          </div>
+          <div class="form-div">
+              <div class="form-container">
+                  <label>
+                      Preffered Branch<br>
+                      <select style="margin-right: 10px; width: 250px;">
+                  </label>
+              </div>
+              <div class="form-container">
+                  <label>
+                      Preffered Dated<br>
+                      <input type="date" placeholder="Preffered Date" style="width: 255px; height: 55px;">
+                  </label>
+              </div>
+          </div>
+          <div class="form-container" style="display: flex; justify-content: center;">
+              <label>
+                  Brief description of your requirement (optional).<br>
+                  <input id="preferred-date-input">
+              </label>
+          </div>
+          <div class="form-container" style="margin: 0 34px; display: flex;">
+              <input type="checkbox" style="margin-bottom: 40px;">
+              <label style=" font-size: 8px; font-weight: 500; text-align: justify;"><i>By submitting this web form, I grant permission for Siha Polyclinic to contact me via email or phone. 
+                  It will override my registry in NCPR. I affirm that I am refraining from disclosing medical, financial, or sensitive personal details, online. 
+                  I recognize that despite implementing security measures, websites do encounter cyber threats. By using our Website and Services, you acknowledge that we are not liable for intercepted information online and release us from related claims. 
+                  Any revisions to this consent form take effect upon posting. Opt-out anytime by following the guidelines in the Privacy Policy. For more details, visit our website's Privacy Policy section.</i></label>
+          </div>
+          <div class="form-button">
+              <button style="width: 40%;">SUBMIT</button>
+          </div>
+      </form>
+  </div>
+  </div>
+
+</div>
+<style>
+  /* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe00;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+width: 80%; /* Could be more or less, depending on screen size */
+display: flex;
+justify-content: center;
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+</style>
+<script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+btn2.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
+</script>
   <section class="welcome-line">
     <h1 style="margin-bottom: 50px;">Who We Are</h1>
     <p>Siha Polyclinic & Diagnostic Centre (SPDC) is a new state-of-art medical centre, registered with PHAB and it

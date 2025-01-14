@@ -1679,8 +1679,7 @@ body {
 
 .pharmacy-sub-hero {
   background-color: #e4f4f4;
-  position: relative;
-  bottom: 75px;
+  
 }
 
 .p-sub-hero-container {
@@ -1697,8 +1696,6 @@ body {
 
 .why-pharmacy {
   font-family: "Montserrat", serif;
-  position: relative;
-  bottom: 70px;
 }
 
 .why-pharmacy h2 {
@@ -2249,4 +2246,87 @@ font-size: 1.5em; /* Adjust tick size */
 .cont-card div button a {
   color: white;
   text-decoration: none;
+}
+
+.some-words {
+  margin: 10px 100px;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.physio-services {
+  background-color: #016d62;
+  font-family: "Montserrat", serif;
+}
+
+.physio-services h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  padding: 50px 0 0 0;
+}
+
+.physio-container {
+  margin: 0 100px;
+  padding: 10px 0;
+}
+
+.physio-card {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.151);
+  border-radius: 10px;
+}
+
+.physio-icon {
+  margin: 0 30px 0 0;
+  width: 25%;
+}
+
+.physio-icon div {
+  display: flex;
+  justify-content: center;
+}
+
+.physio-icon div img {
+  width: 62px;
+}
+
+.physio-icon h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fd8103;
+  line-height: 1.2em;
+}
+
+.physio-list {
+  width: 25%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: white;
+}
+
+
+.vaccination-button {
+  background-color: #fd8103;
+  border: 1px solid #fd8103;
+  padding: 10px 20px;
+  font-family: "Montserrat", serif;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 25px;
+}
+
+.vaccination-button a {
+  text-decoration: none;
+  color: white;
 }
