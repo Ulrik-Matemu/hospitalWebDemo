@@ -188,7 +188,7 @@ body {
   .search-btn {
     display: block;
     position: absolute;
-    top: 28px;
+    top: 17px;
     right: 20px;
     z-index: 9999;
     background-color: white;
@@ -2142,7 +2142,7 @@ font-size: 1.5em; /* Adjust tick size */
     top: 50px;
     background-color: transparent;
     border: 2px solid transparent;
-    right: 15px;
+    right: 20px;
     z-index: 9999;
   }
   .toggle2-btn span {

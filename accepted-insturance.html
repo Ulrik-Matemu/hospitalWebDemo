@@ -20,14 +20,14 @@
 <body>
     <button class="search-btn" style="margin-right: 50px; font-size: 25px;">
         <i class="fa fa-search"></i>
-    </button>
-    <button class="mobile-menu-btn">
+      </button>
+      <button class="mobile-menu-btn">
         <span></span>
         <span></span>
         <span></span>
-    </button>
-    <div class="logo1"><img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png"></div>
-    <div class="navbar">
+      </button>
+      <div class="logo1"><img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png"></div>
+      <div class="navbar">
         <div class="logo2"
             style="background-color: white; padding-left: 9px; padding-right: 10px; display: flex; justify-content: center; align-items: center;">
             <img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px"></div>
@@ -51,7 +51,7 @@
         </div>
         <div class="dropdown">
             <p><a href="vaccination.html">VACCINATIONS</a></p>
-
+    
         </div>
         <div class="dropdown">
             <p><a href="sports-medicine.html">SPORTS <br>MEDICINE</a></p>
@@ -62,69 +62,79 @@
         <div>
             <p><a href="education-&-research.html">EDUCATION <br>& RESEARCH</a></p>
         </div>
-
+    
     </div>
-    <div class="navbar2">
+      <button class="toggle2-btn" onclick="toggleNavbar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar2">
+    
+        <script>
+          function toggleNavbar() {
+            const navbarMenu = document.querySelector('.navbar2');
+            navbarMenu.classList.toggle('active');
+          }
+        </script>
         <ul>
-            <li><a href="index.html" style="color: #00a896;">Home</a></li>
-            <li class="dropdown2"><a href="about-us.html">About Us</a>
-
-            </li>
-            <li class="dropdown2"><a href="">Specialities</a>
-                <div class="dropdown-content2">
-                    <div class="double-drop">
-                        <div class="double-menu" style="color: black;">
-                            <a href="cardiology.html" style=" line-height: 2; color: black;">Cardiology</a>
-                            <a href="dentistry.html" style=" line-height: 2; color: black;">Dentistry</a>
-                            <a href="ENT.html" style=" line-height: 2; color: black;">ENT</a>
-                            <a href="pharmacy.html" style=" line-height: 2; color: black;">Medicine</a>
-                            <a href="general-medicine.html" style=" line-height: 2; color: black;">General Medicine</a>
-                            <a href="obstetrics-and-gynaecology.html"
-                                style=" line-height: 2; color: black;">Gynaecology</a>
-                            <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Obstetrics
-                                & Gynaecology</a>
-                            <a href="orthopaedics.html" style=" line-height: 2; color: black;">Orthopaedics</a>
-                            <a href="pain-medicine.html" style=" line-height: 2; color: black;">Pain Medicine</a>
-                            <a href="physiotherapy.html" style=" line-height: 2; color: black;">Physiotherapy</a>
-                            <a href="urology.html" style=" line-height: 2; color: black;">Urology</a>
-                        </div>
-
-                    </div>
+          <li><a href="index.html" style="color: #00a896;">Home</a></li>
+          <li class="dropdown2"><a href="about-us.html">About Us</a>
+          </li>
+          <li class="dropdown2"><a href="">Specialities<i class="fas fa-chevron-circle-down drop-icon"></i></a>
+            <div class="dropdown-content2">
+              <div class="double-drop">
+                <div class="double-menu" style="color: black;">
+                  <a href="cardiology.html" style=" line-height: 2; color: black;">Cardiology</a>
+                  <a href="dentistry.html" style=" line-height: 2; color: black;">Dentistry</a>
+                  <a href="ENT.html" style=" line-height: 2; color: black;">ENT</a>
+                  <a href="pharmacy.html" style=" line-height: 2; color: black;">Medicine</a>
+                  <a href="general-medicine.html" style=" line-height: 2; color: black;">General Medicine</a>
+                  <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Gynaecology</a>
+                  <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Obstetrics &
+                    Gynaecology</a>
+                  <a href="orthopaedics.html" style=" line-height: 2; color: black;">Orthopaedics</a>
+                  <a href="pain-medicine.html" style=" line-height: 2; color: black;">Pain Medicine</a>
+                  <a href="physiotherapy.html" style=" line-height: 2; color: black;">Physiotherapy</a>
+                  <a href="urology.html" style=" line-height: 2; color: black;">Urology</a>
                 </div>
-            </li>
-            <li><a href="">Latest @Siha Polyclinic</a></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-            <li style=" margin-right: 40px; "><a href="" style="color: #FD8103;">+255 717 050 537</a></li>
+    
+              </div>
+            </div>
+          </li>
+          <li><a href="">Latest @Siha Polyclinic</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li style=" margin-right: 40px; "><a href="" style="color: #FD8103;">+255 717 050 537</a></li>
         </ul>
         <input placeholder="Search" name="search">
-    </div>
-    <input class="mobile-input" placeholder="Search">
-    <div class="social-icons">
+      </div>
+      <input class="mobile-input" placeholder="Search">
+      <div class="social-icons">
         <a href="https://facebook.com" target="_blank" class="facebook" title="Facebook"
-            style="border-top-right-radius: 5px; border-top-left-radius: 5px;">
-            <i class="fab fa-facebook-f"></i>
+          style="border-top-right-radius: 5px; border-top-left-radius: 5px;">
+          <i class="fab fa-facebook-f"></i>
         </a>
         <a href="https://twitter.com" target="_blank" class="twitter" title="Twitter">
-            <i class="fab fa-twitter"></i>
+          <i class="fab fa-twitter"></i>
         </a>
         <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram">
-            <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram"></i>
         </a>
         <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"
-            style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-            <i class="fab fa-linkedin-in"></i>
+          style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+          <i class="fab fa-linkedin-in"></i>
         </a>
-    </div>
-    <div class="sticky-right">
+      </div>
+      <div class="sticky-right">
         <a href="#request-info" class="request-info">
-            WE CARE, GOD CURES
+          WE CARE, GOD CURES
         </a>
         <a href="https://wa.me/1234567890" target="_blank" class="whatsapp" title="Contact via WhatsApp">
-            <i class="fab fa-whatsapp"></i>
+          <i class="fab fa-whatsapp"></i>
         </a>
-    </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      </div>
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <section class="contact-hero">
         <h1>Accepted Insurance</h1>
