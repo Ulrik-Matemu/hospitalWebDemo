@@ -1378,7 +1378,7 @@ body {
 
 @media (max-width: 768px) {
   .form {
-    width: 95%;
+    width: 100%;
     margin: 5px;
   }
   .form-div {
