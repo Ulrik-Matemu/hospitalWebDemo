@@ -29,73 +29,53 @@
   <div class="logo1"><img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png"></div>
   <div class="navbar">
     <div class="logo2"
-      style="background-color: white; padding-left: 9px; padding-right: 10px;  justify-content: center; align-items: center;">
-      <img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px"></div>
+        style="background-color: white; padding-left: 9px; padding-right: 10px; display: flex; justify-content: center; align-items: center;">
+        <img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px"></div>
     <div class="dropdown">
-      <p><a href="">FIND A <br class="responsive-br">DOCTOR</a></p>
+        <p><a href="find-doctor.html">FIND A <br>DOCTOR</a></p>
     </div>
     <div class="dropdown">
-      <p><a href="pharmacy.html">PHARMACY</a></p>
+        <p><a href="pharmacy.html">PHARMACY</a></p>
     </div>
     <div>
-      <p><a href="">HOME <br class="responsive-br">HEALTHCARE</a></p>
+        <p><a href="home-healthcare.html">HOME <br>HEALTHCARE</a></p>
     </div>
     <div class="dropdown">
-      <p><a href="">SURGICAL <br class="responsive-br">CARE</a></p>
-      <div class="dropdown-content">
-        <a href="#">MINOR WOUND CARE</a>
-        <a href="#">MINOR INCISIONS AND DRAINAGE</a>
-        <a href="#">CERUMEN REMOVAL</a>
-        <a href="#">POP APPLICATIONS</a>
-      </div>
+        <p><a href="surgical-care.html">SURGICAL <br>CARE</a></p>
     </div>
     <div class="dropdown">
-      <p><a href="lab-and-radiology.html">DIAGNOSTICS</a></p>
+        <p><a href="lab-and-radiology.html">DIAGNOSTICS</a></p>
     </div>
     <div>
-      <p><a href="physiotherapy.html">PHYSICAL <br class="responsive-br">THERAPY</a></p>
-    </div>
-    <div class="dropdown"><p><a href="vaccination.html">VACCINATIONS</a></p>
-      <div class="dropdown-content">
-          <a href="vaccination.html">HEPATITIS B VACCINE</a>
-          <a href="vaccination.html">SEASONAL FLU SHOT</a>
-          <a href="vaccination.html">HB VACCINATIONS</a>
-          <a href="vaccination.html">SHINGLES VACCINATION</a>
-          <a href="vaccination.html">HPV VACCINE</a>
-          <a href="vaccination.html">PNEUMONIA VACCINE</a>
-          <a href="vaccination.html">TYPHOID VACCINE</a>
-      </div>
-  </div>
-    <div class="dropdown">
-      <p><a href="">SPORTS <br class="responsive-br">MEDICINE</a></p>
-      <div class="dropdown-content">
-        <a href="#">SPORTS MEDICINE</a>
-        <a href="#">CONSULTATION</a>
-        <a href="#">MEDICAL SCREENING &<br class="responsive-br">DIAGNOSTICS</a>
-        <a href="#">SPECIALIZED SERVICES</a>
-        <a href="#">SPORTS SPECIFIC HIGH <br class="responsive-br">PERFORMANCE ASSESSMENT</a>
-      </div>
+        <p><a href="physiotherapy.html">PHYSICAL <br>THERAPY</a></p>
     </div>
     <div class="dropdown">
-      <p><a href="accepted-insturance.html">ACCEPTED <br class="responsive-br"> INSURANCE</a></p>
+        <p><a href="vaccination.html">VACCINATIONS</a></p>
+
+    </div>
+    <div class="dropdown">
+        <p><a href="sports-medicine.html">SPORTS <br>MEDICINE</a></p>
+    </div>
+    <div class="dropdown">
+        <p><a href="accepted-insturance.html">ACCEPTED <br> INSURANCE</a></p>
     </div>
     <div>
-      <p><a href="">EDUCATION <br class="responsive-br">& RESEARCH</a></p>
+        <p><a href="education-&-research.html">EDUCATION <br>& RESEARCH</a></p>
     </div>
 
-  </div>
+</div>
   <button class="toggle2-btn" onclick="toggleNavbar()">
     <span></span>
     <span></span>
     <span></span>
   </button>
   <div class="navbar2">
-   
+
     <script>
       function toggleNavbar() {
-  const navbarMenu = document.querySelector('.navbar2');
-  navbarMenu.classList.toggle('active');
-}
+        const navbarMenu = document.querySelector('.navbar2');
+        navbarMenu.classList.toggle('active');
+      }
     </script>
     <ul>
       <li><a href="index.html" style="color: #00a896;">Home</a></li>
@@ -111,7 +91,8 @@
               <a href="pharmacy.html" style=" line-height: 2; color: black;">Medicine</a>
               <a href="general-medicine.html" style=" line-height: 2; color: black;">General Medicine</a>
               <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Gynaecology</a>
-              <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Obstetrics & Gynaecology</a>
+              <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Obstetrics &
+                Gynaecology</a>
               <a href="orthopaedics.html" style=" line-height: 2; color: black;">Orthopaedics</a>
               <a href="pain-medicine.html" style=" line-height: 2; color: black;">Pain Medicine</a>
               <a href="physiotherapy.html" style=" line-height: 2; color: black;">Physiotherapy</a>
@@ -230,159 +211,174 @@
       </div>
     </div>
   </section>
-     <!-- The Modal -->
-<div id="myModal" class="modal">
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="form" id="pain-form" style="background-color: white;">
-      <form>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="form" id="pain-form" style="background-color: white;">
+        <form>
           <h2 style="color: #00a896;">Request for Specialities Service</h2>
           <div class="form-div">
-              <div class="form-container">
-                  <label>
-                      Full Name <span style="color: red;">*</span><br>
-                      <input>
-                  </label>
-              </div>
-              <div class="form-container">
-                  <label>
-                      Email<br>
-                      <input>
-                  </label>
-              </div>
+            <div class="form-container">
+              <label>
+                Full Name <span style="color: red;">*</span><br>
+                <input>
+              </label>
+            </div>
+            <div class="form-container">
+              <label>
+                Email<br>
+                <input>
+              </label>
+            </div>
           </div>
           <div class="form-div">
-              <div class="form-container">
-                  <label>
-                      Phone No.<br>
-                      <input>
-                  </label>
-              </div>
-              <div class="form-container">
-                  <label>
-                      Select Service<br>
-                      <select>
-                          <option>X-RAY</option>
-                          <option>Another</option>
-                      </select>
-                  </label>
-              </div>
+            <div class="form-container">
+              <label>
+                Phone No.<br>
+                <input>
+              </label>
+            </div>
+            <div class="form-container">
+              <label>
+                Select Service<br>
+                <select>
+                  <option>X-RAY</option>
+                  <option>Another</option>
+                </select>
+              </label>
+            </div>
           </div>
           <div class="form-container" style="display: flex; justify-content: center;">
-              <label>
-                  Specify Lab Test<br>
-                  <input id="lab-test-input">
-              </label>
+            <label>
+              Specify Lab Test<br>
+              <input id="lab-test-input">
+            </label>
           </div>
           <div class="form-div">
-              <div class="form-container">
-                  <label>
-                      Preffered Branch<br>
-                      <select style="margin-right: 10px; width: 250px;">
-                  </label>
-              </div>
-              <div class="form-container">
-                  <label>
-                      Preffered Dated<br>
-                      <input type="date" placeholder="Preffered Date" style="width: 255px; height: 55px;">
-                  </label>
-              </div>
+            <div class="form-container">
+              <label>
+                Preffered Branch<br>
+                <select style="margin-right: 10px; width: 250px;">
+              </label>
+            </div>
+            <div class="form-container">
+              <label>
+                Preffered Dated<br>
+                <input type="date" placeholder="Preffered Date" style="width: 255px; height: 55px;">
+              </label>
+            </div>
           </div>
           <div class="form-container" style="display: flex; justify-content: center;">
-              <label>
-                  Brief description of your requirement (optional).<br>
-                  <input id="preferred-date-input">
-              </label>
+            <label>
+              Brief description of your requirement (optional).<br>
+              <input id="preferred-date-input">
+            </label>
           </div>
           <div class="form-container" style="margin: 0 34px; display: flex;">
-              <input type="checkbox" style="margin-bottom: 40px;">
-              <label style=" font-size: 8px; font-weight: 500; text-align: justify;"><i>By submitting this web form, I grant permission for Siha Polyclinic to contact me via email or phone. 
-                  It will override my registry in NCPR. I affirm that I am refraining from disclosing medical, financial, or sensitive personal details, online. 
-                  I recognize that despite implementing security measures, websites do encounter cyber threats. By using our Website and Services, you acknowledge that we are not liable for intercepted information online and release us from related claims. 
-                  Any revisions to this consent form take effect upon posting. Opt-out anytime by following the guidelines in the Privacy Policy. For more details, visit our website's Privacy Policy section.</i></label>
+            <input type="checkbox" style="margin-bottom: 40px;">
+            <label style=" font-size: 8px; font-weight: 500; text-align: justify;"><i>By submitting this web form, I
+                grant permission for Siha Polyclinic to contact me via email or phone.
+                It will override my registry in NCPR. I affirm that I am refraining from disclosing medical, financial,
+                or sensitive personal details, online.
+                I recognize that despite implementing security measures, websites do encounter cyber threats. By using
+                our Website and Services, you acknowledge that we are not liable for intercepted information online and
+                release us from related claims.
+                Any revisions to this consent form take effect upon posting. Opt-out anytime by following the guidelines
+                in the Privacy Policy. For more details, visit our website's Privacy Policy section.</i></label>
           </div>
           <div class="form-button">
-              <button style="width: 40%;">SUBMIT</button>
+            <button style="width: 40%;">SUBMIT</button>
           </div>
-      </form>
+        </form>
+      </div>
+    </div>
+
   </div>
-  </div>
+  <style>
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
 
-</div>
-<style>
-  /* The Modal (background) */
-.modal {
-display: none; /* Hidden by default */
-position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
-left: 0;
-top: 0;
-width: 100%; /* Full width */
-height: 100%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe00;
+      margin: 15% auto;
+      /* 15% from the top and centered */
+      padding: 20px;
+      width: 80%;
+      /* Could be more or less, depending on screen size */
+      display: flex;
+      justify-content: center;
+    }
 
-/* Modal Content/Box */
-.modal-content {
-background-color: #fefefe00;
-margin: 15% auto; /* 15% from the top and centered */
-padding: 20px;
-width: 80%; /* Could be more or less, depending on screen size */
-display: flex;
-justify-content: center;
-}
+    /* The Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
 
-/* The Close Button */
-.close {
-color: #aaa;
-float: right;
-font-size: 28px;
-font-weight: bold;
-}
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-.close:hover,
-.close:focus {
-color: black;
-text-decoration: none;
-cursor: pointer;
-}
-</style>
-<script>
-  // Get the modal
-var modal = document.getElementById("myModal");
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    var btn2 = document.getElementById("myBtn2");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-var btn2 = document.getElementById("myBtn2");
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-modal.style.display = "block";
-}
+    btn2.onclick = function () {
+      modal.style.display = "block";
+    }
 
-btn2.onclick = function() {
-  modal.style.display = "block";
-}
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-if (event.target == modal) {
-  modal.style.display = "none";
-}
-}
-</script>
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
   <section class="welcome-line">
     <h1 style="margin-bottom: 50px;">Who We Are</h1>
     <p>Siha Polyclinic & Diagnostic Centre (SPDC) is a new state-of-art medical centre, registered with PHAB and it
@@ -559,7 +555,7 @@ if (event.target == modal) {
       </div>
     </div>
   </section>
-  
+
   <section class="footer">
     <div class="footer-container">
       <div class="f-column1">

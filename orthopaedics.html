@@ -33,26 +33,16 @@
             <img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px">
         </div>
         <div class="dropdown">
-            <p><a href="">FIND A <br>DOCTOR</a></p>
-            <div class="dropdown-content">
-                <a href="#">MD</a>
-                <a href="#">SPECIALIST</a>
-            </div>
+            <p><a href="find-doctor.html">FIND A <br>DOCTOR</a></p>
         </div>
         <div class="dropdown">
             <p><a href="pharmacy.html">PHARMACY</a></p>
         </div>
         <div>
-            <p><a href="">HOME <br>HEALTHCARE</a></p>
+            <p><a href="home-healthcare.html">HOME <br>HEALTHCARE</a></p>
         </div>
         <div class="dropdown">
-            <p><a href="">SURGICAL <br>CARE</a></p>
-            <div class="dropdown-content">
-                <a href="#">MINOR WOUND CARE</a>
-                <a href="#">MINOR INCISIONS AND DRAINAGE</a>
-                <a href="#">CERUMEN REMOVAL</a>
-                <a href="#">POP APPLICATIONS</a>
-            </div>
+            <p><a href="surgical-care.html">SURGICAL <br>CARE</a></p>
         </div>
         <div class="dropdown">
             <p><a href="lab-and-radiology.html">DIAGNOSTICS</a></p>
@@ -60,32 +50,18 @@
         <div>
             <p><a href="physiotherapy.html">PHYSICAL <br>THERAPY</a></p>
         </div>
-        <div class="dropdown"><p><a href="vaccination.html">VACCINATIONS</a></p>
-            <div class="dropdown-content">
-                <a href="vaccination.html">HEPATITIS B VACCINE</a>
-                <a href="vaccination.html">SEASONAL FLU SHOT</a>
-                <a href="vaccination.html">HB VACCINATIONS</a>
-                <a href="vaccination.html">SHINGLES VACCINATION</a>
-                <a href="vaccination.html">HPV VACCINE</a>
-                <a href="vaccination.html">PNEUMONIA VACCINE</a>
-                <a href="vaccination.html">TYPHOID VACCINE</a>
-            </div>
+        <div class="dropdown">
+            <p><a href="vaccination.html">VACCINATIONS</a></p>
+
         </div>
         <div class="dropdown">
-            <p><a href="">SPORTS <br>MEDICINE</a></p>
-            <div class="dropdown-content">
-                <a href="#">SPORTS MEDICINE</a>
-                <a href="#">CONSULTATION</a>
-                <a href="#">MEDICAL SCREENING &<br>DIAGNOSTICS</a>
-                <a href="#">SPECIALIZED SERVICES</a>
-                <a href="#">SPORTS SPECIFIC HIGH <br>PERFORMANCE ASSESSMENT</a>
-            </div>
+            <p><a href="sports-medicine.html">SPORTS <br>MEDICINE</a></p>
         </div>
         <div class="dropdown">
             <p><a href="accepted-insturance.html">ACCEPTED <br> INSURANCE</a></p>
         </div>
         <div>
-            <p><a href="">EDUCATION <br>& RESEARCH</a></p>
+            <p><a href="education-&-research.html">EDUCATION <br>& RESEARCH</a></p>
         </div>
 
     </div>
@@ -104,13 +80,15 @@
                             <a href="ENT.html" style=" line-height: 2; color: black;">ENT</a>
                             <a href="pharmacy.html" style=" line-height: 2; color: black;">Medicine</a>
                             <a href="general-medicine.html" style=" line-height: 2; color: black;">General Medicine</a>
-                            <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Gynaecology</a>
-                            <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Obstetrics & Gynaecology</a>
+                            <a href="obstetrics-and-gynaecology.html"
+                                style=" line-height: 2; color: black;">Gynaecology</a>
+                            <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Obstetrics
+                                & Gynaecology</a>
                             <a href="orthopaedics.html" style=" line-height: 2; color: black;">Orthopaedics</a>
                             <a href="pain-medicine.html" style=" line-height: 2; color: black;">Pain Medicine</a>
                             <a href="physiotherapy.html" style=" line-height: 2; color: black;">Physiotherapy</a>
                             <a href="urology.html" style=" line-height: 2; color: black;">Urology</a>
-                          </div>
+                        </div>
 
                     </div>
                 </div>
@@ -150,7 +128,14 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <section class="hero">
-        <img src="img/orth.jpg" style="width: 100%; height: 600px" alt="Slide 1" class="active">
+        <img src="img/orth.jpg" style="width: 100%; height: 600px" alt="Slide 1">
+        <style>
+            @media (max-width: 1024px) {
+                .hero img {
+                    display: none;
+                }
+            }
+        </style>
         <div class="controls">
             <button class="prev">❮</button>
             <button class="next">❯</button>
@@ -162,24 +147,53 @@
     <section class="form-and-why">
         <div class="why">
             <h2>How long will you be in pain?</h2>
-           <ul class="ticks" style="margin-top: 20px; ">
-            <li style="margin-bottom: -15px;"><p>Your joints are sore.</p></li>
-            <li style="margin-bottom: -15px;"><p>Your shoulder or back feels tender.</p></li>
-            <li style="margin-bottom: -15px;"><p>Maybe a hip that hurts when you walk.</p></li>
-            <li style="margin-bottom: -15px;"><p>The stiffness in your knees restricts your movement.</p></li>
-           </ul>
-           <h2>Isn’t it time you see a specialist?</h2>
-           <ul class="ticks" style="margin-top: 20px;">
-            <li style="margin-bottom: -15px;"><p>As we have read somewhere before, wear and tear or accidental injuries can cause bone and muscular problems.</p></li>
-            <li style="margin-bottom: -15px;"><p>Some issues may develop with age and we keep ignoring them.</p></li>
-            <li style="margin-bottom: -15px;"><p>Maybe a hip that hurts when you walk.</p></li>
-            <li style="margin-bottom: -15px;"><p>Arthritis, for example.`</p></li>
-           </ul>
+            <ul class="ticks" style="margin-top: 20px; ">
+                <li class="margin">
+                    <p>Your joints are sore.</p>
+                </li>
+                <li class="margin">
+                    <p>Your shoulder or back feels tender.</p>
+                </li>
+                <li class="margin">
+                    <p>Maybe a hip that hurts when you walk.</p>
+                </li>
+                <li class="margin">
+                    <p>The stiffness in your knees restricts your movement.</p>
+                </li>
+            </ul>
+            <h2>Isn’t it time you see a specialist?</h2>
+            <ul class="ticks" style="margin-top: 20px;">
+                <li class="margin">
+                    <p>As we have read somewhere before, wear and tear or accidental injuries can cause bone and
+                        muscular problems.</p>
+                </li>
+                <li class="margin">
+                    <p>Some issues may develop with age and we keep ignoring them.</p>
+                </li>
+                <li class="margin">
+                    <p>Maybe a hip that hurts when you walk.</p>
+                </li>
+                <li class="margin">
+                    <p>Arthritis, for example.`</p>
+                </li>
+            </ul>
+            <style>
+                .margin {
+                    margin-bottom: -15px;
+                }
 
-           <h2>Talk to an Orthopaedic / Orthopedic near you</h2>
-           <p>Visit Siha Polyclinic Orthopaedic department to consult one of our highly qualified Orthopaedic surgeons.</p>
-           <p>Seek help before your quality of life is compromised.</p>
-           <button><a href="#callback" style="text-decoration: none;">REQUEST CALLBACK</a></button>
+                @media (max-width: 1024px) {
+                    .margin {
+                        margin-bottom: 0;
+                    }
+                }
+            </style>
+
+            <h2>Talk to an Orthopaedic / Orthopedic near you</h2>
+            <p>Visit Siha Polyclinic Orthopaedic department to consult one of our highly qualified Orthopaedic surgeons.
+            </p>
+            <p>Seek help before your quality of life is compromised.</p>
+            <button><a href="#callback" style="text-decoration: none;">REQUEST CALLBACK</a></button>
         </div>
         <div class="form" id="callback">
             <form>
@@ -257,23 +271,58 @@
     </section>
     <section class="diagnosis-services" style="margin: 100px 0 0 0; padding: 50px 0; background-color: white;">
 
-        <div class="d-services" style="margin: 10px 120px;">
+        <div class="d-services">
+            <style>
+                .d-services {
+                    margin: 10px 120px;
+                }
+
+                @media (max-width: 1024px) {
+                    .d-services {
+                        margin: 10px 10px;
+                    }
+                }
+            </style>
             <div class="d-list">
                 <h2 style="text-align: left; margin-left: 110px;">Who is an Orthopaedist or Orthopaedic surgeon?</h2>
-                <p>A doctor who specializes in Orthopaedics is called an Orthopaedist/ Orthopaedic surgeon. They use medical, physical, rehabilitative and surgical methods to treat all aspects of conditions pertaining to musculoskeletal system.</p>
-                <h2 style="text-align: left; margin-left: 110px;">What conditions are treated by an orthopaedic specialist?</h2>
-                <p>Usually people think that orthopedic doctors treat fractured bones and replace joints, but they also treat conditions like:</p>
+                <p>A doctor who specializes in Orthopaedics is called an Orthopaedist/ Orthopaedic surgeon. They use
+                    medical, physical, rehabilitative and surgical methods to treat all aspects of conditions pertaining
+                    to musculoskeletal system.</p>
+                <h2 style="text-align: left; margin-left: 110px;">What conditions are treated by an orthopaedic
+                    specialist?</h2>
+                <p>Usually people think that orthopedic doctors treat fractured bones and replace joints, but they also
+                    treat conditions like:</p>
                 <ul>
-                    <li><p>Sports injuries</p></li>
-                    <li><p>Back pain</p></li>
-                    <li><p>Bone tumors</p></li>
-                    <li><p>Carpal tunnel syndrome, hand arthritis and other hand injuries</p></li>
-                    <li><p>Ligament tears</p></li>
-                    <li><p>Bow legs</p></li>
-                    <li><p>Hip dysplasia</p></li>
-                    <li><p>Foot and ankle injuries</p></li>
-                    <li><p>Osteoporosis</p></li>
-                    <li><p>Arthritis</p></li>
+                    <li>
+                        <p>Sports injuries</p>
+                    </li>
+                    <li>
+                        <p>Back pain</p>
+                    </li>
+                    <li>
+                        <p>Bone tumors</p>
+                    </li>
+                    <li>
+                        <p>Carpal tunnel syndrome, hand arthritis and other hand injuries</p>
+                    </li>
+                    <li>
+                        <p>Ligament tears</p>
+                    </li>
+                    <li>
+                        <p>Bow legs</p>
+                    </li>
+                    <li>
+                        <p>Hip dysplasia</p>
+                    </li>
+                    <li>
+                        <p>Foot and ankle injuries</p>
+                    </li>
+                    <li>
+                        <p>Osteoporosis</p>
+                    </li>
+                    <li>
+                        <p>Arthritis</p>
+                    </li>
                 </ul>
             </div>
             <div class="d-image" style="margin: 0;">
@@ -281,33 +330,73 @@
             </div>
         </div>
     </section>
-    
+
     <section class="diagnosis-services" style="margin: 1px 0 0 0; padding: 50px 0; background-color: whitesmoke;">
-        <div class="d-services" style="margin: 10px 120px;">
+        <div class="d-services">
+            <style>
+                .d-services {
+                    margin: 10px 120px;
+                }
+
+                @media (max-width: 1024px) {
+                    .d-services {
+                        margin: 10px;
+                    }
+                }
+            </style>
             <div class="d-image" style="margin: 0;">
-                <img src="img/orthopaedic-rxdx.jpg" style="width: 550px;">
+                <img src="img/orthopaedic-rxdx.jpg" class="five">
+                <style>
+                    .five {
+                        width: 550px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        .five {
+                            width: 100%;
+                        }
+                    }
+                </style>
             </div>
             <div class="d-list">
                 <h2 style="text-align: left; margin-left: 110px;">When should I see an Orthopaedic specialist?</h2>
                 <p>You should consult an orthopaedic specialist if you have:</p>
                 <ul>
-                    <li><p>Joint, bone or muscle pain that started after an injury</p></li>
-                    <li><p>Gradually increasing hip or knee pain</p></li>
-                    <li><p>Joint pain that is interfering with daily activities</p></li>
-                    <li><p>Gradually increasing neck or back pain</p></li>
-                    <li><p>Radiating pain in the arm or leg</p></li>
-                    <li><p>Moderate or advanced arthritis of any joint</p></li>
-                    <li><p>Previous unsuccessful treatment for joint pain</p></li>
-                    <li><p>Have been advised a joint replacement</p></li>
+                    <li>
+                        <p>Joint, bone or muscle pain that started after an injury</p>
+                    </li>
+                    <li>
+                        <p>Gradually increasing hip or knee pain</p>
+                    </li>
+                    <li>
+                        <p>Joint pain that is interfering with daily activities</p>
+                    </li>
+                    <li>
+                        <p>Gradually increasing neck or back pain</p>
+                    </li>
+                    <li>
+                        <p>Radiating pain in the arm or leg</p>
+                    </li>
+                    <li>
+                        <p>Moderate or advanced arthritis of any joint</p>
+                    </li>
+                    <li>
+                        <p>Previous unsuccessful treatment for joint pain</p>
+                    </li>
+                    <li>
+                        <p>Have been advised a joint replacement</p>
+                    </li>
                 </ul>
-              
+
             </div>
         </div>
     </section>
     <section class="contact-section">
         <div class="contact-container">
             <div class="cont-card">
-                <p style="margin: 0 100px;"><a href=""><b>Orthopaedics</b> is a medical speciality that deals with diagnosis, correction, prevention and treatment of musculoskeletal deformities, which includes disorders of the bones, joints, muscles, ligaments and tendons.</a></p>
+                <p style="margin: 0 100px;"><a href=""><b>Orthopaedics</b> is a medical speciality that deals with
+                        diagnosis, correction, prevention and treatment of musculoskeletal deformities, which includes
+                        disorders of the bones, joints, muscles, ligaments and tendons.</a></p>
             </div>
         </div>
     </section>

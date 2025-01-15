@@ -30,29 +30,18 @@
     <div class="navbar">
         <div class="logo2"
             style="background-color: white; padding-left: 9px; padding-right: 10px; display: flex; justify-content: center; align-items: center;">
-            <img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px">
-        </div>
+            <img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px"></div>
         <div class="dropdown">
-            <p><a href="">FIND A <br>DOCTOR</a></p>
-            <div class="dropdown-content">
-                <a href="#">MD</a>
-                <a href="#">SPECIALIST</a>
-            </div>
+            <p><a href="find-doctor.html">FIND A <br>DOCTOR</a></p>
         </div>
         <div class="dropdown">
             <p><a href="pharmacy.html">PHARMACY</a></p>
         </div>
         <div>
-            <p><a href="">HOME <br>HEALTHCARE</a></p>
+            <p><a href="home-healthcare.html">HOME <br>HEALTHCARE</a></p>
         </div>
         <div class="dropdown">
-            <p><a href="">SURGICAL <br>CARE</a></p>
-            <div class="dropdown-content">
-                <a href="#">MINOR WOUND CARE</a>
-                <a href="#">MINOR INCISIONS AND DRAINAGE</a>
-                <a href="#">CERUMEN REMOVAL</a>
-                <a href="#">POP APPLICATIONS</a>
-            </div>
+            <p><a href="surgical-care.html">SURGICAL <br>CARE</a></p>
         </div>
         <div class="dropdown">
             <p><a href="lab-and-radiology.html">DIAGNOSTICS</a></p>
@@ -60,32 +49,18 @@
         <div>
             <p><a href="physiotherapy.html">PHYSICAL <br>THERAPY</a></p>
         </div>
-        <div class="dropdown"><p><a href="vaccination.html">VACCINATIONS</a></p>
-            <div class="dropdown-content">
-                <a href="vaccination.html">HEPATITIS B VACCINE</a>
-                <a href="vaccination.html">SEASONAL FLU SHOT</a>
-                <a href="vaccination.html">HB VACCINATIONS</a>
-                <a href="vaccination.html">SHINGLES VACCINATION</a>
-                <a href="vaccination.html">HPV VACCINE</a>
-                <a href="vaccination.html">PNEUMONIA VACCINE</a>
-                <a href="vaccination.html">TYPHOID VACCINE</a>
-            </div>
+        <div class="dropdown">
+            <p><a href="vaccination.html">VACCINATIONS</a></p>
+
         </div>
         <div class="dropdown">
-            <p><a href="">SPORTS <br>MEDICINE</a></p>
-            <div class="dropdown-content">
-                <a href="#">SPORTS MEDICINE</a>
-                <a href="#">CONSULTATION</a>
-                <a href="#">MEDICAL SCREENING &<br>DIAGNOSTICS</a>
-                <a href="#">SPECIALIZED SERVICES</a>
-                <a href="#">SPORTS SPECIFIC HIGH <br>PERFORMANCE ASSESSMENT</a>
-            </div>
+            <p><a href="sports-medicine.html">SPORTS <br>MEDICINE</a></p>
         </div>
         <div class="dropdown">
             <p><a href="accepted-insturance.html">ACCEPTED <br> INSURANCE</a></p>
         </div>
         <div>
-            <p><a href="">EDUCATION <br>& RESEARCH</a></p>
+            <p><a href="education-&-research.html">EDUCATION <br>& RESEARCH</a></p>
         </div>
 
     </div>
@@ -150,7 +125,12 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <section class="hero">
-        <img src="img/general-medicine.jpg" style="width: 100%; height: 600px" alt="Slide 1" class="active">
+        <img src="img/general-medicine.jpg" alt="Slide 1">
+        <style>
+            .hero img {
+                display: none;
+            }
+        </style>
         <div class="controls">
             <button class="prev">❮</button>
             <button class="next">❯</button>
@@ -245,7 +225,17 @@
     </section>
     <section class="diagnosis-services" style="margin: 100px 0 0 0; padding: 50px 0; background-color: whitesmoke;">
 
-        <div class="d-services" style="margin: 10px 120px;">
+        <div class="d-services">
+            <style>
+                .d-services {
+                    margin:  10px 120px;
+                }
+                @media (max-width: 1024px) {
+                    .d-services {
+                        margin: 10px 10px;
+                    }
+                }
+            </style>
             <div class="d-list">
                 <h2 style="text-align: left; margin-left: 110px;">What is the role of a General Practitioner?</h2>
                 <p>GPs work as a part of team of doctors and play an important role in guiding the patients to specific
@@ -279,10 +269,21 @@
         </div>
     </section>
     <section class="diagnosis-services" style="margin: 1px 0 0 0; padding: 50px 0; background-color: whitesmoke;">
-        <div class="d-services" style="margin: 10px 120px;">
+        <div class="d-services" >
             <div class="d-image" style="margin: 0;">
-                <img src="img/gp2.jpg" style="width: 550px;">
+                <img src="img/gp2.jpg" class="five">
             </div>
+
+            <style>
+                .five {
+                    width: 550px;
+                }
+                @media (max-width: 1024px) {
+                    .five {
+                        width: 100%;
+                    }
+                }
+            </style>
             <div class="d-list">
                 <h2 style="text-align: left; margin-left: 110px;">What services are provided by a General Practitioner?</h2>
                 <p>Services can include:</p>
