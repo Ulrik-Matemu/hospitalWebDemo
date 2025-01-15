@@ -1,11 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find a Doctor - Siha Polyclinic</title>
+    <title>Find A Doctor - Siha Polyclinic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+.doctor-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00a896;
+}
+
+ 
+
+/* Controls */
+.controls2 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input,
+.filter-select {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-select {
+  max-width: 200px;
+}
+
+/* Doctor List */
+.doctor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Doctor Card */
+.doctor-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.doctor-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.doctor-card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.doctor-card button {
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    background-color: #00a896;
+    border: 1px solid #66fff0;
+    color: white;
+}
+.title-p {
+    font-weight: 600;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #00a896;
+    color: white;
+}
+
+.title-p a {
+    text-decoration: none;
+}
+    </style>
 </head>
+
 <body>
-    <h1 style="text-align: center;">This Page is still under construction. For more details, please contact your web master.</h1>
+    <button class="search-btn" style="margin-right: 50px; font-size: 25px;">
+        <i class="fa fa-search"></i>
+    </button>
+    <button class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="logo1"><img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png"></div>
+    <div class="navbar">
+        <div class="logo2"
+            style="background-color: white; padding-left: 9px; padding-right: 10px; display: flex; justify-content: center; align-items: center;">
+            <img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px"></div>
+        <div class="dropdown">
+            <p><a href="find-doctor.html">FIND A <br>DOCTOR</a></p>
+        </div>
+        <div class="dropdown">
+            <p><a href="pharmacy.html">PHARMACY</a></p>
+        </div>
+        <div>
+            <p><a href="home-healthcare.html">HOME <br>HEALTHCARE</a></p>
+        </div>
+        <div class="dropdown">
+            <p><a href="surgical-care.html">SURGICAL <br>CARE</a></p>
+        </div>
+        <div class="dropdown">
+            <p><a href="lab-and-radiology.html">DIAGNOSTICS</a></p>
+        </div>
+        <div>
+            <p><a href="physiotherapy.html">PHYSICAL <br>THERAPY</a></p>
+        </div>
+        <div class="dropdown">
+            <p><a href="vaccination.html">VACCINATIONS</a></p>
+
+        </div>
+        <div class="dropdown">
+            <p><a href="sports-medicine.html">SPORTS <br>MEDICINE</a></p>
+        </div>
+        <div class="dropdown">
+            <p><a href="accepted-insturance.html">ACCEPTED <br> INSURANCE</a></p>
+        </div>
+        <div>
+            <p><a href="education-&-research.html">EDUCATION <br>& RESEARCH</a></p>
+        </div>
+
+    </div>
+    <div class="navbar2">
+        <ul>
+            <li><a href="index.html" style="color: #00a896;">Home</a></li>
+            <li class="dropdown2"><a href="about-us.html">About Us</a>
+
+            </li>
+            <li class="dropdown2"><a href="">Specialities</a>
+                <div class="dropdown-content2">
+                    <div class="double-drop">
+                        <div class="double-menu" style="color: black;">
+                            <a href="cardiology.html" style=" line-height: 2; color: black;">Cardiology</a>
+                            <a href="dentistry.html" style=" line-height: 2; color: black;">Dentistry</a>
+                            <a href="ENT.html" style=" line-height: 2; color: black;">ENT</a>
+                            <a href="pharmacy.html" style=" line-height: 2; color: black;">Medicine</a>
+                            <a href="general-medicine.html" style=" line-height: 2; color: black;">General Medicine</a>
+                            <a href="obstetrics-and-gynaecology.html"
+                                style=" line-height: 2; color: black;">Gynaecology</a>
+                            <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Obstetrics
+                                & Gynaecology</a>
+                            <a href="orthopaedics.html" style=" line-height: 2; color: black;">Orthopaedics</a>
+                            <a href="pain-medicine.html" style=" line-height: 2; color: black;">Pain Medicine</a>
+                            <a href="physiotherapy.html" style=" line-height: 2; color: black;">Physiotherapy</a>
+                            <a href="urology.html" style=" line-height: 2; color: black;">Urology</a>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li><a href="">Latest @Siha Polyclinic</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li style=" margin-right: 40px; "><a href="" style="color: #FD8103;">+255 717 050 537</a></li>
+        </ul>
+        <input placeholder="Search" name="search">
+    </div>
+    <input class="mobile-input" placeholder="Search">
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" class="facebook" title="Facebook"
+            style="border-top-right-radius: 5px; border-top-left-radius: 5px;">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="twitter" title="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"
+            style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+    <div class="sticky-right">
+        <a href="#request-info" class="request-info">
+            WE CARE, GOD CURES
+        </a>
+        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp" title="Contact via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <section class="hero">
+        <img src="img/book-doctor.jpg" style="width: 100%;" alt="Slide 1" class="active">
+        <style>
+            @media (max-width: 1024px) {
+                .hero img.active {
+                    display: none;
+                }
+            }
+        </style>
+        <div class="controls">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+        <div class="dots"></div>
+
+    </section>
+
+    <section class="doctor-listings">
+        <div class="doctor-container">
+            <h1 class="title">Hospital Doctor Listing</h1>
+            <p class="title-p">Didn’t find your desirable slot?
+                Request <a href="">here</a> to block a tentative slot or <a href="">WhatsApp us</a>. Our team will contact you to confirm.</p>
+    
+            <!-- Search and Filter -->
+            <div class="controls2">
+                <input type="text" id="search" placeholder="Search by name..." class="search-input">
+                <select id="specialty" class="filter-select">
+                    <option value="">All Specialties</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Orthopedics">Orthopedics</option>
+                    <option value="Gynaecology">Gynaecology</option>
+                    <option value="Dentist">Dentist</option>
+                    <option value="Urology">Urology</option>
+                    <option value="ENT">ENT</option>
+                    <option value="Radiology">Radiology</option>
+                    <!-- Add more specialties here -->
+                </select>
+            </div>
+    
+            <!-- Doctor Listings -->
+            <div id="doctor-list" class="doctor-list">
+                <!-- Doctor Card Template -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="f-column1">
+                <ul style="margin-bottom: 80px;">
+                    <li><a href="">Policies</a></li>
+                    <li><a href="terms-and-conditions.html" style="font-weight: 400;">Terms of Use</a></li>
+                    <li><a href="" style="font-weight: 400;">Feedback & Complaints</a></li>
+                    <li><a href="" style="font-weight: 400;">Privacy Policy</a></li>
+                    <li><a href="" style="font-weight: 400;">Refund Policy</a></li>
+                    <li><a href="cookie-policy.html" style="font-weight: 400;">Cookie Policy</a></li>
+                    <li><a href="customer-support-policy.html" style="font-weight: 400;">Customer Support Policy</a>
+                    </li>
+                    <li><a href="follow-up-policy.html" style="font-weight: 400;">Follow-up Policy</a></li>
+                    <li><a href="" style="font-weight: 400;">Patient Safety</a></li>
+
+                </ul>
+            </div>
+            <div class="f-column1" id="none-mobile">
+                <ul style="margin-bottom: 240px;">
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="f-column1">
+                <ul class="mobile-active">
+                    <li><a href="">Quick Contacts</a></li>
+                    <li><a href="" style="font-weight: 400;"><i class="fa fa-phone"></i> +255 717 050 537</a></li>
+                    <li><a href="" style="font-weight: 400;"><i class="fa fa-envelope"></i> P.O.Box 923 Tanga</a></li>
+                    <li><a href="" style="font-weight: 400;"><i class="fa fa-whatsapp"></i> +255 716 217 121</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social">
+            <p>FOLLOW US ON</p>
+            <div class="social-footer">
+                <div><a href=""><i class="fa fa-facebook-f"></i></a></div>
+                <div><a href=""><i class="fa fa-instagram"></i></a></div>
+                <div><a href=""><i class="fa fa-youtube"></i></a></div>
+                <div><a href=""><i class="fa fa-linkedin-in"></i></a></div>
+                <div><a href=""><i class="fa fa-twitter"></i></a></div>
+            </div>
+        </div>
+
+        <p style="font-family: 'Montserrat', serif; color: white;"> &copy; 2025 Siha Polyclinic. All Rights Reserved.
+        </p>
+    </section>
+    <button id="backToTop">↑</button>
+
+
+
+
+
+    <script src="js/back-to-top-button.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/navbar-toggle.js"></script>
+    <script>
+        // Sample data (you can replace it with real data)
+        const doctors = [
+            { name: 'Dr. Kassim Shegow', specialty: 'Cardiology', image: 'img/male-user.png' },
+            { name: 'Dr. Mdoe Mhuza', specialty: 'Orthopedics', image: 'img/male-user.png' },
+            { name: 'Dr. Justice Mwambashi', specialty: 'Orthopedics', image: 'img/male-user.png'},
+            { name: 'Dr. Mohamed Sachedina', specialty: 'ENT', image: 'img/male-user.png'},
+            { name: 'Dr. Edwin Mashola', specialty: 'Gynaecology', image: 'img/male-user.png'},
+            { name: 'Dr. Festo Felix Mvukiye', specialty: 'Dentist', image: 'img/male-user.png' },
+            { name: 'Dr. Boniphase Pima', specialty: 'Surgeon', image: 'img/male-user.png'},
+            { name: 'Dr. Joshua Jackson', specialty: 'Urology', image: 'img/male-user.png'},
+            { name: 'Dr. Tariq Aziz ', specialty: 'Radiology', image: 'img/male-user.png'}
+        ];
+
+        // Elements
+        const searchInput = document.getElementById('search');
+        const specialtySelect = document.getElementById('specialty');
+        const doctorList = document.getElementById('doctor-list');
+
+        // Function to filter doctors
+        function filterDoctors() {
+            const searchQuery = searchInput.value.toLowerCase();
+            const selectedSpecialty = specialtySelect.value;
+
+            const filteredDoctors = doctors.filter(doctor => {
+                const matchesName = doctor.name.toLowerCase().includes(searchQuery);
+                const matchesSpecialty = selectedSpecialty ? doctor.specialty === selectedSpecialty : true;
+                return matchesName && matchesSpecialty;
+            });
+
+            displayDoctors(filteredDoctors);
+        }
+
+        // Function to display doctors in the UI
+        function displayDoctors(doctorsToDisplay) {
+            doctorList.innerHTML = ''; // Clear previous listings
+            doctorsToDisplay.forEach(doctor => {
+                const doctorCard = document.createElement('div');
+                doctorCard.classList.add('doctor-card');
+
+                doctorCard.innerHTML = `
+      <img src="${doctor.image}" alt="${doctor.name}">
+      <h3>${doctor.name}</h3>
+      <p>${doctor.specialty}</p>
+      <button>BOOK APPOINTMENT</button>
+    `;
+
+                doctorList.appendChild(doctorCard);
+            });
+        }
+
+        // Initial load
+        filterDoctors();
+
+        // Event listeners
+        searchInput.addEventListener('input', filterDoctors);
+        specialtySelect.addEventListener('change', filterDoctors);
+
+    </script>
 </body>
+
 </html>

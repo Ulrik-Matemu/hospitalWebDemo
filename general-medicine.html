@@ -125,10 +125,12 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <section class="hero">
-        <img src="img/general-medicine.jpg" alt="Slide 1">
+        <img src="img/general-medicine.jpg" alt="Slide 1" class="active">
         <style>
-            .hero img {
+            @media (max-width: 1024px) {
+                .hero img.active {
                 display: none;
+            }
             }
         </style>
         <div class="controls">

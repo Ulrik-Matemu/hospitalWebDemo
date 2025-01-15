@@ -2455,3 +2455,87 @@ font-size: 1.5em; /* Adjust tick size */
     padding: 0 5px;
   }
 }
+
+.doctor-listings {
+  font-family: "Montserrat", serif;
+background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
+}
+
+
+.surgical-cards {
+  margin: 100px 0;
+}
+
+.surgical-cards h2 {
+  font-family: "Montserrat", serif;
+  font-size: 42px;
+  text-align: center;
+}
+
+.surgical-card-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 100px;
+  font-family: "Montserrat", serif;
+}
+
+.surgical-card {
+  display: grid;
+  border: 1px solid #e4f4f4;
+  margin: 0 5px;
+  width: 20%;
+  line-height: 18px;
+  padding: 0;
+  text-align: center;
+  background-color: #e4f4f4;
+  transition: 0.3s ease;
+}
+
+
+
+.surgical-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00a896;
+}
+
+
+.surgical-card p {
+  font-weight: 500;
+  color: #25d366;
+}
+
+.surgical-card:hover {
+  background-color: #497777;
+}
+
+.surgical-card:hover h3 {
+  color: white;
+}
+
+.surgical-card:hover p {
+  color: #39f17d;
+}
+
+.sports-cards {
+  font-family: "Montserrat", serif;
+  margin: 100px 0;
+}
+
+.sports-card-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 100px;
+}
+
+.sports-card {
+  border: 1px solid #f2f2f2;
+  padding: 20px;
+  margin: 5px;
+  background-color: #f2f2f2;
+  width: 25%;
+}
+
+.sports-card h3 {
+  color: #fd8103;
+}
