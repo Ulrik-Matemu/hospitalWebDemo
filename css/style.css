@@ -2541,7 +2541,7 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 @media (max-width: 1024px) {
   .surgical-card-container {
     display: block;
-    margin: 5px 20px;
+    margin: 5px 20px 5px 10px;
   }
   .surgical-card {
     width: 100%;
