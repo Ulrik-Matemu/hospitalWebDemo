@@ -16,122 +16,128 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
+        .doctor-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-.doctor-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Title */
-.title {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #00a896;
-}
-
- 
-
-/* Controls */
-.controls2 {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.search-input,
-.filter-select {
-  flex: 1;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.filter-select {
-  max-width: 200px;
-}
+        /* Title */
+        .title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #00a896;
+        }
 
 
-/* Doctor List */
-.doctor-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
 
-/* Doctor Card */
-.doctor-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
-}
+        /* Controls */
+        .controls2 {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
 
-.doctor-card:hover {
-  transform: translateY(-5px);
-}
+        .search-input,
+        .filter-select {
+            flex: 1;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-.doctor-card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
+        .filter-select {
+            max-width: 200px;
+        }
 
-.doctor-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-}
+        @media (max-width: 400px) {
+            .filter-select {
+                max-width: 50px;
+            }
+        }
 
-.doctor-card p {
-  color: #555;
-  font-size: 0.9rem;
-}
+        /* Doctor List */
+        .doctor-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
 
-.doctor-card button {
-    padding: 10px;
-    font-family: "Montserrat", serif;
-    font-weight: 500;
-    background-color: #00a896;
-    border: 1px solid #66fff0;
-    color: white;
-}
-.title-p {
-    font-weight: 600;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: #00a896;
-    color: white;
-}
+        /* Doctor Card */
+        .doctor-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s ease-in-out;
+        }
 
-.title-p a {
-    text-decoration: none;
-}
+        .doctor-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .doctor-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .doctor-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .doctor-card p {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .doctor-card button {
+            padding: 10px;
+            font-family: "Montserrat", serif;
+            font-weight: 500;
+            background-color: #00a896;
+            border: 1px solid #66fff0;
+            color: white;
+        }
+
+        .title-p {
+            font-weight: 600;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: #00a896;
+            color: white;
+        }
+
+        .title-p a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
     <button class="search-btn" style="margin-right: 50px; font-size: 25px;">
         <i class="fa fa-search"></i>
-      </button>
-      <button class="mobile-menu-btn">
+    </button>
+    <button class="mobile-menu-btn">
         <span></span>
         <span></span>
         <span></span>
-      </button>
-      <div class="logo1"><img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png"></div>
-      <div class="navbar">
+    </button>
+    <div class="logo1"><img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png"></div>
+    <div class="navbar">
         <div class="logo2"
             style="background-color: white; padding-left: 9px; padding-right: 10px; display: flex; justify-content: center; align-items: center;">
-            <img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px"></div>
+            <img src="img/WhatsApp_Image_2024-12-20_at_13.39.47-removebg-preview.png" width="90px">
+        </div>
         <div class="dropdown">
             <p><a href="find-doctor.html">FIND A <br>DOCTOR</a></p>
         </div>
@@ -152,7 +158,7 @@
         </div>
         <div class="dropdown">
             <p><a href="vaccination.html">VACCINATIONS</a></p>
-    
+
         </div>
         <div class="dropdown">
             <p><a href="sports-medicine.html">SPORTS <br>MEDICINE</a></p>
@@ -163,79 +169,82 @@
         <div>
             <p><a href="education-&-research.html">EDUCATION <br>& RESEARCH</a></p>
         </div>
-    
+
     </div>
-      <button class="toggle2-btn" onclick="toggleNavbar()">
+    <button class="toggle2-btn" onclick="toggleNavbar()">
         <span></span>
         <span></span>
         <span></span>
-      </button>
-      <div class="navbar2">
-    
+    </button>
+    <div class="navbar2">
+
         <script>
-          function toggleNavbar() {
-            const navbarMenu = document.querySelector('.navbar2');
-            navbarMenu.classList.toggle('active');
-          }
+            function toggleNavbar() {
+                const navbarMenu = document.querySelector('.navbar2');
+                navbarMenu.classList.toggle('active');
+            }
         </script>
         <ul>
-          <li><a href="index.html" style="color: #00a896;">Home</a></li>
-          <li class="dropdown2"><a href="about-us.html">About Us</a>
-          </li>
-          <li class="dropdown2"><a href="">Specialities<i class="fas fa-chevron-circle-down drop-icon"></i></a>
-            <div class="dropdown-content2">
-              <div class="double-drop">
-                <div class="double-menu" style="color: black;">
-                  <a href="cardiology.html" style=" line-height: 2; color: black;">Cardiology</a>
-                  <a href="dentistry.html" style=" line-height: 2; color: black;">Dentistry</a>
-                  <a href="ENT.html" style=" line-height: 2; color: black;">ENT</a>
-                  <a href="pharmacy.html" style=" line-height: 2; color: black;">Medicine</a>
-                  <a href="general-medicine.html" style=" line-height: 2; color: black;">General Medicine</a>
-                  <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Gynaecology</a>
-                  <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Obstetrics &
-                    Gynaecology</a>
-                  <a href="orthopaedics.html" style=" line-height: 2; color: black;">Orthopaedics</a>
-                  <a href="pain-medicine.html" style=" line-height: 2; color: black;">Pain Medicine</a>
-                  <a href="physiotherapy.html" style=" line-height: 2; color: black;">Physiotherapy</a>
-                  <a href="urology.html" style=" line-height: 2; color: black;">Urology</a>
+            <li><a href="index.html" style="color: #00a896;">Home</a></li>
+            <li class="dropdown2"><a href="about-us.html">About Us</a>
+            </li>
+            <li class="dropdown2"><a href="#">Specialities<i class="fas fa-chevron-circle-down drop-icon"></i></a>
+                <div class="dropdown-content2">
+                    <div class="double-drop">
+                        <div class="double-menu" style="color: black;">
+                            <a href="cardiology.html" style=" line-height: 2; color: black;">Cardiology</a>
+                            <a href="dentistry.html" style=" line-height: 2; color: black;">Dentistry</a>
+                            <a href="ENT.html" style=" line-height: 2; color: black;">ENT</a>
+                            <a href="pharmacy.html" style=" line-height: 2; color: black;">Medicine</a>
+                            <a href="general-medicine.html" style=" line-height: 2; color: black;">General Medicine</a>
+                            <a href="obstetrics-and-gynaecology.html"
+                                style=" line-height: 2; color: black;">Gynaecology</a>
+                            <a href="obstetrics-and-gynaecology.html" style=" line-height: 2; color: black;">Obstetrics
+                                &
+                                Gynaecology</a>
+                            <a href="orthopaedics.html" style=" line-height: 2; color: black;">Orthopaedics</a>
+                            <a href="pain-medicine.html" style=" line-height: 2; color: black;">Pain Medicine</a>
+                            <a href="physiotherapy.html" style=" line-height: 2; color: black;">Physiotherapy</a>
+                            <a href="urology.html" style=" line-height: 2; color: black;">Urology</a>
+                        </div>
+
+                    </div>
                 </div>
-    
-              </div>
-            </div>
-          </li>
-          <li><a href="">Latest @Siha Polyclinic</a></li>
-          <li><a href="careers.html">Careers</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-          <li style=" margin-right: 40px; "><a href="" style="color: #FD8103;">+255 717 050 537</a></li>
+            </li>
+            <li><a href="index.html#news">Latest @Siha Polyclinic</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li style=" margin-right: 40px; "><a href="" style="color: #FD8103;">+255 717 050 537</a></li>
         </ul>
         <input placeholder="Search" name="search">
-      </div>
-      <input class="mobile-input" placeholder="Search">
-      <div class="social-icons">
+    </div>
+    <input class="mobile-input" placeholder="Search">
+    <div class="social-icons">
         <a href="https://facebook.com" target="_blank" class="facebook" title="Facebook"
-          style="border-top-right-radius: 5px; border-top-left-radius: 5px;">
-          <i class="fab fa-facebook-f"></i>
+            style="border-top-right-radius: 5px; border-top-left-radius: 5px;">
+            <i class="fab fa-facebook-f"></i>
         </a>
         <a href="https://twitter.com" target="_blank" class="twitter" title="Twitter">
-          <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitter"></i>
         </a>
-        <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram">
-          <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/sihapolyclinicltd?igsh=MTNpeW9lYXQwMzZvNg==" target="_blank"
+            class="instagram" title="Instagram">
+            <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn"
-          style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-          <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/in/siha-polyclinic-94b382347/" target="_blank" class="linkedin"
+            title="LinkedIn" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+            <i class="fab fa-linkedin-in"></i>
         </a>
-      </div>
-      <div class="sticky-right">
+    </div>
+    <div class="sticky-right">
         <a href="#request-info" class="request-info">
-          WE CARE, GOD CURES
+            WE CARE, GOD CURES
         </a>
         <a href="https://wa.me/1234567890" target="_blank" class="whatsapp" title="Contact via WhatsApp">
-          <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-whatsapp"></i>
         </a>
-      </div>
-      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <section class="hero">
         <img src="img/book-doctor.jpg" style="width: 100%;" alt="Slide 1" class="active">
@@ -258,8 +267,9 @@
         <div class="doctor-container">
             <h1 class="title">Hospital Doctor Listing</h1>
             <p class="title-p">Didn’t find your desirable slot?
-                Request <a href="">here</a> to block a tentative slot or <a href="">WhatsApp us</a>. Our team will contact you to confirm.</p>
-    
+                Request <a href="">here</a> to block a tentative slot or <a href="">WhatsApp us</a>. Our team will
+                contact you to confirm.</p>
+
             <!-- Search and Filter -->
             <div class="controls2">
                 <input type="text" id="search" placeholder="Search by name..." class="search-input">
@@ -272,10 +282,11 @@
                     <option value="Urology">Urology</option>
                     <option value="ENT">ENT</option>
                     <option value="Radiology">Radiology</option>
+                    <option value="Surgeon">Surgeon</option>
                     <!-- Add more specialties here -->
                 </select>
             </div>
-    
+
             <!-- Doctor Listings -->
             <div id="doctor-list" class="doctor-list">
                 <!-- Doctor Card Template -->
@@ -321,9 +332,9 @@
             <p>FOLLOW US ON</p>
             <div class="social-footer">
                 <div><a href=""><i class="fa fa-facebook-f"></i></a></div>
-                <div><a href=""><i class="fa fa-instagram"></i></a></div>
-                <div><a href=""><i class="fa fa-youtube"></i></a></div>
-                <div><a href=""><i class="fa fa-linkedin-in"></i></a></div>
+                <div><a href="https://www.instagram.com/sihapolyclinicltd?igsh=MTNpeW9lYXQwMzZvNg=="><i class="fa fa-instagram"></i></a></div>
+                <div><a href="https://youtube.com/@siha-polyclinic?si=gqMrOzyogqcOpFZF"><i class="fa fa-youtube"></i></a></div>
+                <div><a href="https://www.linkedin.com/in/siha-polyclinic-94b382347/"><i class="fa fa-linkedin-in"></i></a></div>
                 <div><a href=""><i class="fa fa-twitter"></i></a></div>
             </div>
         </div>
@@ -343,15 +354,13 @@
     <script>
         // Sample data (you can replace it with real data)
         const doctors = [
-            { name: 'Dr. Kassim Shegow', specialty: 'Cardiology', image: 'img/male-user.png' },
-            { name: 'Dr. Mdoe Mhuza', specialty: 'Orthopedics', image: 'img/male-user.png' },
-            { name: 'Dr. Justice Mwambashi', specialty: 'Orthopedics', image: 'img/male-user.png'},
-            { name: 'Dr. Mohamed Sachedina', specialty: 'ENT', image: 'img/male-user.png'},
-            { name: 'Dr. Edwin Mashola', specialty: 'Gynaecology', image: 'img/male-user.png'},
-            { name: 'Dr. Festo Felix Mvukiye', specialty: 'Dentist', image: 'img/male-user.png' },
-            { name: 'Dr. Boniphase Pima', specialty: 'Surgeon', image: 'img/male-user.png'},
-            { name: 'Dr. Joshua Jackson', specialty: 'Urology', image: 'img/male-user.png'},
-            { name: 'Dr. Tariq Aziz ', specialty: 'Radiology', image: 'img/male-user.png'}
+            { name: 'Dr. Kassim Shegow', specialty: 'Cardiology', image: 'img/male-user.png', qualification: 'MD, MSc Cardiology (Uk)' },
+            { name: 'Dr. Mdoe Gregory Mhuza', specialty: 'Orthopedics', image: 'img/male-user.png', qualification: 'MD, MMED (Orthopedic & Traumatology)' },
+            { name: 'Dr. Justice Mwambashi', specialty: 'Orthopedics', image: 'img/male-user.png', qualification: 'MBBS,MMED (Orthopedic & Traumatology)' },
+            { name: 'Dr. Mohamed Ramzan Naushad Sachedina', specialty: 'ENT', image: 'img/male-user.png', qualification: 'MD,MMED (Otorhinolaryngology - ENT)' },
+            { name: 'Dr. Edwin Deus Mashola', specialty: 'Gynaecology', image: 'img/male-user.png', qualification: 'MD,MMED (Obstetrics and Gynaecology)' },
+            { name: 'Dr. Bonifase Micheal Pima', specialty: 'Surgeon', image: 'img/male-user.png', qualification: 'MBBS, MMED (General Surgery)' },
+            { name: 'Dr. Joshua Jackson', specialty: 'Urology', image: 'img/male-user.png', qualification: 'MD,MMED (Urology)' },
         ];
 
         // Elements
@@ -383,7 +392,8 @@
                 doctorCard.innerHTML = `
       <img src="${doctor.image}" alt="${doctor.name}">
       <h3>${doctor.name}</h3>
-      <p>${doctor.specialty}</p>
+      <p><b>${doctor.specialty}</b></p>
+      <p style="font-size: 15px;">${doctor.qualification}</p>
       <button>BOOK APPOINTMENT</button>
     `;
 

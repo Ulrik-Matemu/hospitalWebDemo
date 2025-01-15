@@ -1317,6 +1317,8 @@ body {
 
 .why p {
   margin-bottom: 20px;
+  margin-right: 40px;
+  text-align: justify;
 }
 
 
