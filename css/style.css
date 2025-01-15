@@ -1296,7 +1296,6 @@ body {
 .why {
   width: 49%;
   margin: 20px 0;
-  padding: 20px;
 }
 
 
@@ -1669,8 +1668,8 @@ body {
     margin: 0 5px;
   }
   .why {
-    width: 85%;
-    padding: 5px;
+    width: 100%;
+    margin: 0 5px;
     text-align: justify;
   }
   .why h2, .why p, .why ul {
