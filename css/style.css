@@ -382,7 +382,7 @@ body {
 /* Hero text overlay */
 .hero-text {
   position: absolute;
-  top: 50%;
+  top: 36%;
   left: 40%;
   transform: translate(-50%, -50%);
   max-width: 700px;
