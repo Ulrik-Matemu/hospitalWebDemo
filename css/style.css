@@ -357,7 +357,6 @@ body {
   width: 100%;
   max-width: 100%;
   /* Ensure no overflow */
-
   overflow: hidden;
 }
 
@@ -378,6 +377,46 @@ body {
 .hero img.active {
   display: block;
   /* Show only the active image */
+}
+
+/* Hero text overlay */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  opacity: 0;
+  animation: slideInUp 0.8s ease-out 0.4s forwards;
+  z-index: 5;
+}
+
+.hero-text h2 {
+  margin: 0 0 12px 0;
+  color: gray;
+  font-size: 46px;
+  font-weight: 800;
+}
+
+.hero-text p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: gray;
+  font-weight: 600;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 30px));
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Controls */
@@ -2003,7 +2042,7 @@ font-size: 1.5em; /* Adjust tick size */
 }
 
 .l-container-1-sm-card1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.103)),  url(../img/latest4.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.103)),  url(../img/new-gallery/news-1.jpg);
   background-size: cover;
   padding: 1px 20px;
   margin: 0 10px 10px 10px;
@@ -2013,12 +2052,13 @@ font-size: 1.5em; /* Adjust tick size */
   font-weight: 700;
   font-size: 28px;
   position: relative;
-  top: 20px;
+  top: 50px;
 }
 
 .l-container-1-sm-card1 p {
   font-size: 20px;
   font-weight: 400;
+  color: transparent;
 }
 
 .l-container-1-sm-card {
@@ -2033,7 +2073,7 @@ font-size: 1.5em; /* Adjust tick size */
   font-weight: 700;
   font-size: 28px;
   position: relative;
-  top: 20px;
+  top: 50px;
 }
 
 .l-container-1-sm-card p {
@@ -2042,7 +2082,7 @@ font-size: 1.5em; /* Adjust tick size */
 }
 
 .l-container-1-lg-card {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.493)),  url(../img/latest3.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.493)),  url(../img/new-gallery/famasi.jpg);
   padding: 20px;
   background-size: cover;
   margin: 10px;
@@ -2053,12 +2093,14 @@ font-size: 1.5em; /* Adjust tick size */
   font-weight: 700;
   font-size: 28px;
   position: relative;
-  top: 20px;
+  top: 35px;
+  text-align: center;
 }
 
 .l-container-1-lg-card p {
   font-size: 20px;
   font-weight: 400;
+  color: transparent;
 }
 
 .l-self-card {
@@ -2077,6 +2119,7 @@ font-size: 1.5em; /* Adjust tick size */
 .l-self-card p {
   font-size: 20px;
   font-weight: 400;
+  color: transparent;
 }
 
 .l-self-card h3, .l-self-card p {
