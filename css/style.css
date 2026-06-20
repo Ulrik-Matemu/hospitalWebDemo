@@ -2022,9 +2022,10 @@ font-size: 1.5em; /* Adjust tick size */
 }
 
 .l-container-1-sm-card {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.103)),  url(../img/latest1.webp);
-  background-size: cover;
-  padding: 1px 20px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.103)),  url(../img/new-gallery/ambulance-inside.jpg);
+  background-size:cover;
+  background-position:center;;
+  padding: 1px 20px;;
   margin: 0 10px 10px 10px;
 }
 
