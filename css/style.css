@@ -386,7 +386,7 @@ body {
   left: 52%;
   transform: translate(-50%, -50%);
   max-width: 1200px;
-  text-align: left;
+  text-align: right;
   font-family: 'Montserrat', serif;
   opacity: 0;
   animation: slideInUp 0.8s ease-out 0.4s forwards;
