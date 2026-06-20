@@ -383,10 +383,10 @@ body {
 .hero-text {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   max-width: 700px;
-  text-align: center;
+  text-align: left;
   font-family: 'Montserrat', serif;
   opacity: 0;
   animation: slideInUp 0.8s ease-out 0.4s forwards;
@@ -395,16 +395,16 @@ body {
 
 .hero-text h2 {
   margin: 0 0 12px 0;
-  color: gray;
+  color: #fd8103;
   font-size: 46px;
   font-weight: 800;
 }
 
 .hero-text p {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
-  color: gray;
+  color: black;
   font-weight: 600;
 }
 
