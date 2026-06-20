@@ -369,7 +369,7 @@ body {
 
 .hero img {
   width: 100%;
-  height: 480px;
+  height: 500px;
   object-fit: cover;
   display: none;
   /* Hide all images initially */
