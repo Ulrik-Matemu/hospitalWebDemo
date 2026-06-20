@@ -383,9 +383,9 @@ body {
 .hero-text {
   position: absolute;
   top: 36%;
-  left: 40%;
+  left: 52%;
   transform: translate(-50%, -50%);
-  max-width: 700px;
+  max-width: 1200px;
   text-align: left;
   font-family: 'Montserrat', serif;
   opacity: 0;
@@ -396,15 +396,16 @@ body {
 .hero-text h2 {
   margin: 0 0 12px 0;
   color: #fd8103;
-  font-size: 46px;
+  font-size: 52px;
   font-weight: 800;
 }
 
 .hero-text p {
   margin: 0;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.6;
   color: black;
+  min-width: 1050px;
   font-weight: 600;
 }
 
