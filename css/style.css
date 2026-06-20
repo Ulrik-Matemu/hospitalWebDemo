@@ -383,7 +383,7 @@ body {
 .hero-text {
   position: absolute;
   top: 36%;
-  left: 48%;
+  left: 44%;
   transform: translate(-50%, -50%);
   max-width: 1200px;
   text-align: left;
