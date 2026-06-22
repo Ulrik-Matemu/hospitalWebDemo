@@ -2011,7 +2011,7 @@ font-size: 1.5em; /* Adjust tick size */
   color: white;
   font-family: "Montserrat", serif;
   padding-top: 50px;
-  margin-bottom: -20px;
+  margin-bottom: -50px;
 }
 
 .latest h2 {
@@ -2028,135 +2028,177 @@ font-size: 1.5em; /* Adjust tick size */
   background-color: white;
 }
 
-.latest-container {
+.latest-carousel-wrapper {
+  position: relative;
   display: flex;
-  margin: 20px 60px;
-  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 20px;
+  gap: 20px;
 }
 
-.l-container-1 {
-  width: 50%;
+.latest-carousel-container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 10px;
 }
 
-.l-container-1-2-card {
+.latest-carousel {
   display: flex;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 20px;
+  padding: 20px 10px;
+  padding-bottom: 100px;
 }
 
-.l-container-1-sm-card1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.103)),  url(../img/new-gallery/news-1.jpg);
+.latest-news-card {
+  flex: 0 0 calc(25% - 15px);
+  min-width: 280px;
+  opacity: 1;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.latest-card-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 15px;
   background-size: cover;
-  padding: 1px 20px;
-  margin: 0 10px 10px 10px;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
+  transition: all 0.4s ease;
+  overflow: hidden;
 }
 
-.l-container-1-sm-card1 h3 {
+.latest-news-card:hover .latest-card-image {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.latest-card-content {
+  padding: 20px 5px 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-card-category {
+  font-size: 13px;
   font-weight: 700;
-  font-size: 28px;
-  position: relative;
-  top: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #00a896;
+  margin-bottom: 8px;
 }
 
-.l-container-1-sm-card1 p {
-  font-size: 20px;
-  font-weight: 400;
-  color: transparent;
-}
-
-.l-container-1-sm-card {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.103)),  url(../img/new-gallery/ambulance-inside.jpg);
-  background-size:cover;
-  background-position:center;;
-  padding: 1px 20px;;
-  margin: 0 10px 10px 10px;
-}
-
-.l-container-1-sm-card h3 {
+.latest-card-content h3 {
   font-weight: 700;
-  font-size: 28px;
-  position: relative;
-  top: 50px;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  color: white;
+  transition: all 0.3s ease;
 }
 
-.l-container-1-sm-card p {
-  font-size: 20px;
+.latest-card-content p {
+  font-size: 15px;
   font-weight: 400;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
 }
 
-.l-container-1-lg-card {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.493)),  url(../img/new-gallery/famasi.jpg);
-  padding: 20px;
-  background-size: cover;
-  margin: 10px;
-  background-size: cover;
+.latest-news-card:hover .latest-card-content h3 {
+  color: #00a896;
 }
 
-.l-container-1-lg-card h3 {
-  font-weight: 700;
-  font-size: 28px;
-  position: relative;
-  top: 35px;
-  text-align: center;
+.latest-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 12px 16px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
-.l-container-1-lg-card p {
-  font-size: 20px;
-  font-weight: 400;
-  color: transparent;
+.latest-carousel-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-50%) scale(1.1);
 }
 
-.l-self-card {
-  width: 40%; 
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.103)),  url(../img/new-gallery/latest5.jpeg);
-  background-size: cover;
-  margin: 0 10px 10px 10px;
-  padding: 50px;
+.latest-prev {
+  left: 0;
 }
 
-.l-self-card h3 {
-  font-weight: 700;
-  font-size: 28px;
-}
-
-.l-self-card p {
-  font-size: 20px;
-  font-weight: 400;
-  color: transparent;
-}
-
-.l-self-card h3, .l-self-card p {
-  position: relative;
-  top: 250px;
+.latest-next {
+  right: 0;
 }
 
 @media (max-width: 1024px) {
-  .latest-container {
-    display: block;
-    margin: 20px 10px;
-    padding: 5px;
+  .latest-news-card {
+    flex: 0 0 calc(50% - 10px);
+    min-width: 250px;
   }
-  .l-container-1 {
-    width: 100%;
+
+  
+
+  .latest-carousel-btn {
+    padding: 10px 14px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
   }
-  .l-container-1-2-card {
-    display: block;
-  }
-  .l-self-card {
-    width: 100%;
-    padding: 1px;
-    margin: 0;
-  }
-  .l-self-card h3, .l-self-card p {
-    position: static;
-    font-size: 19.5px;
-  }
+
   .latest h2 {
     margin-left: 30px;
   }
+
   .underline {
     margin-left: 30px;
   }
+
   .latest {
     padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .latest-news-card {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
+
+  .latest-carousel-wrapper {
+    margin: 30px 10px;
+    gap: 10px;
+  }
+
+  .latest-carousel-btn {
+    padding: 8px 12px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  
+
+  .latest-card-content h3 {
+    font-size: 18px;
+  }
+
+  .latest-card-content p {
+    font-size: 14px;
   }
 }
 
