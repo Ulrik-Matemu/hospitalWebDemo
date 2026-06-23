@@ -3,6 +3,7 @@
         const prevButton = document.querySelector(".controls .prev");
         const nextButton = document.querySelector(".controls .next");
         const dotsContainer = document.querySelector(".dots");
+        const hero = document.querySelector(".hero");
     
         let currentSlide = 0;
     
@@ -23,6 +24,17 @@
             dots[i].classList.toggle("active", i === index);
           });
         };
+    
+        // Show the first slide immediately — don't wait for the 5s auto-play tick
+        updateSlide(currentSlide);
+    
+        // Reveal the hero (hide the skeleton) once slide 1 has actually loaded
+        const revealHero = () => hero.classList.add("is-loaded");
+        if (slides[0].complete) {
+          revealHero();
+        } else {
+          slides[0].addEventListener("load", revealHero);
+        }
     
         // Go to next slide
         const nextSlide = () => {

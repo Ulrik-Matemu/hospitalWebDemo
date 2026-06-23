@@ -358,6 +358,27 @@ body {
   max-width: 100%;
   /* Ensure no overflow */
   overflow: hidden;
+  min-height: 70vh;        /* add this */
+  background: #e9eef0;
+}
+
+.hero-skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, #e2e8ea 8%, #f2f5f6 18%, #e2e8ea 33%);
+  background-size: 200% 100%;
+  animation: heroShimmer 1.4s linear infinite;
+  z-index: 1;
+}
+
+@keyframes heroShimmer {
+  to { background-position-x: -200%; }
+}
+
+.hero.is-loaded .hero-skeleton {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
 }
 
 @media (min-width: 2000px) {
