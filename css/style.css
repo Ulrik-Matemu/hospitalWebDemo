@@ -2041,7 +2041,6 @@ font-size: 1.5em; /* Adjust tick size */
   position: relative;
   width: 90%;
   max-width: 1200px;
-  overflow: hidden;
   border-radius: 10px;
 }
 
