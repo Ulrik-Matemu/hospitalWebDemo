@@ -2813,13 +2813,12 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .separator-line div {
   height: 1.8px;
   min-width: 1000px;
-  background-color: #fd8103;
+  background-color: gray;
 }
 
 /* Responsive adjustment for tablet/mobile */
@@ -2840,5 +2839,124 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 
   .wfs-card-body p {
     font-size: 1.4rem;
+  }
+}
+
+/* Section Base Container */
+.features-section {
+  background-color: #f3f6fc; /* Very faint soft tint background seen in the screenshot */
+  padding: 40px 20px;
+  padding-bottom: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Centered Header Style */
+.section-main-title {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 300; /* Light weight base */
+  color: #1e293b;
+  margin-bottom: 60px;
+  letter-spacing: -1px;
+}
+
+/* Utility class for selective bolding */
+.text-bold {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Split Columns Layout Container */
+.feature-split-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* Image Side Layout with Shimmer Support */
+.feature-image-wrapper {
+  flex: 1.1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px; /* Smooth heavy rounding matching WhatsApp Image 2026-06-25 at 15.07.45.jpeg */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+}
+
+.feature-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Shimmer Skeleton integration */
+.feature-skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, #e2e8ea 8%, #f2f5f6 18%, #e2e8ea 33%);
+  background-size: 200% 100%;
+  animation: heroShimmer 1.4s linear infinite;
+  z-index: 1;
+}
+
+/* Text Content Column Styling */
+.feature-text-wrapper {
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Minimal Editorial Title */
+.feature-sub-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #1e293b;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.5px;
+}
+
+.feature-description {
+  max-width: 400px;
+}
+
+/* Body Content Block paragraphs */
+.feature-description p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #475569; /* Slate gray tone for premium text contrast */
+  margin: 0 0 20px 0;
+}
+
+.feature-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Media Queries for Responsive Screens */
+@media (max-width: 992px) {
+  .feature-split-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .section-main-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .feature-sub-title {
+    font-size: 2rem;
+  }
+  
+  .feature-image-wrapper {
+    width: 100%;
+    max-width: 600px;
   }
 }
