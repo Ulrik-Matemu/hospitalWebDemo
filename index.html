@@ -151,7 +151,7 @@
 
     </div> -->
 
-    <!-- <div class="controls">
+  <!-- <div class="controls">
       <button class="prev">❮</button>
       <button class="next">❯</button>
     </div>
@@ -159,141 +159,146 @@
 
   </section> -->
   <section class="hero" id="hero-section">
-  <!-- Your shimmer loading fallback remains -->
-  <div class="hero-skeleton"></div>
+    <!-- Your shimmer loading fallback remains -->
+    <div class="hero-skeleton"></div>
 
-  <!-- Background Video Element -->
-  <video 
-    class="hero-video" 
-    autoplay 
-    muted 
-    loop 
-    playsinline 
-    preload="auto"
-    oncanplay="document.getElementById('hero-section').classList.add('is-loaded')"
-  >
-    <!-- Swap the source below with your actual video path -->
-    <source src="vids/hero-vid2.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+    <!-- Background Video Element -->
+    <video class="hero-video" autoplay muted loop playsinline preload="auto"
+      oncanplay="document.getElementById('hero-section').classList.add('is-loaded')">
+      <!-- Swap the source below with your actual video path -->
+      <source src="vids/hero-vid2.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
-  <!-- Uncommented and adjusted text overlay to sit beautifully over video -->
- 
-</section>
-<style>
-  /* Hero Section Layout */
-.hero {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  height: 80vh; /* Set a fluid premium height relative to the viewport (e.g., 80% screen height) */
-  min-height: 520px; 
-  background: #e9eef0;
-}
+    <!-- Uncommented and adjusted text overlay to sit beautifully over video -->
 
-/* Background Video Sizing */
-.hero-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Forces video to behave like a background cover image */
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
-}
+  </section>
+  <style>
+    /* Hero Section Layout */
+    .hero {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      height: 80vh;
+      /* Set a fluid premium height relative to the viewport (e.g., 80% screen height) */
+      min-height: 520px;
+      background: #e9eef0;
+    }
 
-/* Base Skeleton Styling */
-.hero-skeleton {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(110deg, #e2e8ea 8%, #f2f5f6 18%, #e2e8ea 33%);
-  background-size: 200% 100%;
-  animation: heroShimmer 1.4s linear infinite;
-  z-index: 2; /* Sits over the video until loaded */
-  opacity: 1;
-  transition: opacity 0.4s ease;
-}
+    /* Background Video Sizing */
+    .hero-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Forces video to behave like a background cover image */
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+    }
 
-@keyframes heroShimmer {
-  to { background-position-x: -200%; }
-}
+    /* Base Skeleton Styling */
+    .hero-skeleton {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, #e2e8ea 8%, #f2f5f6 18%, #e2e8ea 33%);
+      background-size: 200% 100%;
+      animation: heroShimmer 1.4s linear infinite;
+      z-index: 2;
+      /* Sits over the video until loaded */
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
 
-/* Smooth Transition State Triggered via JavaScript oncanplay */
-.hero.is-loaded .hero-skeleton {
-  opacity: 0;
-  pointer-events: none; /* Allows interaction to pass through once invisible */
-}
+    @keyframes heroShimmer {
+      to {
+        background-position-x: -200%;
+      }
+    }
 
-.hero.is-loaded .hero-video {
-  opacity: 1; /* Smoothly reveals video only when ready to play */
-}
+    /* Smooth Transition State Triggered via JavaScript oncanplay */
+    .hero.is-loaded .hero-skeleton {
+      opacity: 0;
+      pointer-events: none;
+      /* Allows interaction to pass through once invisible */
+    }
 
-/* Modernized Hero Text Overlay */
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 10%; /* Changed from fixed 44% to left alignment for clean text reading overlay */
-  transform: translateY(-50%);
-  max-width: 800px; /* Reduced fixed max-widths to support responsive scaling naturally */
-  text-align: left;
-  font-family: 'Montserrat', sans-serif;
-  z-index: 3;
-  padding: 0 20px;
-  animation: slideInUp 0.8s ease-out 0.4s forwards;
-  opacity: 0;
-}
+    .hero.is-loaded .hero-video {
+      opacity: 1;
+      /* Smoothly reveals video only when ready to play */
+    }
 
-.hero-text h2 {
-  margin: 0 0 16px 0;
-  color: #fd8103;
-  font-size: 3.2rem;
-  font-weight: 800;
-  letter-spacing: -1px;
-}
+    /* Modernized Hero Text Overlay */
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      /* Changed from fixed 44% to left alignment for clean text reading overlay */
+      transform: translateY(-50%);
+      max-width: 800px;
+      /* Reduced fixed max-widths to support responsive scaling naturally */
+      text-align: left;
+      font-family: 'Montserrat', sans-serif;
+      z-index: 3;
+      padding: 0 20px;
+      animation: slideInUp 0.8s ease-out 0.4s forwards;
+      opacity: 0;
+    }
 
-.hero-text p {
-  margin: 0;
-  font-size: 1.3rem;
-  line-height: 1.6;
-  color: #ffffff; /* Flipped text color to White so it reads visibly against darker underlying videos */
-  font-weight: 500;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Soft subtle shadow to guarantee text separation over shifting frames */
-}
+    .hero-text h2 {
+      margin: 0 0 16px 0;
+      color: #fd8103;
+      font-size: 3.2rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
 
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(calc(-50% + 30px));
-  }
-  to {
-    opacity: 1;
-    transform: translateY(-50%);
-  }
-}
+    .hero-text p {
+      margin: 0;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      color: #ffffff;
+      /* Flipped text color to White so it reads visibly against darker underlying videos */
+      font-weight: 500;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      /* Soft subtle shadow to guarantee text separation over shifting frames */
+    }
 
-/* Responsive adjustments for phones and tablets */
-@media (max-width: 768px) {
-  .hero {
-    height: 60vh;
-    min-height: 480px;
-  }
-  
-  .hero-text {
-    left: 5%;
-    max-width: 90%;
-  }
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(calc(-50% + 30px));
+      }
 
-  .hero-text h2 {
-    font-size: 2.2rem;
-  }
+      to {
+        opacity: 1;
+        transform: translateY(-50%);
+      }
+    }
 
-  .hero-text p {
-    font-size: 1.1rem;
-  }
-}
-</style>
+    /* Responsive adjustments for phones and tablets */
+    @media (max-width: 768px) {
+      .hero {
+        height: 60vh;
+        min-height: 480px;
+      }
+
+      .hero-text {
+        left: 5%;
+        max-width: 90%;
+      }
+
+      .hero-text h2 {
+        font-size: 2.2rem;
+      }
+
+      .hero-text p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 
   <section style="background-color: #e4f4f4;">
     <h2
@@ -365,8 +370,9 @@
       <div class="wfs-image-container">
         <div class="wfs-image-skeleton"></div>
 
-        <img src="img/new-gallery/siha-director2.jpeg" alt="Siha Polyclinic Director"
+          <img src="img/new-gallery/siha-director2.jpeg" alt="Siha Polyclinic Director"
           onload="this.previousElementSibling.style.display='none'; this.style.opacity='1';" />
+          
       </div>
 
       <!-- Right Side: Light-blue card panel -->
