@@ -2813,12 +2813,13 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .separator-line div {
   height: 1.8px;
   min-width: 1000px;
-  background-color: gray;
+  background-color: #fd8103;
 }
 
 /* Responsive adjustment for tablet/mobile */
