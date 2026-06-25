@@ -358,7 +358,7 @@ body {
   max-width: 100%;
   /* Ensure no overflow */
   overflow: hidden;
-  min-height: 70vh;        /* add this */
+  min-height: 480px;        /* add this */
   background: #e9eef0;
 }
 
@@ -2745,6 +2745,8 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
   flex-direction: column;
 }
 
+
+
 .wfs-card-footer {
   margin-top: auto; /* Pushes the signature to the bottom if the card gets tall */
   padding-top: 32px; /* Leaves breathing room below the main text */
@@ -2779,9 +2781,7 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 }
 
 /* Header Text Layout */
-.wfs-card-header {
-  margin-bottom: 32px;
-}
+
 
 .wfs-director-name {
   font-family: 'Montserrat', sans-serif;
@@ -2801,11 +2801,11 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 /* Main Quote / Message Styling */
 .wfs-card-body p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem; /* Bold, large modern typography scale */
+  font-size: 1.4rem; /* Bold, large modern typography scale */
   line-height: 1.4;
   font-weight: 400;
   color: #0f172a; /* Deep navy/black for high aesthetic readability */
-  margin: 0;
+  margin-bottom: 5px;
   letter-spacing: -0.5px;
 }
 
