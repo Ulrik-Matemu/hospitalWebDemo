@@ -2891,6 +2891,7 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
   gap: 56px;
   max-width: 1250px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 /* Image Side Layout with Shimmer Support */
