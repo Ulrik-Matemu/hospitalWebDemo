@@ -2861,9 +2861,8 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 
 /* Section Base Container */
 .features-section {
-  background-color: #dbeafe; /* Very faint soft tint background seen in the screenshot */
-  padding: 40px 20px;
-  padding-bottom: 100px;
+  background-color: #dbeafe; 
+  padding: 60px 0; /* Zeroed out horizontal padding to let containers hit their full boundaries */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -2871,7 +2870,7 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 .section-main-title {
   text-align: center;
   font-size: 3.2rem;
-  font-weight: 300; /* Light weight base */
+  font-weight: 300; 
   color: #1e293b;
   margin-bottom: 60px;
   letter-spacing: -1px;
@@ -2888,26 +2887,32 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 56px;
-  max-width: 1250px;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  gap: 0; /* CRITICAL: Zero gap lets facing image edges align perfectly down the middle */
+  max-width: 1300px;
+  margin: 0 auto 80px auto;
 }
 
-/* Image Side Layout with Shimmer Support */
+/* Alternating flip rule for desktop layout */
+.row-reverse-desktop {
+  flex-direction: row-reverse;
+}
+
+/* Image Side Layout - Locked at exactly 50% width */
 .feature-image-wrapper {
-  flex: 1.1;
+  flex: 0 0 50%;
+  width: 50%;
+  height: 480px; /* Uniform height ensures perfectly identical shapes */
   position: relative;
   overflow: hidden;
-  border-radius: 32px; /* Smooth heavy rounding matching WhatsApp Image 2026-06-25 at 15.07.45.jpeg */
+  border-radius: 32px; 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
 }
 
 .feature-image-wrapper img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: cover; 
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
@@ -2922,12 +2927,25 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
   z-index: 1;
 }
 
-/* Text Content Column Styling */
+/* Text Content Column Styling - Locked at exactly 50% width */
 .feature-text-wrapper {
-  flex: 0.9;
+  flex: 0 0 50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Padding classes ensure text elements don't bunch up against the image center lines */
+.content-padding-right {
+  padding-left: 60px;
+  padding-right: 20px;
+}
+
+.content-padding-left {
+  padding-right: 60px;
+  padding-left: 20px;
 }
 
 /* Minimal Editorial Title */
@@ -2941,7 +2959,7 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 }
 
 .feature-description {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 /* Body Content Block paragraphs */
@@ -2949,7 +2967,7 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
   font-size: 1.05rem;
   line-height: 1.6;
   font-weight: 400;
-  color: #475569; /* Slate gray tone for premium text contrast */
+  color: #475569; 
   margin: 0 0 13px 0;
 }
 
@@ -2957,11 +2975,14 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
   margin-bottom: 0;
 }
 
-/* Media Queries for Responsive Screens */
+/* Media Queries for Responsive Mobile Screens */
 @media (max-width: 992px) {
-  .feature-split-container {
-    flex-direction: column;
-    gap: 40px;
+  .feature-split-container,
+  .feature-split-container.row-reverse-desktop {
+    flex-direction: column; 
+    gap: 30px;
+    margin-bottom: 60px;
+    padding: 0 20px;
   }
   
   .section-main-title {
@@ -2973,8 +2994,21 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
     font-size: 2rem;
   }
   
-  .feature-image-wrapper {
+  .feature-image-wrapper,
+  .feature-text-wrapper {
+    flex: 1 1 100%;
     width: 100%;
+  }
+
+  .feature-image-wrapper {
     max-width: 600px;
+    height: 320px; 
+  }
+
+  .content-padding-right,
+  .content-padding-left {
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
