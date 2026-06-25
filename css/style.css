@@ -2685,60 +2685,90 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 }
 
 /* Styling for the new heading */
-.wfs-heading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  color: #2c3e50; /* Deep, professional dark tone */
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 500;
-  letter-spacing: -0.5px; /* Slight tightening for a modern editorial feel */
-}
-
-/* Container Layout */
+/* Container styling to hold both elements side-by-side */
 .wfs-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  max-width: 1100px;
+  align-items: stretch; /* Ensures both columns have equal height if needed */
+  justify-content: center;
+  gap: 24px; /* Crisp, modern gap spacing */
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
-/* Image Styling */
+/* Image Container */
 .wfs-image-container {
   flex: 1;
-  max-width: 450px;
+  max-width: 400px; /* Adjust based on your asset layout preference */
 }
 
 .wfs-image-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  border-radius: 4px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 24px; /* Generous, elegant rounded corners like Screenshot_2026-06-25_15_05_07.jpg */
+  display: block;
 }
 
-/* Text & Typography Styling */
-.wfs-text-container {
-  flex: 1;
+/* Text Card Panel */
+.wfs-text-card {
+  flex: 1.5;
+  background-color: #dbeafe; /* Soft, light blue background tone */
+  border-radius: 24px; /* Matches the image's rounded look perfectly */
+  padding: 48px; /* Roomy internal padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.wfs-text-container p {
+/* Header Text Layout */
+.wfs-card-header {
+  margin-bottom: 32px;
+}
+
+.wfs-director-name {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #555555;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1e293b; /* Premium slate color */
+  margin: 0 0 4px 0;
 }
 
-/* Responsive design for tablets and mobile */
-@media (max-width: 768px) {
+.wfs-director-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #64748b; /* Muted subtitle color */
+  margin: 0;
+}
+
+/* Main Quote / Message Styling */
+.wfs-card-body p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem; /* Bold, large modern typography scale */
+  line-height: 1.4;
+  font-weight: 400;
+  color: #0f172a; /* Deep navy/black for high aesthetic readability */
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* Responsive adjustment for tablet/mobile */
+@media (max-width: 90edpx) {
   .wfs-container {
     flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-    gap: 30px;
+    align-items: center;
+  }
+  
+  .wfs-image-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .wfs-text-card {
+    padding: 32px 24px;
+  }
+
+  .wfs-card-body p {
+    font-size: 1.4rem;
   }
 }
