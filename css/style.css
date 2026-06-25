@@ -2816,9 +2816,9 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 }
 
 .separator-line div {
-  height: 1.8px;
+  height: 1px;
   min-width: 1000px;
-  background-color: gray;
+  background-color: rgb(177, 177, 177);
 }
 
 /* Responsive adjustment for tablet/mobile */
@@ -2844,7 +2844,7 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 
 /* Section Base Container */
 .features-section {
-  background-color: #f3f6fc; /* Very faint soft tint background seen in the screenshot */
+  background-color: #dbeafe; /* Very faint soft tint background seen in the screenshot */
   padding: 40px 20px;
   padding-bottom: 100px;
   font-family: 'Montserrat', sans-serif;
@@ -2932,7 +2932,7 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
   line-height: 1.6;
   font-weight: 400;
   color: #475569; /* Slate gray tone for premium text contrast */
-  margin: 0 0 20px 0;
+  margin: 0 0 13px 0;
 }
 
 .feature-description p:last-child {
