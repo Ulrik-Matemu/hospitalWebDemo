@@ -2691,7 +2691,7 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
   align-items: stretch; /* Ensures both columns have equal height if needed */
   justify-content: center;
   gap: 24px; /* Crisp, modern gap spacing */
-  max-width: 1200px;
+  max-width: 1275px;
   margin: 0 auto;
   padding: 60px 20px;
 }
