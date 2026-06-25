@@ -138,7 +138,7 @@
     </a>
   </div>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <section class="hero">
+  <!-- <section class="hero">
     <div class="hero-skeleton"></div>
     <img src="img/new-gallery/Siders-3 (2).png" alt="Slide 1">
     <img src="img/new-gallery/Siders-1 (2).jpg" alt="Slide 2">
@@ -151,13 +151,148 @@
 
     </div> -->
 
-    <div class="controls">
+    <!-- <div class="controls">
       <button class="prev">❮</button>
       <button class="next">❯</button>
     </div>
     <div class="dots"></div>
 
-  </section>
+  </section> -->
+  <section class="hero" id="hero-section">
+  <!-- Your shimmer loading fallback remains -->
+  <div class="hero-skeleton"></div>
+
+  <!-- Background Video Element -->
+  <video 
+    class="hero-video" 
+    muted 
+    loop 
+    playsinline 
+    preload="auto"
+    oncanplay="document.getElementById('hero-section').classList.add('is-loaded')"
+  >
+    <!-- Swap the source below with your actual video path -->
+    <source src="vids/hero-vid.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Uncommented and adjusted text overlay to sit beautifully over video -->
+ 
+</section>
+<style>
+  /* Hero Section Layout */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 80vh; /* Set a fluid premium height relative to the viewport (e.g., 80% screen height) */
+  min-height: 520px; 
+  background: #e9eef0;
+}
+
+/* Background Video Sizing */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Forces video to behave like a background cover image */
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* Base Skeleton Styling */
+.hero-skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, #e2e8ea 8%, #f2f5f6 18%, #e2e8ea 33%);
+  background-size: 200% 100%;
+  animation: heroShimmer 1.4s linear infinite;
+  z-index: 2; /* Sits over the video until loaded */
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+@keyframes heroShimmer {
+  to { background-position-x: -200%; }
+}
+
+/* Smooth Transition State Triggered via JavaScript oncanplay */
+.hero.is-loaded .hero-skeleton {
+  opacity: 0;
+  pointer-events: none; /* Allows interaction to pass through once invisible */
+}
+
+.hero.is-loaded .hero-video {
+  opacity: 1; /* Smoothly reveals video only when ready to play */
+}
+
+/* Modernized Hero Text Overlay */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%; /* Changed from fixed 44% to left alignment for clean text reading overlay */
+  transform: translateY(-50%);
+  max-width: 800px; /* Reduced fixed max-widths to support responsive scaling naturally */
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 3;
+  padding: 0 20px;
+  animation: slideInUp 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.hero-text h2 {
+  margin: 0 0 16px 0;
+  color: #fd8103;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.hero-text p {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #ffffff; /* Flipped text color to White so it reads visibly against darker underlying videos */
+  font-weight: 500;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Soft subtle shadow to guarantee text separation over shifting frames */
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(calc(-50% + 30px));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+}
+
+/* Responsive adjustments for phones and tablets */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    min-height: 480px;
+  }
+  
+  .hero-text {
+    left: 5%;
+    max-width: 90%;
+  }
+
+  .hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+}
+</style>
 
   <section style="background-color: #e4f4f4;">
     <h2
@@ -241,23 +376,25 @@
         </div>
 
         <div class="wfs-card-body">
+          <p>Message from the Directors.</p>
           <p>Welcome to Siha Polyclinic & Diagnostic.
           </p>
           <p>We are committed to providing high-quality, compassionate, and
             patient-centered healthcare. Our dedicated team strives to deliver excellence in medical services while
             ensuring the safety, comfort, and well-being of every patient. </p>
-            <p>Thank you for trusting us with your
-            healthcare needs. We remain dedicated to serving our community with professionalism, integrity, and care.</p>
-            <p>We Care, God Cures.</p>
+          <p>Thank you for trusting us with your
+            healthcare needs. We remain dedicated to serving our community with professionalism, integrity, and care.
+          </p>
+          <p>We Care, God Cures.</p>
         </div>
       </div>
 
     </div>
-    
+
     <div class="separator-line">
       <div></div>
     </div>
-    
+
   </section>
   <!-- The Modal -->
   <div id="myModal" class="modal">
@@ -536,39 +673,40 @@
 
   </section>
   <section class="features-section">
-  
-  <!-- Centered section title with mix of light and bold fonts -->
-  <h2 class="section-main-title">
-    Reasons why patients <span class="text-bold">choose Siha Polyclinic</span>.
-  </h2>
 
-  <div class="feature-split-container">
-    
-    
-    <div class="feature-image-wrapper">
-      <div class="feature-skeleton"></div>
-      <img 
-        src="img/new-gallery/mri.jpeg" 
-        alt="Advanced Diagnostics at Siha" 
-        onload="this.previousElementSibling.style.display='none'; this.style.opacity='1';"
-      />
-    </div>
-    
-    <!-- Right Side: Minimalist editorial text layout -->
-    <div class="feature-text-wrapper">
-      <h3 class="feature-sub-title">
-        The technology <br><span class="text-bold">is genuinely clinical</span>
-      </h3>
-      
-      <div class="feature-description">
-        <p>At Siha Polyclinic Our 3T wide-bore MRI delivers sub millimeter image clarity — the same standard used by other leading Tanzania health institutions. The difference is access and cost. Whole-Body MRI gives you a clearer picture of your health with one scan covering 100+ body structures — without the long waits.</p>
-        
-        <p>Every scan is enhanced with AI-powered detection across 100+ body structures — flagging subtle findings that benefit from a second look. Your images are reviewed by board-certified radiologists, and not general readers. The report you receive reflects clinical expertise.</p>
+    <!-- Centered section title with mix of light and bold fonts -->
+    <h2 class="section-main-title">
+      Reasons why patients <span class="text-bold">choose Siha Polyclinic</span>.
+    </h2>
+
+    <div class="feature-split-container">
+
+
+      <div class="feature-image-wrapper">
+        <div class="feature-skeleton"></div>
+        <img src="img/new-gallery/mri.jpeg" alt="Advanced Diagnostics at Siha"
+          onload="this.previousElementSibling.style.display='none'; this.style.opacity='1';" />
       </div>
-    </div>
 
-  </div>
-</section>
+      <!-- Right Side: Minimalist editorial text layout -->
+      <div class="feature-text-wrapper">
+        <h3 class="feature-sub-title">
+          The technology <br><span class="text-bold">is genuinely clinical</span>
+        </h3>
+
+        <div class="feature-description">
+          <p>At Siha Polyclinic Our 3T wide-bore MRI delivers sub millimeter image clarity — the same standard used by
+            other leading Tanzania health institutions. The difference is access and cost. Whole-Body MRI gives you a
+            clearer picture of your health with one scan covering 100+ body structures — without the long waits.</p>
+
+          <p>Every scan is enhanced with AI-powered detection across 100+ body structures — flagging subtle findings
+            that benefit from a second look. Your images are reviewed by board-certified radiologists, and not general
+            readers. The report you receive reflects clinical expertise.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
   <section class="counter-section">
     <div class="counters">
       <div class="counter">
