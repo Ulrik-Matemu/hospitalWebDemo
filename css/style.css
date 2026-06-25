@@ -2738,12 +2738,44 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
 /* Text Card Panel */
 .wfs-text-card {
   flex: 1.5;
-  background-color: #dbeafe; /* Soft, light blue background tone */
-  border-radius: 24px; /* Matches the image's rounded look perfectly */
-  padding: 48px; /* Roomy internal padding */
+  background-color: #dbeafe;
+  border-radius: 24px;
+  padding: 48px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+}
+
+.wfs-card-footer {
+  margin-top: auto; /* Pushes the signature to the bottom if the card gets tall */
+  padding-top: 32px; /* Leaves breathing room below the main text */
+  text-align: right; /* Aligns text right */
+}
+
+/* Signature Name styling */
+.wfs-signature-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 2px 0;
+}
+
+/* Signature Title styling */
+.wfs-signature-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+  text-transform: uppercase; /* Makes it look modern and crisp */
+  letter-spacing: 0.5px;
+}
+
+/* Responsive design adjustment */
+@media (max-width: 768px) {
+  .wfs-card-footer {
+    text-align: center; /* Centers the name nicely on mobile screens */
+    padding-top: 24px;
+  }
 }
 
 /* Header Text Layout */
