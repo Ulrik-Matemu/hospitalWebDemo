@@ -1703,7 +1703,7 @@ Hero Section
 
 
 .contact-hero {
-  background-image: url(../img/Siha_Polyclinic_Hero_Image_1351x480.jpg);
+  background-image: url(../img/new-gallery/hero-5.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1747,7 +1747,7 @@ Hero Section
 @media (max-width: 1024px) {
   .form-and-why {
     display: grid;
-    margin: 0 5px;
+    margin: 0 30px 0 20px;
   }
   .why {
     width: 100%;
@@ -2010,16 +2010,35 @@ Hero Section
   width: 550px;
 }
 
+.d-image video {
+  width: 550px;
+}
+
 @media (max-width: 1024px) {
   .diagnosis-services {
     margin: 0;
   }
   .d-services {
     display: block;
+    padding: 20px;
+    text-align: justify;
   }
+
+  .d-list h2 {
+    right: 0;
+  }
+
   .d-image img {
     width: 97%;
     padding: 5px;
+  }
+
+  .d-image video {
+    width: 100%;
+  }
+  
+  .d-video {
+    padding: 20px;
   }
 }
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dentistry - Siha Polyclinic</title>
+    <title>Careers - Siha Polyclinic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,57 +137,41 @@
 </div>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-<section class="hero">
-    <img src="img/new-gallery/Siders-8.png" alt="Slide 1" class="active">
-    <div class="controls">
-        <button class="prev">❮</button>
-        <button class="next">❯</button>
-    </div>
-    <div class="dots"></div>
 
-</section>
-<section class="navigation-buttons">
-    <div class="nav-button-container">
-        <button class="nav-button"><a href="#diagnostic" style="text-decoration: none;">BRANCH-WISE DENTAL
-                SERVICES</a>
-            <span></span>
-        </button>
-        <button class="nav-button"><a href="#imaging-services" style="text-decoration: none;">PAEDIATRIC DENTISTRY
-                SERVICES</a>
-            <span></span>
-        </button>
-        <button class="nav-button">DENTAL CARE
-            <span></span>
-        </button>
-        <button class="nav-button">DENTAL CONSULTANTS
-            <span></span>
-        </button>
-    </div>
+<section class="contact-hero">
+    <h1>Careers</h1>
 </section>
 <section class="form-and-why">
     <div class="why">
-        <h2 style="text-decoration: underline;">Share Your Dental Worries with Us</h2>
-        <p>Root canals, dentures, fixing the crown of your teeth, these require expertise and the right set-up to
-            ensure risk-free successful procedure.</p>
-        <h2 style="text-decoration: underline;">Dental Problems Not Related to Oral Hygiene</h2>
-        <ul class="ticks">
-            <li>
-                <p>Misshapen tooth</p>
-            </li>
-            <li>
-                <p>Wisdom tooth
-                </p>
-            </li>
-            <li>
-                <p>Cracks or breakage from accidents</p>
-            </li>
+        <h2>At Siha Polyclinic, we recognise that talented and enthusiastic people are the basis of our ongoing
+            success.</h2>
+        <p style="margin-bottom: 20px;">Does the thought of patient care Motivate you?</p>
+        <p style="margin-bottom: 20px;">Are you up to the challenge of adapting to a dynamic and highly energetic
+            environment that brings you moral satisfaction of helping people receive medical support?</p>
+        <p style="margin-bottom: 20px;">Then you are the right person for us.</p>
+        <p style="margin-bottom: 20px;">Siha Polyclinic is committed to patient care. We believe in serving our
+            beneficiaries with complete integrity and passion. Compassionate care is our motto. No matter the
+            background, status, education, experience you bring, your ability to stay true to our cause is the
+            secret to make us gel.</p>
+        <p style="margin-bottom: 20px;">Apply for any of our open positions or share your resume with us. Let us
+            know which field/department/position interests you, and why you think you should be working with us.</p>
+        <p style="margin-bottom: 20px;">You can also contact the Human Resources at <a href="">hr@sihapolyclic.com</a>
+            or <a href="">+255 717 050 537</a></p>
+        <button style="display: none;">LOCATE US ON GOOGLE MAPS</button>
+        <h3>Other ways to reach us</h3>
+        <ul class="contact-list" style="list-style-type: none;">
+            <li><a href="" style="font-weight: 400; text-decoration: none;"><i style="color: black;"
+                        class="fa fa-phone"></i> +255 717 050 537</a></li>
+            <li><a href="" style="font-weight: 400; text-decoration: none;"><i style="color: black;"
+                        class="fa fa-envelope"></i> P.O.Box 923 Tanga</a></li>
+            <li><a href="" style="font-weight: 400; text-decoration: none;"><i style="color: black;"
+                        class="fa fa-whatsapp"></i> +255 716 217 121</a></li>
         </ul>
-        <p>Teeth decay and gum diseases aren’t the end of the list. Dentists deal with a lot of other kinds of
-            conditions and cosmetic requirements</p>
+
     </div>
     <div class="form">
         <form>
-            <h2>Dental Enquiry Form</h2>
+            <h2 style="font-size: 20px;">Apply Now</h2>
             <div class="form-div">
                 <div class="form-container">
                     <label>
@@ -211,19 +195,35 @@
                 </div>
                 <div class="form-container">
                     <label>
-                        Select Service<br>
-                        <select>
-                            <option>X-RAY</option>
-                            <option>Another</option>
-                        </select>
+                        Alternate No.<br>
+                        <input>
                     </label>
                 </div>
             </div>
-
-            <div class="form-container">
+            <div class="form-div">
+                <div class="form-container">
+                    <label>
+                        Job Roles<br>
+                        <select id="select-department" style="margin-right: 10px;">
+                    </label>
+                </div>
+                <div class="form-container">
+                    <label>
+                        Preffered Dated<br>
+                        <input style="display: none;" type="date" placeholder="Preffered Date">
+                    </label>
+                </div>
+            </div>
+            <div class="form-container" style="display: flex; justify-content: center;">
                 <label>
-                    Brief description of your requirement (optional).<br>
-                    <input id="preferred-date-input">
+                    Upload Resume (pdf) as Name_CV *<br>
+                    <input type="file" id="preferred-date-input">
+                </label>
+            </div>
+            <div class="form-container" style="display: flex; justify-content: center;">
+                <label>
+                    Upload Cover Letter (pdf) *<br>
+                    <input type="file" id="preferred-date-input">
                 </label>
             </div>
             <div class="form-container" style="margin: 0 34px; display: flex;">
@@ -244,43 +244,24 @@
             </div>
         </form>
     </div>
+
 </section>
-<section class="diagnosis-services">
-    <h2 style="font-weight: 700;">What is different at Siha Polyclinic?</h2>
-    <p style="text-align: center;">The Siha Polyclinic clinic boasts of an expert panel of dental consultants. We stress
-        emphasis on appointment based dental practice where we can serve you more efficiently in a timely fashion.</p>
-    <div class="d-services">
-        <div class="d-list">
-            <h2>Paediatric Dentistry</h2>
-            <p>Siha Polyclinic is specialized in creating the unique physical, emotional and developmental needs of the
-                children. Be assured of your kid and their dental health being in the hands of highly trained
-                professionals and their team. They work together to make your kids experience as comfortable as
-                possible. Paediatric dentists are the paediatricians of dentistry. A paediatric dentist has two to three
-                years of specialty training following dental school and limits his/her practice to treating children
-                only. Paediatric dentists are primary and specialty oral care providers for infants and children through
-                adolescence (up to 18 years), including those with special health needs.</p>
-            <ul>
-                <li>
-                    <p>Best Doctors</p>
-                </li>
-                <li>
-                    <p>Child-Friendly Experience</p>
-                </li>
-                <li>
-                    <p>Strict Sterilisation protocol</p>
-                </li>
-                <li>
-                    <p>Latest equipments and technologies</p>
-                </li>
-            </ul>
-        </div>
-        <div class="d-image">
-            <div class="d-video">
-                <video src="vids/dentistry.mp4" controls style=" aspect-ratio: 1 / 1; object-fit: cover; border-radius: 20px;"></video>
-            </div>
-        </div>
-    </div>
-</section>
+
+
+
+<script>
+    function myMap() {
+        var mapProp = {
+            center: new google.maps.LatLng(-5.067426, 39.098317),
+            zoom: 10,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+</script>
+
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUccYgoukcfpTu49FpyD74eqfLABcA3_Y&callback=myMap"></script>
+
 <section class="footer">
     <div class="footer-container">
       <div class="f-column1">
@@ -326,16 +307,10 @@
       </div>
     </div>
     <p class="footer-copyright">&copy; 2026 Siha Polyclinic. All Rights Reserved.</p>
-</section>
+  </section>
 <button id="backToTop">↑</button>
-
-
-
-
-
-<script src="js/back-to-top-button.js"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script src="js/navbar-toggle.js"></script>
+<script src="js/back-to-top-button.js"></script>
 </body>
 
 </html>
