@@ -1467,12 +1467,10 @@ Hero Section
   .form-div {
     display: block;
   }
-  .form-container label select {
-    width: 100%;
-  }
+  
   
   #preferred-date-input {
-    width: 100%;
+    width: 250px;
   }
   #select-department {
     width: 250px;
@@ -1837,6 +1835,12 @@ Hero Section
   margin: 20px 0;
 }
 
+@media (max-width: 1024px) {
+  .info-card {
+    line-height:normal;
+  }
+}
+
 .info-card h3 {
   color: #00a896;
 }
@@ -1980,6 +1984,12 @@ Hero Section
 .diagnosis-services p {
   font-size: 18px;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .diagnosis-services p {
+    padding: 10px;
+  }
 }
 
 .d-services {
@@ -2385,6 +2395,12 @@ font-size: 1.5em; /* Adjust tick size */
   padding: 50px 100px 20px 100px;
   font-size: 18px;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .gynaecology-form p {
+    padding: 20px;
+  }
 }
 
 .gynaecology-form div {

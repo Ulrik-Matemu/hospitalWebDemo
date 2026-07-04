@@ -141,13 +141,9 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <section class="hero">
-        <img src="img/gnaecology.jpg" style="width: 100%; height: 600px" alt="Slide 1" class="active">
+        <img src="img/gnaecology.jpg" alt="Slide 1" class="active">
         <style>
-            @media (max-width: 1024px) {
-                .hero img.active {
-                    display: none;
-                }
-            }
+           
         </style>
         <div class="controls">
             <button class="prev">❮</button>
@@ -169,16 +165,28 @@
 
         <div class="d-services">
             <div class="d-list">
-                <h2 style="text-align: left; margin-left: 110px;">What does Obstetrician-Gynecologist do?</h2>
+                <h2 >What does Obstetrician-Gynecologist do?</h2>
                 <p>An obstetrician-gynecologist or Ob-Gyn is a healthcare professional who specializes in female
                     reproductive health and associated disorders. They have in-depth knowledge of the female
                     reproductive system and how it functions. An ob-gyn specialist is usually the primary physician of
                     women whom they consult on a regular basis.</p>
-                <h2 style="text-align: left; margin-left: 110px;">At what age one should see a Gynecologist?</h2>
+                <h2 >At what age one should see a Gynecologist?</h2>
                 <p>It is recommended that girls should start seeing an Ob-Gyn doctor between the ages of 13 and 15. This
                     is a great way for a girl to develop a relationship with her doctor so that she feels comfortable
                     sharing personal information in the future. </p>
             </div>
+            <style>
+                .d-list h2 {
+                    text-align: left; 
+                    margin-left: 110px;
+                }
+
+                @media (max-width: 768px) {
+                    .d-list h2 {
+                        margin-left: 0;
+                    }
+                }
+            </style>
             <div class="d-image" style="margin: 0;">
                 <img src="img/gp2.jpg">
             </div>
@@ -259,7 +267,7 @@
                 </style>
             </div>
             <div class="d-list">
-                <h2 style="text-align: left; margin-left: 110px;">What procedures are done by a Gynecologist at Siha
+                <h2>What procedures are done by a Gynecologist at Siha
                     Polyclinic?</h2>
                 <p>Following services are provided by Ob-Gyn department at Siha Polyclinic:</p>
                 <ul>

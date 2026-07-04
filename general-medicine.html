@@ -143,11 +143,7 @@
     <section class="hero">
         <img src="img/general-medicine.jpg" alt="Slide 1" class="active">
         <style>
-            @media (max-width: 1024px) {
-                .hero img.active {
-                    display: none;
-                }
-            }
+            
         </style>
         <div class="controls">
             <button class="prev">❮</button>
@@ -243,7 +239,7 @@
                 }
             </style>
             <div class="d-list">
-                <h2 style="text-align: left; margin-left: 110px;">What is the role of a General Practitioner?</h2>
+                <h2 >What is the role of a General Practitioner?</h2>
                 <p>GPs work as a part of team of doctors and play an important role in guiding the patients to specific
                     medical specialities. As GPs are usually first point of contact for any patient, they examine and
                     evaluate the severity of the disease or condition. They may recommend basic lab tests like blood
@@ -257,6 +253,18 @@
             <div class="d-image" style="margin: 0;">
                 <img src="img/gp.jpg">
             </div>
+            <style>
+                .d-list h2 {
+                    text-align: left; 
+                    margin-left: 110px;
+                }
+
+                @media (max-width: 1024px) {
+                    .d-list h2 {
+                        margin-left: 0;
+                    }
+                }
+            </style>
         </div>
     </section>
     <section class="contact-section">
@@ -292,7 +300,7 @@
                 }
             </style>
             <div class="d-list">
-                <h2 style="text-align: left; margin-left: 110px;">What services are provided by a General Practitioner?
+                <h2>What services are provided by a General Practitioner?
                 </h2>
                 <p>Services can include:</p>
                 <ul>

@@ -216,7 +216,19 @@
                 </style>
             </div>
             <div class="d-list">
-                <h2 style="text-align: left; margin-left: 110px;">Department of Surgical Care</h2>
+                <h2 >Department of Surgical Care</h2>
+                 <style>
+                .d-list h2 {
+                    text-align: left; 
+                    margin-left: 110px;
+                }
+
+                @media (max-width: 768px) {
+                    .d-list h2 {
+                        margin-left: 0;
+                    }
+                }
+            </style>
                 <p>Gone are the days of staying in hospitals for weeks for surgery procedures and recovery.</p>
                 <p>Now, you can have your procedure in an Out Patient settings and be in-and-out of the place within a
                     day if you are having a planned elective surgery.</p>
