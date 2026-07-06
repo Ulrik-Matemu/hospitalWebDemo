@@ -3047,3 +3047,158 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
     margin: 0 auto;
   }
 }
+
+/* ==========================================================================
+   Accepted Insurance Section (Infinite Slider Carousel)
+   ========================================================================== */
+.accepted-insurance-section {
+  background-color: #e4f4f4;
+  padding: 50px 0;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  border-top: 1px solid rgba(0, 168, 150, 0.1);
+}
+
+.insurance-ticker-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.insurance-ticker-title h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00a896;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.insurance-ticker-title .insurance-underline {
+  margin: 12px auto 0 auto;
+  width: 80px;
+  height: 4px;
+  background-color: #fd8103;
+  border-radius: 2px;
+}
+
+.insurance-ticker-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 15px 0;
+}
+
+/* Gradient overlays on left and right for fade out effect */
+.insurance-ticker-container::before,
+.insurance-ticker-container::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.insurance-ticker-container::before {
+  left: 0;
+  background: linear-gradient(to right, #e4f4f4 0%, rgba(228, 244, 244, 0) 100%);
+}
+
+.insurance-ticker-container::after {
+  right: 0;
+  background: linear-gradient(to left, #e4f4f4 0%, rgba(228, 244, 244, 0) 100%);
+}
+
+.insurance-ticker-track {
+  display: flex;
+  width: calc(280px * 12); /* 280px item width * 12 items */
+  animation: scrollInsurance 25s linear infinite;
+}
+
+.insurance-ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.insurance-ticker-item {
+  width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.insurance-card-wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(0, 168, 150, 0.08);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateY(0);
+}
+
+.insurance-card-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(10%) contrast(95%);
+  opacity: 0.9;
+  transition: all 0.4s ease;
+}
+
+.insurance-card-wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 168, 150, 0.15);
+}
+
+.insurance-card-wrapper:hover img {
+  filter: grayscale(0%) contrast(100%);
+  opacity: 1;
+}
+
+@keyframes scrollInsurance {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-280px * 3)); /* Shift by the width of 3 unique items */
+  }
+}
+
+@media (max-width: 768px) {
+  .accepted-insurance-section {
+    padding: 40px 0;
+  }
+
+  .insurance-ticker-title h2 {
+    font-size: 1.8rem;
+  }
+  
+  .insurance-ticker-item {
+    width: 200px;
+    padding: 0 10px;
+  }
+  
+  .insurance-card-wrapper {
+    height: 90px;
+    padding: 12px;
+  }
+  
+  .insurance-ticker-track {
+    width: calc(200px * 12);
+  }
+  
+  @keyframes scrollInsurance {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-200px * 3));
+    }
+  }
+}
