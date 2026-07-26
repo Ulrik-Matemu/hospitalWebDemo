@@ -3202,3 +3202,150 @@ background: linear-gradient(135deg, #e7e7e7, #d3d3d3, #d9d9d9);
     }
   }
 }
+
+:root {
+  --primary-green: #004d25;
+  --primary-red: #c8102e;
+  --dark-navy: #0f172a;
+  --text-dark: #1e293b;
+  --bg-light: #f8fafc;
+}
+
+.hepatitis-campaign {
+  background-color: var(--bg-light);
+  padding: 3rem 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--text-dark);
+}
+
+.campaign-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary-green);
+  background-color: #e6f4ea;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+}
+
+.highlight-title-dark {
+  background-color: var(--primary-green);
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.25rem 1.5rem;
+  margin: 0.5rem 0;
+  border-radius: 2px;
+}
+
+.highlight-title-red {
+  color: var(--primary-red);
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.date-badge {
+  display: inline-block;
+  background-color: var(--primary-green);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 0.25rem 2rem;
+  margin: 0.75rem 0 2rem 0;
+  border-radius: 2px;
+}
+
+.quote-card {
+  background: #ffffff;
+  border-left: 4px solid var(--primary-green);
+  padding: 1.5rem;
+  margin: 0 auto 2.5rem auto;
+  max-width: 600px;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border-radius: 0 8px 8px 0;
+}
+
+.cta-banner {
+  display: inline-block;
+  background-color: var(--dark-navy);
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.75rem 2.5rem;
+  transform: skewX(-8deg);
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.cta-banner span {
+  display: inline-block;
+  transform: skewX(8deg);
+}
+
+.services-list {
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.free-offer {
+  background-color: #f0fdf4;
+  border: 1px solid #dcfce7;
+}
+
+.paid-offer {
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+}
+
+.service-card p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.free-offer strong {
+  color: var(--primary-green);
+}
+
+.price {
+  color: var(--primary-red);
+  font-weight: 800;
+}
